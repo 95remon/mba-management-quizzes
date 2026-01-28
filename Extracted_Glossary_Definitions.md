@@ -1,0 +1,651 @@
+# Extracted Margin Definitions / Glossary
+*These definitions likely correspond to the side-highlights in your book.*
+
+- A balance sheet shows assets and liabilities at one point in time.
+- A balanced scorecard tallies organizational performance in fi nancial, customer service, internal process, and innovation and learning areas.
+- A bargaining zone is the space between one party’s minimum reservation point and the other party’s maximum reservation point.
+- A behaviorally anchored rating scale uses specifi c descriptions of actual behaviors to rate various levels of performance.
+- A boundaryless organization eliminates internal boundaries among subsystems and external boundaries with the external environment.
+- A budget is a plan that commits resources to projects or activities.
+- A bureaucracy emphasizes formal authority, order, fairness, and effi  ciency.
+- A business model is a plan for making a profi t by generating revenues that are greater than costs.
+- A business plan describes the direction for a new business and the fi nancing needed to operate it.
+- A business strategy identifi es how a division or strategic business unit will compete in its product or service domain.
+- A certain environment off ers complete information on possible action alternatives and their consequences.
+- A change leader takes initiative in trying to change the behavior of another person or social system.
+- A charismatic leader inspires followers in extraordinary ways.
+- A classic entrepreneur is someone willing to pursue opportunities in situations others view as problems or threats.
+- A code of ethics is a formal statement of values and ethical standards.
+- A committee is designated to work on a special task on a continuing basis.
+- A communication channel is the pathway through which a message moves from sender to receiver.
+- A compressed workweek allows a fulltime job to be completed in less than fi ve days.
+- A conceptual skill is the ability to think analytically to diagnose and solve complex problems.
+- A confi rmation error occurs when focusing only on information that confi rms a decision already made.
+- A consultative decision is made by a leader after receiving information, advice, or opinions from group members.
+- A core competency is a special strength that gives an organization a competitive advantage.
+- A corporate strategy sets long-term direction for the total enterprise.
+- A corporation is a legal entity that exists separately from its owners.
+- A cost leadership strategy seeks to operate with low cost so that products can be sold at low prices.
+- A crisis decision occurs when an unexpected problem arises that can lead to disaster if not resolved quickly and appropriately.
+- A cross-functional team brings together members from diff erent functional departments.
+- A customer structure groups together people and jobs that serve the same customers or clients.
+- A decentralized communication network allows all members to communicate directly with one another.
+- A decision is a choice among possible alternative courses of action.
+- A defensive strategy does the minimum legally required to display social responsibility.
+- A democratic leader emphasizes both tasks and people.
+- A diff erentiation strategy off ers products that are unique and diff erent from the competition.
+- A divisional structure groups together people working on the same product, in the same area, with similar customers, or on the same processes.
+- A downsizing strategy decreases the size of operations.
+- A family business is owned and controlled by members of a family.
+- A family business feud occurs when family members have major disagreements over how the business should be run.
+- A fi rst-mover advantage comes from being fi rst to exploit a niche or enter a market.
+- A focus strategy concentrates on serving a unique market segment better than anyone else.
+- A focused cost leadership strategy seeks the lowest costs of operations within a special market segment.
+- A focused diff erentiation strategy offers a unique product to a special market segment.
+- A force-coercion strategy pursues change through formal authority and/or the use of rewards or punishments.
+- A foreign subsidiary is a local operation completely owned by a foreign fi rm.
+- A formal group is a team offi  cially recognized and supported by the organization.
+- A franchise is when one business owner sells to another the right to operate the same business in another location.
+- A functional strategy guides activities within one specifi c area of operations.
+- A functional structure groups together people with similar skills who perform similar tasks.
+- A Gantt chart graphically displays the scheduling of tasks required to complete a project.
+- A geographical structure groups together people and jobs performed in the same location.
+- A global corporation is a multinational enterprise (MNE) or multinational corporation (MNC) that conducts commercial transactions across national boundaries.
+- A global strategic alliance is a partnership in which foreign and domestic fi rms share resources and knowledge for mutual gains.
+- A globalization strategy adopts standardized products and advertising for use worldwide.
+- A graphic rating scale uses a checklist of traits or characteristics to evaluate performance.
+- A greenfi eld venture is a foreign subsidiary built from the ground up by the foreign owner.
+- A group decision is made by group members themselves.
+- A growth strategy involves expansion of the organization’s current operations.
+- A halo eff ect occurs when one attribute is used to develop an overall impression of a person or situation.
+- A human relations leader emphasizes people over task.
+- A human skill or interpersonal skill is the ability to work well in cooperation with other people.
+- A hygiene factor is found in the job context, such as working conditions, interpersonal relations, organizational policies, and compensation.
+- A job analysis studies exactly what is done in a job, and why.
+- A job description details the duties and responsibilities of a job holder.
+- A joint venture operates in a foreign country through co-ownership by foreign and local partners.
+- A knowledge worker is someone whose mind is a critical asset to employers.
+- A labor contract is a formal agreement between a union and an employer about the terms of work for union members.
+- A labor union is an organization that deals with employers on the workers’ collective behalf.
+- A laissez-faire leader has a “do the best you can and don’t bother me” attitude.
+- A learning organization continuously changes and improves, using the lessons of experience.
+- A limited liability corporation is a hybrid business form combining the advantages of the sole proprietorship, partnership, and corporation.
+- A maintenance activity is an action taken by a team member that supports the emotional life of the group.
+- A manager is a person who supports, activates, and is responsible for the work of others.
+- A mechanistic design is centralized, with many rules and procedures, a clearcut division of labor, narrow spans of control, and formal coordination.
+- A mission statement expresses the organization’s reason for existence in society.
+- A mixed message results when words communicate one message while actions, body language, or appearance communicate something else.
+- A moral manager makes ethical behavior a personal goal.
+- A multicultural organization has a culture with core values that respect diversity and support multiculturalism.
+- A multidomestic strategy customizes products and advertising to best fi t local needs.
+- A multiperson comparison compares one person’s performance with that of others.
+- A need is a physiological or psychological defi ciency that a person wants to satisfy.
+- A network structure uses information technologies to link with networks of outside suppliers and service contractors.
+- A nonprogrammed decision applies a specifi c solution crafted for a unique problem.
+- A norm is a behavior, rule, or standard expected to be followed by team members.
+- A partnership is when two or more people agree to contribute resources to start and operate a business together.
+- A performance management system sets standards, assesses results, and plans for performance improvements.
+- A performance opportunity is a situation that off ers the chance for a better future if the right steps are taken.
+- A performance threat is a situation in which something is obviously wrong or has the potential to go wrong.
+- A plan is a statement of intended means for accomplishing objectives.
+- A policy is a standing plan that communicates broad guidelines for decisions and action.
+- A proactive strategy actively pursues social responsibility by taking discretionary actions to make things better in the future.
+- A procedure is a rule describing actions that are to be taken in specifi c situations.
+- A process structure groups jobs and activities that are part of the same processes.
+- A product structure groups together people and jobs focused on a single product or service.
+- A programmed decision applies a solution from past experience to a routine problem.
+- A project team or task force is convened for a specifi c purpose and disbands when its task is completed.
+- A psychological contract is the set of individual expectations about the employment relationship.
+- A rational persuasion strategy pursues change through empirical data and rational argument.
+- A risk environment lacks complete information but off ers “probabilities” of the likely outcomes for possible action alternatives.
+- A satisfi cing decision chooses the fi rst satisfactory alternative that comes to one’s attention.
+- A satisfi er factor is found in job content, such as challenging and exciting work, recognition, responsibility, advancement opportunities, or personal growth.
+- A self-fulfi lling prophecy occurs when a person acts in ways that confi rm another’s expectations.
+- A serial entrepreneur starts and runs businesses and nonprofi ts over and over again, moving from one interest and opportunity to the next.
+- A shamrock organization operates with a core group of full-time long-term workers supported by others who work on contracts and part-time.
+- A shared power strategy pursues change by participation in assessing change needs, values, and goals.
+- A Six Sigma program sets a quality standard of 3.4 defects or less per million products or service deliveries.
+- A skill is the ability to translate knowledge into action that results in desired performance.
+- A small business has fewer than 500 employees, is independently owned and operated, and does not dominate its industry.
+- A social responsibility audit measures an organization’s performance in various areas of social responsibility.
+- A sole proprietorship is an individual pursuing business for a profi t.
+- A startup is a new and temporary venture that is trying to discover a profi table business model for future success.
+- A stereotype occurs when attributes commonly associated with a group are assigned to an individual.
+- A strategic alliance is a cooperation agreement with another organization to jointly pursue activities of mutual interest.
+- A strategic plan identifi es long-term directions for the organization.
+- A strategy is a comprehensive plan guiding resource allocation to achieve long-term organization goals.
+- A stressor is anything that causes stress.
+- A subsystem is a smaller component of a larger system.
+- A succession plan describes how the leadership transition and related fi nancial matters will be handled.
+- A sustainable business operates in ways that meet the needs of customers while protecting or advancing the wellbeing of our natural environment.
+- A SWOT analysis examines organizational strengths and weaknesses and environmental opportunities and threats.
+- A system is a collection of interrelated parts working together for a purpose.
+- A tactical plan helps to implement all or parts of a strategic plan.
+- A task activity is an action taken by a team member that directly contributes to the group’s performance purpose.
+- A team is a collection of people who regularly interact to pursue common goals.
+- A team structure uses permanent and temporary cross-functional teams to improve lateral relations.
+- A technical skill is the ability to use expertise to perform a task with profi ciency.
+- A transnational corporation is a global corporation or MNE that operates worldwide on a borderless basis.
+- A transnational strategy seeks effi  ciencies of global operations with attention to local markets.
+- A truly global manager is culturally aware and informed on international aff airs.
+- A turnaround strategy tries to fi x specifi c performance problems.
+- A Type A personality is a person oriented toward extreme achievement, impatience, and perfectionism.
+- A virtual organization uses IT and the Internet to engage a shifting network of strategic alliances.
+- A vision clarifi es the purpose of the organization and expresses what it hopes to be in the future.
+- A whistleblower exposes the misdeeds of others in organizations.
+- A work process is a group of related tasks that collectively creates a valuable work product.
+- A zero-based budget allocates resources as if each budget were brand new.
+- Accommodation, or smoothing, plays down diff erences and highlights similarities to reduce confl ict.
+- According to the defi cit principle a satisfi ed need does not motivate behavior.
+- According to the progression principle a need is activated only when the nextlower-level need is satisfi ed.
+- Accountability is the requirement to show performance results to a supervisor.
+- Active listening helps the source of a message say what he or she really means.
+- Affi  rmative action is an eff ort to give preference in employment to women and minority group members, who have traditionally been underrepresented.
+- Agenda setting develops action priorities for accomplishing goals and plans.
+- Agreeableness is being good-natured, cooperative, and trusting.
+- An accommodative strategy accepts social responsibility and tries to satisfy society’s basic ethical expectations.
+- An adaptive organization operates with a minimum of bureaucratic features and encourages worker empowerment and teamwork.
+- An administrator is a manager in a public or nonprofi t organization.
+- An amoral manager fails to consider the ethics of her or his behavior.
+- An angel investor is a wealthy individual willing to invest in a new venture in return for an equity stake.
+- An assessment center examines how job candidates handle simulated work situations.
+- An attitude is a predisposition to act in a certain way.
+- An authority decision is made by the leader and then communicated to the group.
+- An autocratic leader acts in a command-and-control fashion.
+- An eff ective manager helps others achieve high performance and satisfaction at work.
+- An eff ective team achieves high levels of task performance, membership satisfaction, and future viability.
+- An ethical dilemma is a situation that off ers potential benefi t or gain and that may also be considered unethical.
+- An ethical framework is a personal rule or strategy for making ethical decisions.
+- An immoral manager chooses to behave unethically.
+- An income statement shows profi ts or losses at one point in time.
+- An informal group is unoffi  cial and emerges from relationships and shared interests among members.
+- An initial public off ering, or IPO, is an initial selling of shares of stock to the public at large.
+- An input standard measures work efforts that go into a performance task.
+- An international business conducts for-profi t transactions of goods and services across national boundaries.
+- An obstructionist strategy tries to avoid and resist pressures for social responsibility.
+- An ombudsperson is a designated neutral third party who listens to complaints and disputes in an attempt to resolve them.
+- An open system interacts with its environment and transforms resource inputs into outputs.
+- An operational plan identifi es shortterm activities to implement strategic plans.
+- An optimizing decision chooses the alternative giving the absolute best solution to a problem.
+- An organic design is decentralized, with fewer rules and procedures, open divisions of labor, wide spans of control, and more personal coordination.
+- An organization chart describes the arrangement of work positions within an organization.
+- An organization is a collection of people working together to achieve a common purpose.
+- An output standard measures performance results in terms of quantity, quality, cost, or time.
+- An uncertain environment lacks so much information that it is diffi  cult to assign probabilities to the likely outcomes of alternatives.
+- Analytical competency is the ability to evaluate and analyze information to make actual decisions and solve real problems.
+- Analytics is the systematic analysis of large databases to solve problems and make informed decisions.
+- Attribution is the process of explaining events.
+- Authentic leadership activates positive psychological states to achieve self-awareness and positive selfregulation.
+- Authoritarianism is the degree to which a person tends to defer to authority.
+- Automation is the total mechanization of a job.
+- Avoidance, or withdrawal, pretends that a confl ict doesn’t really exist.
+- Base compensation is a salary or hourly wage paid to an individual.
+- BCG matrix analyzes business opportunities according to market growth rate and market share.
+- Behavioral interviews ask job applicants about past behaviors.
+- Benchmarking uses external and internal comparisons to plan for future improvements.
+- Best practices are things people and organizations do that lead to superior performance.
+- Biculturalism is when minority members adopt characteristics of majority cultures in order to succeed.
+- Big-C creativity occurs when extraordinary things are done by exceptional people.
+- Biodata methods collect certain biographical information that has been proven to correlate with good job performance.
+- Bona fi de occupational qualifi cations are employment criteria justifi ed by capacity to perform a job.
+- Bonus pay plans provide one-time payments based on performance accomplishments.
+- Bounded rationality describes making decisions within the constraints of limited information and alternatives.
+- Brainstorming engages group members in an open, spontaneous discussion of problems and ideas.
+- Breakeven analysis performs what-if calculations under diff erent revenue and cost conditions.
+- Bureaucratic control infl uences behavior through authority, policies, procedures, job descriptions, budgets, and day-to-day supervision.
+- Business incubators off er space, shared services, and advice to help get small businesses started.
+- Business intelligence taps information systems to extract and report data in organized ways that are helpful to decision makers.
+- Business model innovations result in ways for fi rms to make money.
+- Centralization is the concentration of authority for most decisions at the top level of an organization.
+- Changing is the phase where a planned change actually takes place.
+- Chapter 11 bankruptcy under U.S.
+- law protects a fi rm from creditors while management reorganizes to restore solvency.
+- Child labor is the employment of children for work otherwise done by adults.
+- Clan control infl uences behavior through norms and expectations set by the organizational culture.
+- Coaching occurs as an experienced person off ers performance advice to a less experienced person.
+- Coercive power is the capacity to punish or withhold positive outcomes as a means of infl uencing other people.
+- Cognitive dissonance is discomfort felt when attitude and behavior are inconsistent.
+- Cognitive styles are shown by the ways individuals deal with information while making decisions.
+- Cohesiveness is the degree to which members are attracted to and motivated to remain part of a team.
+- Collaboration, or problem solving, involves working through confl ict diff erences and solving problems so everyone wins.
+- Collective bargaining is the process of negotiating, administering, and interpreting a labor contract.
+- Communication is the process of sending and receiving symbols with meanings attached.
+- Communication transparency involves openly sharing honest and complete information about the organization and workplace aff airs.
+- Commutative justice is the degree to which an exchange or a transaction is fair to all parties.
+- Comparable worth holds that persons performing jobs of similar importance should be paid at comparable levels.
+- Comparative management studies how management practices diff er among countries and cultures.
+- Competition, or authoritative command, uses force, superior skill, or domination to “win” a confl ict.
+- Competitive advantage is something that an organization does extremely well, is diffi  cult to copy, and gives it an advantage over competitors in the marketplace.
+- Compromise occurs when each party to the confl ict gives up something of value to the other.
+- Concurrent control focuses on what happens during the work process.
+- Confl ict is a disagreement over issues of substance and/or an emotional antagonism.
+- Confl ict resolution is the removal of the substantial and emotional reasons for a confl ict.
+- Conscientiousness is being responsible, dependable, and careful.
+- Constructive stress acts in a positive way to increase eff ort, stimulate creativity, and encourage diligence in one’s work.
+- Contingency planning identifi es alternative courses of action to take when things go wrong.
+- Contingency thinking tries to match management practices with situational demands.
+- Contingency workers are employed on a part-time and temporary basis to supplement a permanent workforce.
+- Continuous improvement involves always searching for new ways to improve work quality and performance.
+- Continuous reinforcement rewards each time a desired behavior occurs.
+- Control charts graphically plot quality trends against control limits.
+- Controlling is the process of measuring performance and taking action to ensure desired results.
+- Co-opetition is the strategy of working with rivals on projects of mutual benefi t.
+- Core values are beliefs and values shared by organization members.
+- Corporate governance occurs when a board of directors holds top management accountable for organizational performance.
+- Corporate social responsibility is the obligation of an organization to serve the interests of society in addition to its own interests.
+- Corruption involves illegal practices to further one’s business interests.
+- Cost-benefi t analysis involves comparing the costs and benefi ts of each potential course of action.
+- CPM/PERT is a combination of the critical path method and the program evaluation and review technique.
+- Creativity is the generation of a novel idea or unique approach that solves a problem or crafts an opportunity.
+- Credible communication earns trust, respect, and integrity in the eyes of others.
+- Cultural intelligence is the ability to accept and adapt to new cultures.
+- Cultural relativism suggests there is no one right way to behave; ethical behavior is determined by its cultural context.
+- Culture is a shared set of beliefs, values, and patterns of behavior common to a group of people.
+- Culture shock is the confusion and discomfort a person experiences when in an unfamiliar culture.
+- Data are raw facts and observations.
+- Debt fi nancing involves borrowing money that must be repaid over time, with interest.
+- Decentralization is the dispersion of authority to make decisions throughout all organization levels.
+- Decision making is the process of making choices among alternative possible courses of action.
+- 360-degree appraisals include superiors, subordinates, peers, and even customers in the appraisal process.
+- Delegation is the process of distributing and entrusting work to other persons.
+- Demand legitimacy indicates the validity and legitimacy of a stakeholder’s interest in the organization.
+- Design thinking unlocks creativity in decision making through a process of experiencing, ideation, and prototyping.
+- Destructive stress impairs the performance of an individual.
+- Discrimination actively denies minority members the full benefi ts of organizational membership.
+- Disruptive activities are self-serving behaviors that interfere with team eff ectiveness.
+- Disruptive innovation creates products or services that become so widely used that they largely replace prior practices and competitors.
+- Distributed leadership is when all members of a team contribute helpful task and maintenance behaviors.
+- Distributive justice focuses on the degree to which outcomes are distributed fairly.
+- Distributive negotiation focuses on win–lose claims made by each party for certain preferred outcomes.
+- Divestiture sells off  parts of the organization to refocus attention on core business areas.
+- Dysfunctional confl ict is destructive and hurts task performance.
+- Early retirement incentive programs off er workers fi nancial incentives to retire early.
+- Eff ective negotiation resolves issues of substance while maintaining a positive process.
+- Effi  cient communication occurs at minimum cost.
+- Electronic grapevines use electronic media to pass messages and information among members of social networks.
+- Emotional confl ict results from feelings of anger, distrust, dislike, fear, and resentment, as well as from personality clashes.
+- Emotional intelligence is an ability to understand emotions and manage relationships eff ectively.
+- Emotional stability is being relaxed, secure, and unworried.
+- Emotions are strong feelings directed toward someone or something.
+- Employee assistance programs help employees cope with personal stresses and problems.
+- Employee benefi ts are nonmonetary forms of compensation such as health insurance and retirement plans.
+- Employee engagement is a strong positive feeling about one’s job and the organization.
+- Employee stock ownership plans help employees purchase stock in their employing companies.
+- Employment-at-will means that employees can be terminated at any time for any reason.
+- Empowerment allows others to make decisions and exercise discretion in their work.
+- Entrepreneurship is risk-taking behavior that results in new opportunities.
+- Environmental capital or natural capital is the storehouse of natural resources—atmosphere, land, water, and, minerals—that we use to sustain life and produce goods and services for society.
+- Environmental uncertainty is a lack of information regarding what exists in the environment and what developments may occur.
+- Equal employment opportunity is the requirement that employment decisions be made without regard to race, color, national origin, religion, gender, age, or disability status.
+- Equity fi nancing involves exchanging ownership shares for outside investment monies.
+- Equity sensitivity refl ects that people have diff erent preferences for equity and thus react diff erently to perceptions of inequity.
+- Escalating commitment is the continuation of a course of action even though it is not working.
+- Ethical behavior is “right” or “good” in the context of a governing moral code.
+- Ethical imperialism is an attempt to impose one’s ethical standards on other cultures.
+- Ethics establish standards of good or bad, or right or wrong, in one’s conduct.
+- Ethics intensity or issue intensity indicates the degree to which an issue or a situation is recognized to pose important ethical challenges.
+- Ethics self-governance is making sure day-to-day performance is achieved ethically and in socially responsible ways.
+- Ethics training seeks to help people understand the ethical aspects of decision making and to incorporate high ethical standards into their daily behavior.
+- Ethnic subcultures or national subcultures form among people who work together and have roots in the same ethnic community, country, or region of the world.
+- Ethnocentrism is the belief that one’s membership group or subculture is superior to all others.
+- Evidence-based management involves making decisions based on hard facts about what really works.
+- Executive dashboards visually update and display key performance indicators and information on a realtime basis.
+- Existence needs are desires for physical well-being.
+- Expectancy is a person’s belief that working hard will result in high task performance.
+- Expert power is the capacity to infl uence other people because of specialized knowledge.
+- External recruitment seeks job applicants from outside the organization.
+- Extinction discourages behavior by making the removal of a desirable consequence contingent on its occurrence.
+- Extraversion is being outgoing, sociable, and assertive.
+- Family-friendly benefi ts help employees achieve better work–life balance.
+- Feedback is the process of telling someone else how you feel about something that person did or said.
+- Feedback control takes place after an action is completed.
+- Feedforward control ensures that directions and resources are right before the work begins.
+- Flat structures have wide spans of control and few hierarchical levels.
+- Flexible benefi ts programs allow employees to choose from a range of benefi t options.
+- Flexible working hours give employees some choice in daily work hours.
+- Forecasting attempts to predict the future.
+- Formal structure is the offi  cial structure of the organization.
+- Framing error is trying to solve a problem in the context in which it is perceived.
+- Functional confl ict is constructive and helps task performance.
+- Functional managers are responsible for one area, such as fi nance, marketing, production, personnel, accounting, or sales.
+- Functional plans indicate how diff erent operations within the organization will help advance the overall strategy.
+- Fundamental attribution error overestimates internal factors and underestimates external factors as infl uences on someone’s behavior.
+- Gain-sharing plans allow employees to share in cost savings or productivity gains realized by their eff orts.
+- Gender subcultures form among persons who work together and share the same gender identities.
+- General managers are responsible for complex, multifunctional units.
+- Generational cohorts consist of people born within a few years of one another and who experience somewhat similar life events during their formative years.
+- Generational subcultures form among persons who work together and share similar ages, such as Millennials and Baby Boomers.
+- Globalization is the growing interdependence among elements of the global economy.
+- Global management involves managing business and organizations with interests in more than one country.
+- Groupthink is a tendency for highly cohesive teams to lose their evaluative capabilities.
+- Growth needs are desires for personal growth and development.
+- Growth through concentration is within the same business area.
+- Growth through diversifi cation is by acquisition of or investment in new and diff erent business areas.
+- Growth through vertical integration occurs by acquiring suppliers or distributors.
+- Heuristics are strategies for simplifying decision making.
+- High-context cultures rely on nonverbal and situational cues as well as on spoken or written words in communication.
+- Higher-order needs are esteem and self-actualization needs in Maslow’s hierarchy.
+- Human capital is the economic value of people with job-relevant knowledge, skills, abilities, ideas, energies, and commitments.
+- Human resource management is a process of attracting, developing, and maintaining a talented workforce.
+- Human resource planning analyzes staffi  ng needs and identifi es actions to fi ll those needs.
+- Importing involves the selling in domestic markets of products acquired abroad.
+- Impression management is the systematic attempt to infl uence how others perceive us.
+- Improvisational change makes continual adjustments as changes are being implemented.
+- In a centralized communication network, communication fl ows only between individual members and a hub, or center point.
+- In a free-agent economy people change jobs more often, and many work on independent contracts with a shifting mix of employers.
+- In a hierarchy of goals or hierarchy of objectives, lower-level goals and objectives are means to accomplishing higher-level ones.
+- In a licensing agreement a local fi rm pays a fee to a foreign fi rm for rights to make or sell its products.
+- In a restricted communication network subgroups have limited communication with one another.
+- In a strategic alliance, organizations join in partnership to pursue an area of mutual interest.
+- In arbitration a neutral third party issues a binding decision to resolve a dispute.
+- G-8 In bottom-up change, change initiatives come from all levels in the organization.
+- In continuous-process production, raw materials are continuously transformed by an automated system.
+- In eff ective communication the intended meaning is fully understood by the receiver.
+- In exporting, local products are sold abroad to foreign customers.
+- In franchising, a fee is paid to a foreign business for rights to locally operate using its name, branding, and methods.
+- In global sourcing, materials or services are purchased around the world for local use.
+- In job rotation people switch tasks to learn multiple jobs.
+- In lose–lose confl ict no one achieves his or her true desires, and the underlying reasons for confl ict remain unaff ected.
+- In mediation a neutral party tries to help confl icting parties improve communication to resolve their dispute.
+- In monochronic cultures people tend to do one thing at a time.
+- In over-reward inequity (positive inequity) an individual perceives that rewards received are more than what is fair for work inputs.
+- In polychronic cultures time is used to accomplish many diff erent things at once.
+- In the global economy, resources, markets, and competition are worldwide in scope.
+- In the individualism view ethical behavior advances long-term self-interests.
+- In the justice view ethical behavior treats people impartially and fairly.
+- In the moral rights view ethical behavior respects and protects fundamental rights.
+- In the utilitarian view ethical behavior delivers the greatest good to the most people.
+- In top-down change, the change initiatives come from senior management.
+- In under-reward inequity (negative inequity) an individual perceives that rewards received are less than what is fair for work inputs.
+- In unstructured interviews the interviewer does not work from a formal and preestablished list of questions that is asked of all interviewees.
+- In win–lose confl ict one party achieves its desires, and the other party does not.
+- In win–win confl ict the confl ict is resolved to everyone’s benefi t.
+- In work sampling, applicants are evaluated while performing actual work tasks.
+- Incremental change bends and adjusts existing ways to improve performance.
+- Independent contractors are hired as needed and are not part of the organization’s permanent workforce.
+- Individualism–collectivism is the degree to which a society emphasizes individuals and their self-interests.
+- Informal structure is the set of unoffi cial relationships among an organization’s members.
+- Information competency is the ability to locate, gather, and organize information for use in decision making.
+- Information is data made useful for decision making.
+- Information filtering is the intentional distortion of information to make it appear most favorable to the recipient.
+- Innovation is the process of taking a new idea and putting it into practice.
+- Insourcing is job creation through foreign direct investment.
+- Instrumentality is a person’s belief that various outcomes will occur as a result of task performance.
+- Instrumental values are preferences regarding the means to desired ends.
+- Intellectual capital is the collective brainpower or shared knowledge of a workforce.
+- Interactional justice is the degree to which others are treated with dignity and respect.
+- Interactive leaders are strong communicators and act democratic and participative with followers.
+- Intercultural competencies are skills and personal characteristics that help us be successful in cross-cultural situations.
+- Intermittent reinforcement rewards behavior only periodically.
+- Internal recruitment seeks job applicants from inside the organization.
+- Internet censorship is the deliberate blockage and denial of public access to information posted on the Internet.
+- Internet entrepreneurship is the use of the Internet to pursue an entrepreneurial venture.
+- Intrapreneurs display entrepreneurial behavior as employees of larger firms.
+- Intuitive thinking approaches problems in a fl exible and spontaneous fashion.
+- Inventory control ensures that inventory is only big enough to meet immediate needs.
+- ISO certifi cation indicates conformance with a rigorous set of international quality standards.
+- Issue urgency indicates the extent to which a stakeholder’s concerns need immediate attention.
+- Job burnout is physical and mental exhaustion from work stress.
+- Job design is arranging work tasks for individuals and groups.
+- Job enlargement increases task variety by combining into one job two or more tasks previously done by separate workers.
+- Job enrichment increases job depth by adding work planning and evaluating duties normally performed by the supervisor.
+- Job involvement is the extent to which an individual is dedicated to a job.
+- Job migration occurs when fi rms shift jobs from one country to another.
+- G-9 Job rotation increases task variety by periodically shifting workers between diff erent jobs.
+- Job satisfaction is the degree to which an individual feels positive or negative about a job.
+- Job sharing splits one job between two people.
+- Job simplifi cation employs people in clearly defi ned and specialized tasks with narrow job scope.
+- Job specifi cations list the qualifi cations required of a job holder.
+- Just-in-time scheduling (JIT) routes materials to workstations just in time for use.
+- Knowledge management is the process of using intellectual capital for competitive advantage.
+- Lack of participation error is a failure to include key persons in strategic planning.
+- Leaders show integrity by acting with honesty, credibility, and consistency in putting values into action.
+- Leadership is the process of inspiring others to work hard to accomplish important tasks.
+- Leadership style is a recurring pattern of behaviors exhibited by a leader.
+- Leading is the process of arousing enthusiasm and inspiring eff orts to achieve goals.
+- Lean startups use things like opensource software, while containing costs, staying small, and keeping operations as simple as possible.
+- Learning is a change in behavior that results from experience.
+- Legitimate power is the capacity to infl uence other people by virtue of formal authority, or the rights of offi  ce.
+- Leniency is the tendency to give employees a higher performance rating than they deserve.
+- Lifelong learning is continuous learning from daily experiences.
+- Line managers directly contribute to producing the organization’s goods or services.
+- Liquidation is where a business closes and sells its assets to pay creditors.
+- Little-C creativity occurs when average people come up with unique ways to deal with daily events and situations.
+- Locus of control is the extent to which one believes that what happens is within one’s control.
+- Long-term plans typically look three or more years into the future.
+- Low-context cultures emphasize communication via spoken or written words.
+- Lower-order needs are physiological, safety, and social needs in Maslow’s hierarchy.
+- Machiavellianism describes the extent to which someone is emotionally detached and manipulative.
+- Management by exception focuses attention on substantial diff erences between actual and desired performance.
+- Management development is training to improve knowledge and skills in the management process.
+- Management information systems use IT to collect, organize, and distribute data for use in decision making.
+- Management with analytics involves systematic gathering and processing of data to make it useful as information.
+- Managing diversity is a leadership approach that creates an organizational culture that respects diversity and supports multiculturalism.
+- Market control is essentially the infl uence of market competition on the behavior of organizations and their members.
+- Masculinity–femininity is the degree to which a society values assertiveness and materialism.
+- Members of a board of directors or board of trustees are supposed to make sure an organization is run right.
+- Members of a self-managing work team have the authority to make decisions about how they share and complete their work.
+- Members of a virtual team or distributed team work together and solve problems through computer-based interactions.
+- Mentoring assigns early-career employees as protégés to more senior ones.
+- Merit pay awards pay increases in proportion to performance contributions.
+- Middle managers oversee the work of large departments or divisions.
+- Moods are generalized positive and negative feelings or states of mind.
+- Mood contagion is the spillover of one’s positive or negative moods onto others.
+- Moral absolutism suggests ethical standards apply universally across all cultures.
+- Moral leadership is always “good” and “right” by ethical standards.
+- Moral overconfidence is an overly positive view of one’s strength of character.
+- Most favored nation status gives a trading partner most favorable treatment for imports and exports.
+- Motion study is the science of reducing a task to its basic physical motions.
+- Motivation accounts for the level, direction, and persistence of eff ort expended at work.
+- Multiculturalism in organizations involves inclusiveness, pluralism, and respect for diversity.
+- Multidimensional thinking is an ability to address many problems at once.
+- G-10 NAFTA is the North American Free Trade Agreement linking Canada, the United States, and Mexico in an economic alliance.
+- Necessity-based entrepreneurship takes place because other employment options don’t exist.
+- Need for achievement is the desire to do something better, to solve problems, or to master complex tasks.
+- Need for affi  liation is the desire to establish and maintain good relations with people.
+- Need for power is the desire to control, infl uence, or be responsible for other people.
+- Negative reinforcement strengthens behavior by making the avoidance of an undesirable consequence contingent on its occurrence.
+- Negotiation is the process of making joint decisions when the parties involved have diff erent preferences.
+- Networking is the process of creating positive relationships with people who can help advance agendas.
+- Noise is anything that interferes with the eff ectiveness of communication.
+- Nontariff  barriers to trade discourage imports in nontax ways such as quotas and government import restrictions.
+- Nonverbal communication takes place through gestures and body language.
+- Objectives and goals are specifi c results that one wishes to achieve.
+- Occupational and functional subcultures form among persons who share the same skills and work responsibilities.
+- Off shoring is the outsourcing of jobs to foreign locations.
+- Open book management is where managers provide employees with essential fi nancial information about their companies.
+- Openness to experience is being curious, receptive to new ideas, and imaginative.
+- Operant conditioning is the control of behavior by manipulating its consequences.
+- Operating objectives are specifi c results that organizations try to accomplish.
+- Organization structure is a system of tasks, reporting relationships, and communication linkages.
+- Organizational behavior is the study of individuals and groups in organizations.
+- Organizational citizenship is a willingness to “go beyond the call of duty” or “go the extra mile” in one’s work.
+- Organizational commitment is the loyalty of an individual to the organization.
+- Organizational culture is the predominant value system for the organization as a whole.
+- Organizational design is the process of creating structures that accomplish mission and objectives.
+- Organizational subcultures are groups of people who share similar beliefs and values based on their work or personal characteristics.
+- Organizing is the process of assigning tasks, allocating resources, and coordinating work activities.
+- Orientation familiarizes new employees with jobs, coworkers, and organizational policies and services.
+- Participatory planning includes the persons who will be aff ected by plans and/or those who will implement them.
+- Perception is the process through which people receive, organize, and interpret information from the environment.
+- Performance appraisal is the process of formally evaluating performance and providing feedback to a job holder.
+- Performance coaching provides frequent and developmental feedback for how a worker can improve job performance.
+- Performance eff ectiveness is an output measure of task or goal accomplishment.
+- Performance effi  ciency is an input measure of resource cost associated with goal accomplishment.
+- Personality is the profi le of characteristics making a person unique from others.
+- Personal wellness is the pursuit of one’s full potential through a personal healthpromotion program.
+- Person–job fi t is the extent to which an individual’s knowledge, skills, experiences, and personal characteristics are consistent with the requirements of their work.
+- Person–organization fi t is the extent to which an individual’s values, interests, and behavior are consistent with the culture of the organization.
+- Persuasive communication presents a message in a manner that causes the other person to support it.
+- Planning is the process of setting objectives and determining how to accomplish them.
+- Political risk is the potential loss in value of a foreign investment due to instability and political changes in the host country.
+- Political-risk analysis tries to forecast political disruptions that can threaten the value of a foreign investment.
+- Positive reinforcement strengthens behavior by making a desirable consequence contingent on its occurrence.
+- Power is the ability to get someone else to do something you want done or to make things happen the way you want.
+- Power distance is the degree to which a society accepts unequal distribution of power.
+- Prejudice is the display of negative, irrational attitudes toward members of diverse populations.
+- Principled negotiation or integrative negotiation uses a “win–win” G-11 orientation to reach solutions acceptable to each party.
+- Problem solving involves identifying and taking action to resolve problems.
+- Procedural justice is concerned that policies and rules are fairly applied.
+- Process innovations result in better ways of doing things.
+- Product innovations result in new or improved goods or services.
+- Productivity is the quantity and quality of work performance, with resource utilization considered.
+- Profi t-sharing plans distribute to employees a proportion of net profi ts earned by the organization.
+- Project management makes sure that activities required to complete a project are planned well and accomplished on time.
+- Project teams are convened for a particular task or project and disband once it is completed.
+- Projection is the assignment of personal attributes to other individuals.
+- Projects are one-time activities with many component tasks that must be completed in proper order and according to budget.
+- Protectionism is a call for tariff s and favorable treatments to protect domestic fi rms from foreign competition.
+- Proxemics involves the use of space in communication.
+- Punishment discourages behavior by making an unpleasant consequence contingent on its occurrence.
+- Quality of work life is the overall quality of human experiences in the workplace.
+- Realistic job previews provide job candidates with all pertinent information about a job and an organization, both positive and negative.
+- Recency bias overemphasizes the most recent behaviors when evaluating individual performance.
+- Recruitment is a set of activities designed to attract a qualifi ed pool of job applicants.
+- Referent power is the capacity to infl uence other people because of their desire to identify personally with you.
+- Refreezing is the phase at which change is stabilized.
+- Relatedness needs are desires for good interpersonal relationships.
+- Relationship goals in negotiation are concerned with the ways people work together.
+- Reliability means that a selection device gives consistent results over repeated measures.
+- Reshoring is the return of jobs from foreign locations as companies establish new domestic operations.
+- Retrenchment and restructuring strategies pursue radical changes to solve problems.
+- Reverse innovation recognizes the potential for valuable innovations to be launched from lower organizational levels and diverse locations, including emerging markets.
+- Reward power is the capacity to off er something of value as a means of infl uencing other people.
+- Scenario planning identifi es alternative future scenarios and makes plans to deal with each.
+- Scientifi c management emphasizes careful selection and training of workers and supervisory support.
+- Selection is choosing individuals to hire from a pool of qualifi ed job applicants.
+- Selective perception is the tendency to defi ne problems from one’s own point of view.
+- Self-control is internal control that occurs through self-discipline in fulfi lling work and personal responsibilities.
+- Self-effi  cacy is a person’s belief that she or he is capable of performing a task.
+- Self-management is the ability to understand oneself, exercise initiative, accept responsibility, and learn from experience.
+- Self-monitoring is the degree to which someone is able to adjust behavior in response to external factors.
+- Self-serving bias explains personal success by internal causes and personal failures by external causes.
+- Servant leadership is follower-centered and committed to helping others in their work.
+- Sexual harassment is behavior of a sexual nature that aff ects a person’s employment situation.
+- Shaping is positive reinforcement of successive approximations to the desired behavior.
+- Shared value approaches business decisions with the understanding that economic and social progress are interconnected.
+- Short-term plans typically cover one year or less.
+- Situational interviews ask job applicants how they would react in specifi c situations.
+- Small Business Development Centers founded with support from the U.S.
+- Small Business Administration provide advice to new and existing small businesses.
+- Social business innovation fi nds ways to use business models to address important social problems.
+- Social capital is a capacity to get things done with the support and help of others.
+- Social enterprises have a social mission to help make lives better for underserved populations.
+- Social entrepreneurship is a unique form of ethical entrepreneurship that seeks novel ways to solve pressing social problems.
+- Social loafi ng is the tendency of some people to avoid responsibility by “freeriding” in groups.
+- G-12 Social network analysis identifi es the informal structures and their embedded social relationships that are active in an organization.
+- Socialization is the process through which new members learn the culture of an organization.
+- Span of control is the number of subordinates directly reporting to a manager.
+- Staff  managers use special technical expertise to advise and support line workers.
+- Staff  positions provide technical expertise for other parts of the organization.
+- Stakeholders are the persons, groups, and other organizations that are directly aff ected by the behavior of the organization and that hold a stake in its performance.
+- Stakeholder power refers to the capacity of the stakeholder to positively or negatively aff ect the operations of the organization.
+- Stewardship in management means taking personal responsibility to always respect and protect the interests of society at large.
+- Stock options give the right to purchase shares at a fi xed price in the future.
+- Strategic analysis is the process of analyzing the organization, the environment, and the organization’s competitive position and current strategies.
+- Strategic control makes sure strategies are well implemented and that poor strategies are scrapped or modifi ed.
+- Strategic human resource management mobilizes human capital to implement organizational strategies.
+- Strategic intent focuses and applies organizational energies on a unifying and compelling goal.
+- Strategic leadership inspires people to continuously change, refi ne, and improve strategies and their implementation.
+- Strategic management is the process of formulating and implementing strategies.
+- Strategic opportunism focuses on longterm objectives while being fl exible in dealing with short-term problems.
+- Strategy formulation is the process of crafting strategies to guide the allocation of resources.
+- Strategy implementation is the process of putting strategies into action.
+- Stress is a state of tension caused by extraordinary demands, constraints, or opportunities.
+- Stretch goals are performance targets that we have to work extra hard and stretch to reach.
+- Structured problems are straightforward and clear with respect to information needs.
+- Substance goals in negotiation are concerned with outcomes.
+- Substantive conflict involves disagreements over goals, resources, rewards, policies, procedures, and job assignments.
+- Substitutes for leadership are factors in the work setting that direct work efforts without the involvement of a leader.
+- Sustainability in management means acting in ways that support a high quality of life for present and future generations.
+- Sustainable competitive advantage is the ability to outperform rivals in ways that are diffi  cult or costly to imitate.
+- Sustainable development uses environmental resources to support societal needs today while also preserving and protecting them for future generations.
+- Sustainable innovations or green innovations help reduce an organization’s negative impact and enhance its positive impact on the natural environment.
+- Sweatshops employ workers at very low wages for long hours in poor working conditions.
+- Synergy is the creation of a whole greater than the sum of its individual parts.
+- Systematic thinking approaches problems in a rational and analytical fashion.
+- Tall structures have narrow spans of control and many hierarchical levels.
+- Tariff s are taxes governments levy on imports from abroad.
+- Team building is a sequence of activities to analyze a team and make changes to improve its performance.
+- Team diversity is the diff erences in values, personalities, experiences, demographics, and cultures among the membership.
+- Team Eff ectiveness Equation is Team eff ectiveness  Quality of inputs  (Process gains  Process losses).
+- Team leaders report to middle managers and supervise nonmanagerial workers.
+- Team process is the way team members work together to accomplish tasks.
+- Teamwork is the process of people actively working together to accomplish common goals.
+- Tech IQ is ability to use technology and commitment to stay informed on the latest technological developments.
+- Technological competency is the ability to understand new technologies and to use them to their best advantage.
+- Telecommuting involves using IT to work at home or outside the offi  ce.
+- Terminal values are preferences about desired end states.
+- Termination is the involuntary dismissal of an employee.
+- Th e 3 P’s of organizational performance are profi t, people, and planet.
+- Th e anchoring and adjustment bias bases a decision on incremental adjustments from a prior decision point.
+- Th e availability bias bases a decision on recent information or events.
+- Th e behavioral decision model describes decision making with limited information and bounded rationality.
+- G-13 Th e breakeven point occurs where revenues just equal costs.
+- Th e chain of command links all persons with successively higher levels of authority.
+- Th e classical decision model describes decision making with complete information.
+- Th e classical view of CSR is that business should focus on profi ts.
+- Th e complacency trap is being carried along by the fl ow of events.
+- Th e control equation states: Need for Action  Desired Performance  Actual Performance.
+- Th e core culture consists of the core values, or underlying assumptions and beliefs that shape and guide people’s behaviors in an organization.
+- Th e critical-incident technique keeps a log of someone’s eff ective and ineff ective job behaviors.
+- Th e critical path is the pathway from project start to conclusion that involves activities with the longest completion times.
+- Th e decision-making process begins with identifi cation of a problem and ends with evaluation of implemented solutions.
+- Th e defi cit principle states that a satisfi ed need does not motivate behavior.
+- Th e ecological fallacy assumes that a generalized cultural value applies equally well to all members of the culture.
+- Th e economic order quantity method places new orders when inventory levels fall to predetermined points.
+- Th e euro is now the common European currency.
+- Th e European Union is a political and economic alliance of European countries.
+- Th e Foreign Corrupt Practices Act (FCPA) makes it illegal for U.S.
+- fi rms and their representatives to engage in corrupt practices overseas.
+- Th e frustration-regression principle states that an already satisfi ed need can become reactivated when a higher-level need is blocked.
+- Th e functional chimneys or functional silos problem is a lack of communication and coordination across functions.
+- Th e gender similarities hypothesis holds that males and females have similar psychological properties.
+- Th e general environment consists of economic, legal-political, sociocultural, technological, and natural environment conditions.
+- Th e glass ceiling is an invisible barrier to advancement by women and minorities in organizations.
+- Th e Hawthorne eff ect is the tendency of persons singled out for special attention to perform as expected.
+- Th e intellectual capital equation states: Intellectual Capital  Competency  Commitment.
+- The law of effect states that behavior followed by pleasant consequences is likely to be repeated; behavior followed by unpleasant consequences is not.
+- Th e leaking pipeline problem is where glass ceilings and other obstacles cause qualifi ed and high-performing women to drop out of upward career paths.
+- Th e least-preferred coworker scale, LPC, is used in Fiedler’s contingency model to measure a person’s leadership style.
+- Th e management process is planning, organizing, leading, and controlling the use of resources to accomplish performance goals.
+- Th e nominal group technique structures interaction among team members discussing problems and ideas.
+- Th e observable culture is what one sees and hears when walking around an organization as a visitor, a customer, or an employee.
+- Th e productivity equation is: Productivity  Output/Input.
+- Th e progression principle states that a need isn’t activated until the next lowerlevel need is satisfi ed.
+- The representativeness bias bases a decision on similarity to other situations.
+- Th e socioeconomic view of CSR is that business should focus on broader social welfare as well as profi ts.
+- Th e specifi c environment, or task environment, includes the people and groups with whom an organization interacts.
+- The spotlight questions test the ethics of a decision by exposing it to scrutiny through the eyes of family, community members, and ethical role models.
+- Th e succession problem is the issue of who will run the business when the current head leaves.
+- Th e triple bottom line assesses the economic, social, and environmental performance of organizations.
+- Th e upside-down pyramid view of organizations shows customers at the top being served by workers who are supported by managers.
+- The virtuous circle occurs when socially responsible behavior improves financial performance, which leads to more responsible behavior in the future.
+- Th eory X assumes people dislike work, lack ambition, act irresponsibly, and prefer to be led.
+- Th eory Y assumes people are willing to work, like responsibility, and are selfdirected and creative.
+- Time orientation is the degree to which a society emphasizes short-term or longterm goals.
+- Top managers guide the performance of the organization as a whole or of one of its major parts.
+- Total quality management is an organization-wide commitment to continuous improvement, product quality, and customer needs.
+- Traditional recruitment focuses on selling the job and organization to applicants.
+- G-14 Training provides learning opportunities to acquire and improve job-related skills.
+- Transformational change results in a major and comprehensive redirection of the organization.
+- Transformational leadership is inspirational and arouses extraordinary eff ort and performance.
+- Uncertainty avoidance is the degree to which a society tolerates risk and uncertainty.
+- Unfreezing is the phase during which a situation is prepared for change.
+- Unstructured problems have ambiguities and information defi ciencies.
+- Valence is the value a person assigns to work-related outcomes.
+- Validity means that scores on a selection device have demonstrated links with future job performance.
+- Value-based management actively develops, communicates, and enacts shared values.
+- Values are broad beliefs about what is appropriate behavior.
+- Venture capitalists make large investments in new ventures in return for an equity stake in the business.
+- Vision is a clear sense of the future.
+- Visionary leadership brings to the situation a clear sense of the future and an understanding of how to get there.
+- Withdrawal behaviors occur as temporary absenteeism and actual job turnover.
+- Workforce diversity describes diff erences among workers in gender, race, age, ethnicity, religion, sexual orientation, and able-bodiedness.
+- Work–life balance involves balancing career demands with personal and family needs.
+- Workplace privacy is the right to privacy while at work.
+- Workplace rage is aggressive behavior toward coworkers or the work setting.
+- Workplace spirituality creates meaning and shared community among organizational members.
+- World 3.0 is a world where nations cooperate in the global economy while still respecting diff erent national characters and interests.
+- World Trade Organization member nations agree to negotiate and resolve disputes about tariff s and trade restrictions.
+- Wrongful discharge is a doctrine giving workers legal protections against discriminatory fi rings..

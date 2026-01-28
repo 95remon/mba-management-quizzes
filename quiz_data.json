@@ -1,0 +1,2162 @@
+{
+  "self_test_questions": [
+    {
+      "id": "ch1_q1",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The process of management involves the functions of planning, __________, leading, and controlling.",
+      "options": {
+        "a": "accounting",
+        "b": "creating",
+        "c": "innovating",
+        "d": "organizing"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q2",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "An effective manager achieves both high-performance results and high levels of __________ among people doing the required work.",
+      "options": {
+        "a": "turnover",
+        "b": "effectiveness",
+        "c": "satisfaction",
+        "d": "stress"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q3",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "Performance efficiency is a measure of the __________ associated with task accomplishment.",
+      "options": {
+        "a": "resource costs",
+        "b": "goal specificity",
+        "c": "product quality",
+        "d": "product quantity"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q4",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The requirement that a manager answer to a higher-level boss for performance results achieved by a work team is called __________.",
+      "options": {
+        "a": "dependency",
+        "b": "accountability",
+        "c": "authority",
+        "d": "empowerment"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q5",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "Productivity is a measure of the quantity and __________ of work produced, relative to the cost of inputs.",
+      "options": {
+        "a": "quality",
+        "b": "cost",
+        "c": "timeliness",
+        "d": "value"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q6",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "__________ managers pay special attention to the external environment, looking for problems and opportunities and finding ways to deal with them.",
+      "options": {
+        "a": "Top",
+        "b": "Middle",
+        "c": "Lower",
+        "d": "First-line"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q7",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The accounting manager for a local newspaper would be considered a __________ manager, whereas the editorial director would be considered a __________ manager.",
+      "options": {
+        "a": "general, functional",
+        "b": "middle, top",
+        "c": "staff, line",
+        "d": "senior, junior"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q8",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "When a team leader clarifies desired work targets and deadlines for a work team, he or she is fulfilling the management function of __________.",
+      "options": {
+        "a": "planning",
+        "b": "delegating",
+        "c": "controlling",
+        "d": "supervising"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q9",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The process of building and maintaining good working relationships with others who may help implement a manager\u2019s work agendas is called __________.",
+      "options": {
+        "a": "governance",
+        "b": "networking",
+        "c": "authority",
+        "d": "entrepreneurship"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q10",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "In Katz\u2019s framework, top managers tend to rely more on their __________ skills than do first-line managers.",
+      "options": {
+        "a": "human",
+        "b": "conceptual",
+        "c": "decision-making",
+        "d": "technical"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q11",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The research of Mintzberg and others concludes that managers __________.",
+      "options": {
+        "a": "work at a leisurely pace",
+        "b": "have blocks of private time for planning",
+        "c": "are never free from the pressures of performance responsibility",
+        "d": "have the advantages of flexible work hours"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q12",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "When someone with a negative attitude toward minorities makes a decision to deny advancement opportunities to a Hispanic worker, this is an example of __________.",
+      "options": {
+        "a": "discrimination",
+        "b": "emotional intelligence",
+        "c": "performance efficiency",
+        "d": "prejudice"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q13",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "Among the trends in the new workplace, one can expect to find __________.",
+      "options": {
+        "a": "more order-giving",
+        "b": "more valuing people as human assets",
+        "c": "less teamwork",
+        "d": "reduced concern for work\u2013life balance"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q14",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The manager\u2019s role in the \u201cupside-down pyramid\u201d view of organizations is best described as providing __________ so that operating workers can directly serve __________.",
+      "options": {
+        "a": "direction, top management",
+        "b": "leadership, organizational goals",
+        "c": "support, customers",
+        "d": "agendas, networking"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch1_q15",
+      "chapter": "1",
+      "type": "MCQ",
+      "question": "The management function of __________ is being performed when a retail manager measures daily sales in the women\u2019s apparel department and compares them with daily sales targets.",
+      "options": {
+        "a": "planning",
+        "b": "agenda setting",
+        "c": "controlling",
+        "d": "delegating"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q1",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "The most appropriate first question to ask in strategic planning is __________.",
+      "options": {
+        "a": "\u201cWhere do we want to be in the future?\u201d",
+        "b": "\u201cHow well are we currently doing?\u201d",
+        "c": "\u201cHow can we get where we want to be?\u201d",
+        "d": "\u201cWhy aren\u2019t we doing better?\u201d"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q2",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "The ability of a firm to consistently outperform its rivals is called __________.",
+      "options": {
+        "a": "vertical integration",
+        "b": "competitive advantage",
+        "c": "incrementalism",
+        "d": "strategic intent"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q3",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "In a complex conglomerate business such as General Electric, a",
+      "options": {
+        "n": "__________ level strategy sets strategic direction for a strategic business unit.",
+        "a": "institutional",
+        "b": "corporate",
+        "c": "business",
+        "d": "functional"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q4",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "The __________ is a predominant value system for an organization as a whole.",
+      "options": {
+        "a": "strategy",
+        "b": "core competency",
+        "c": "mission",
+        "d": "corporate culture"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q5",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "Cost efficiency and product quality are two examples of __________ objectives of organizations.",
+      "options": {
+        "a": "official",
+        "b": "operating",
+        "c": "informal",
+        "d": "institutional"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q6",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "An organization that is downsizing to reduce costs is implementing a grand strategy of __________.",
+      "options": {
+        "a": "growth",
+        "b": "cost differentiation",
+        "c": "retrenchment",
+        "d": "vertical integration"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q7",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "When PepsiCo acquired Tropicana, a maker of orange juice, the firm\u2019s strategy was growth by __________.",
+      "options": {
+        "a": "related diversification",
+        "b": "concentration",
+        "c": "vertical integration",
+        "d": "cooperation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q8",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "In Porter\u2019s five forces framework, having __________ increases industry attractiveness.",
+      "options": {
+        "a": "many rivals",
+        "b": "many substitute products",
+        "c": "low bargaining power of suppliers",
+        "d": "few barriers to entry"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q9",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "A __________ in the BCG matrix would have a high market share in a low-growth market, and the correct grand or master strategy is __________.",
+      "options": {
+        "a": "dog, growth",
+        "b": "cash cow, stability",
+        "c": "question mark, stability",
+        "d": "star, retrenchment"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q10",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "The alliances that link together firms in supply chain management relationships are examples of how businesses try to use __________ strategies.",
+      "options": {
+        "a": "B2C",
+        "b": "growth",
+        "c": "cooperation",
+        "d": "concentration"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q11",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "The two questions asked by Porter to identify competitive strategies for a business or product line are: 1\u2014What is the market scope? 2\u2014What is the __________?",
+      "options": {
+        "a": "market share",
+        "b": "source of competitive advantage",
+        "c": "core competency",
+        "d": "industry attractiveness"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q12",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "According to Porter\u2019s model of competitive strategies, a firm that wants to compete with its rivals in a broad market by selling a very low-priced product would need to successfully implement a __________ strategy.",
+      "options": {
+        "a": "retrenchment",
+        "b": "differentiation",
+        "c": "cost leadership",
+        "d": "diversification"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q13",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "When Coke and Pepsi spend millions on ads trying to convince customers that their products are unique, they are pursuing a/an __________ strategy.",
+      "options": {
+        "a": "transnational",
+        "b": "concentration",
+        "c": "diversification",
+        "d": "differentiation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q14",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "The role of the board of directors as an oversight body that holds top executives accountable for the success of business strategies is called __________.",
+      "options": {
+        "a": "strategic leadership",
+        "b": "corporate governance",
+        "c": "logical incrementalism",
+        "d": "strategic opportunism"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch10_q15",
+      "chapter": "10",
+      "type": "MCQ",
+      "question": "An example of a process failure in strategic planning is __________.",
+      "options": {
+        "a": "lack of participation",
+        "b": "weak mission statement",
+        "c": "bad core values",
+        "d": "insufficient financial resources"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q1",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "The main purpose of organizing as a management function is to __________.",
+      "options": {
+        "a": "make sure that results match plans",
+        "b": "arrange people and resources to accomplish work",
+        "c": "create enthusiasm for the work to be done",
+        "d": "match strategies with operational plans"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q2",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "__________ is the system of tasks, reporting relationships, and communication that links together the various parts of an organization.",
+      "options": {
+        "a": "Structure",
+        "b": "Staff",
+        "c": "Decentralization",
+        "d": "Differentiation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q3",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "Rumors and resistance to change are potential disadvantages often associated with __________.",
+      "options": {
+        "a": "virtual organizations",
+        "b": "informal structures",
+        "c": "delegation",
+        "d": "specialized staff"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q4",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "An organization chart showing vice presidents of marketing, finance, manufacturing, and purchasing all reporting to the president is depicting a __________ structure.",
+      "options": {
+        "a": "functional",
+        "b": "matrix",
+        "c": "network",
+        "d": "product"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q5",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "The functional chimneys problem occurs when people in different functions __________.",
+      "options": {
+        "a": "fail to communicate with one another",
+        "b": "try to help each other work with customers",
+        "c": "spend too much time coordinating decisions",
+        "d": "focus on products rather than functions"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q6",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "A manufacturing business with a functional structure has recently developed three new product lines. The president of the company might consider shifting to a/an __________ structure to gain a stronger focus on each product.",
+      "options": {
+        "a": "virtual",
+        "b": "informal",
+        "c": "divisional",
+        "d": "network"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q7",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "__________ structure tries to combine the best elements of the functional and divisional forms.",
+      "options": {
+        "a": "Virtual",
+        "b": "Boundaryless",
+        "c": "Team",
+        "d": "Matrix"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q8",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "The \u201ctwo-boss\u201d system of reporting relationships is found in the __________ structure.",
+      "options": {
+        "a": "functional",
+        "b": "matrix",
+        "c": "network",
+        "d": "product"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q9",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "Better lower-level teamwork and more top-level strategic management are among the expected advantages of a __________ structure.",
+      "options": {
+        "a": "divisional",
+        "b": "matrix",
+        "c": "geographical",
+        "d": "product"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q10",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "\u201cTall\u201d organizations tend to have long chains of command and __________ spans of control.",
+      "options": {
+        "a": "wide",
+        "b": "narrow",
+        "c": "informal",
+        "d": "centralized"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q11",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "A student volunteers to gather information on a company for a group case analysis project. The other members of the group agree, and tell her to go ahead and choose the information sources. In terms of delegation, this group is giving the student __________ to fulfill the agreed-upon task.",
+      "options": {
+        "a": "responsibility",
+        "b": "accountability",
+        "c": "authority",
+        "d": "decentralization"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q12",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "The current trend in the use of staff in organizations is to __________.",
+      "options": {
+        "a": "give staff personnel more authority over operations",
+        "b": "reduce the number of staff personnel",
+        "c": "remove all staff from the organization",
+        "d": "combine all staff functions in one department"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q13",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "The bureaucratic organization described by Max Weber is similar to the __________ organization described by Burns and Stalker.",
+      "options": {
+        "a": "adaptive",
+        "b": "mechanistic",
+        "c": "organic",
+        "d": "adhocracy"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q14",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "Which type of organization design best fits an uncertain and changing environment?",
+      "options": {
+        "a": "mechanistic",
+        "b": "bureaucratic",
+        "c": "organic",
+        "d": "traditional"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch11_q15",
+      "chapter": "11",
+      "type": "MCQ",
+      "question": "An organization that employs just a few \u201ccore\u201d or essential full-time employees and outsources a lot of the remaining work show signs of using a __________ structure.",
+      "options": {
+        "a": "functional",
+        "b": "network",
+        "c": "matrix",
+        "d": "mechanistic"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q1",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "Pluralism and the absence of discrimination and prejudice in policies and practices are two important hallmarks of __________.",
+      "options": {
+        "a": "the glass ceiling effect",
+        "b": "a multicultural organization",
+        "c": "quality circles",
+        "d": "affirmative action"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q2",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "When members of minority cultures feel that they have to behave in ways similar to the majority culture, this is called __________.",
+      "options": {
+        "a": "biculturalism",
+        "b": "symbolic leadership",
+        "c": "the glass ceiling effect",
+        "d": "inclusivity"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q3",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "Engineers, scientists, and information systems specialists are likely to become part of separate __________ subcultures in an organization.",
+      "options": {
+        "a": "ethnic",
+        "b": "generational",
+        "c": "functional",
+        "d": "occupational"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q4",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "Stories told about an organization\u2019s past accomplishments and heroes such as company founders are all part of what is called the __________ culture.",
+      "options": {
+        "a": "observable",
+        "b": "underground",
+        "c": "functional",
+        "d": "core"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q5",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "Honesty, social responsibility, and customer service are examples of __________ that can become foundations for an organization\u2019s core culture.",
+      "options": {
+        "a": "rites and rituals",
+        "b": "values",
+        "c": "subsystems",
+        "d": "ideas"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q6",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "Which leadership approach is most consistent with an organizational culture that values the full utilization of all diverse talents of all the organization\u2019s human resources?",
+      "options": {
+        "a": "Managing diversity",
+        "b": "Affirmative action",
+        "c": "Status quo",
+        "d": "Rational persuasion"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q7",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "When members of a dominant subculture, such as white males, make it hard for members of minority subcultures, such as women, to advance to higher level positions in the organization, this is called the __________ effect.",
+      "options": {
+        "a": "dominator",
+        "b": "glass ceiling",
+        "c": "brick wall",
+        "d": "end-of-line"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q8",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "An executive pursuing transformational change would give highest priority to which one of these change targets?",
+      "options": {
+        "a": "an out-of-date policy",
+        "b": "the organizational culture",
+        "c": "a new information system",
+        "d": "job designs in a customer service department"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q9",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "__________ change results in a major change of direction for an organization, while __________ change makes small adjustments to current ways of doing things.",
+      "options": {
+        "a": "Frame breaking; radical",
+        "b": "Frame bending; incremental",
+        "c": "Transformational; frame breaking",
+        "d": "Transformational; incremental"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q10",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "The presence or absence of a felt need for change is a key issue in the __________ phase of the planned change process.",
+      "options": {
+        "a": "improvising",
+        "b": "evaluating",
+        "c": "unfreezing",
+        "d": "refreezing"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q11",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "When a manager listens to users, makes adaptations, and continuously tweaks and changes a new MIS as it is being implemented, the approach to technological change can be described as __________.",
+      "options": {
+        "a": "top-down",
+        "b": "improvisational",
+        "c": "organization development",
+        "d": "frame breaking"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q12",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "A manager using a force-coercion strategy will rely on __________ to bring about change.",
+      "options": {
+        "a": "expertise",
+        "b": "benchmarking",
+        "c": "formal authority",
+        "d": "information"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q13",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "The most participative of the planned change strategies is __________.",
+      "options": {
+        "a": "force-coercion",
+        "b": "rational persuasion",
+        "c": "shared power",
+        "d": "command and control"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q14",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "True internalization and commitment to a planned change is most likely to occur when a manager uses a",
+      "options": {
+        "n": "__________ change strategy.",
+        "a": "education and communication",
+        "b": "rational persuasion",
+        "c": "manipulation and co-optation",
+        "d": "shared power"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch12_q15",
+      "chapter": "12",
+      "type": "MCQ",
+      "question": "Trying to covertly influence others, offering only selective information, and structuring events in favor of the desired change, is a way of dealing with resistance by __________.",
+      "options": {
+        "a": "participation",
+        "b": "manipulation and co-optation",
+        "c": "force-coercion",
+        "d": "facilitation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q1",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "Someone with a clear sense of the future and the actions needed to get there is considered a __________ leader.",
+      "options": {
+        "a": "task-oriented",
+        "b": "people-oriented",
+        "c": "transactional",
+        "d": "visionary"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q2",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "Leader power = __________ power + __________ power.",
+      "options": {
+        "a": "reward, punishment",
+        "b": "reward, expert",
+        "c": "legitimate, position",
+        "d": "position, personal"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q3",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "A manager who says \u201cbecause I am the boss, you must do what I ask\u201d is relying on __________ power.",
+      "options": {
+        "a": "reward",
+        "b": "legitimate",
+        "c": "expert",
+        "d": "referent"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q4",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "When a leader assumes that others will do as she asks because they want to positively identify with her, she is relying on __________ power to influence their behavior.",
+      "options": {
+        "a": "expert",
+        "b": "reference",
+        "c": "legitimate",
+        "d": "reward"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q5",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "The personal traits now considered important for managerial success include __________.",
+      "options": {
+        "a": "self-confidence",
+        "b": "gender",
+        "c": "age",
+        "d": "height"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q6",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "In the leader-behavior approaches to leadership, someone who does a very good job of planning work, setting standards, and monitoring results would be considered a",
+      "options": {
+        "n": "__________ leader.",
+        "a": "task-oriented",
+        "b": "control-oriented",
+        "c": "achievement-oriented",
+        "d": "employee-centered"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q7",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "According to the Blake and Mouton leadership grid, the most successful leader is one who acts with __________.",
+      "options": {
+        "a": "high initiating structure and low consideration",
+        "b": "high concern for task and high concern for people",
+        "c": "high emotional intelligence and high integrity",
+        "d": "low job stress and high task goals"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q8",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "A leader whose actions indicate an attitude of \u201cdo as you want, and don\u2019t bother me\u201d would be described as having a",
+      "options": {
+        "n": "__________ leadership style.",
+        "a": "autocratic",
+        "b": "country club",
+        "c": "democratic",
+        "d": "laissez-faire"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q9",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "In Fiedler\u2019s contingency model, both highly favorable and highly unfavorable leadership situations are best dealt with by a __________ leader.",
+      "options": {
+        "a": "task-motivated",
+        "b": "laissez-faire",
+        "c": "participative",
+        "d": "relationship-motivated"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q10",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "__________ leadership model suggests that leadership style is strongly anchored in personality and therefore hard to change.",
+      "options": {
+        "a": "Trait",
+        "b": "Fiedler\u2019s",
+        "c": "Transformational",
+        "d": "Blake and Mouton\u2019s"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q11",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "House\u2019s __________ theory of leadership says that successful leaders find ways to add value to leadership situations.",
+      "options": {
+        "a": "trait",
+        "b": "path-goal",
+        "c": "transformational",
+        "d": "life-cycle"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q12",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "A leader who __________ would be described as achievement-oriented in the path\u2013goal theory.",
+      "options": {
+        "a": "sets challenging goals for others",
+        "b": "works hard to achieve high performance",
+        "c": "gives directions and monitors results",
+        "d": "builds commitment through participation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q13",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "The critical contingency variable in the Hersey-Blanchard situational model of leadership is __________.",
+      "options": {
+        "a": "followers\u2019 maturity",
+        "b": "LPC",
+        "c": "task structure",
+        "d": "LMX"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q14",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "Vision, charisma, integrity, and symbolism are all on the list of attributes typically associated with __________ leaders.",
+      "options": {
+        "a": "contingency",
+        "b": "informal",
+        "c": "transformational",
+        "d": "transactional"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch14_q15",
+      "chapter": "14",
+      "type": "MCQ",
+      "question": "The interactive leadership style, sometimes associated with women, is characterized by __________.",
+      "options": {
+        "a": "inclusion and information sharing",
+        "b": "use of rewards and punishments",
+        "c": "command and control",
+        "d": "emphasis on position power"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q1",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "The assumption that people are complex with widely varying needs is most associated with the __________ management approaches.",
+      "options": {
+        "a": "classical",
+        "b": "neoclassical",
+        "c": "behavioral",
+        "d": "modern"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q2",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "The father of scientific management is __________.",
+      "options": {
+        "a": "Weber",
+        "b": "Taylor",
+        "c": "Mintzberg",
+        "d": "Katz"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q3",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "When the registrar of a university deals with students by an identification number rather than a name, which characteristic of bureaucracy is being displayed and what is its intended benefit?",
+      "options": {
+        "a": "division of labor, competency",
+        "b": "merit-based careers, productivity",
+        "c": "rules and procedures, efficiency",
+        "d": "impersonality, fairness"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q4",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "If an organization was performing poorly and Henri Fayol was called in as a consultant, what would he most likely suggest to improve things?",
+      "options": {
+        "a": "Teach managers to better plan and control.",
+        "b": "Teach workers more efficient job methods.",
+        "c": "Promote to management only the most competent workers.",
+        "d": "Find ways to increase corporate social responsibility."
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q5",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "One example of how scientific management principles are applied in organizations today would be:",
+      "options": {
+        "a": "conducting studies to increase efficiencies in job performance.",
+        "b": "finding alternatives to a bureaucratic structure.",
+        "c": "training managers to better understand worker attitudes.",
+        "d": "focusing managers on teamwork rather than individual jobs."
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q6",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "The Hawthorne studies raised awareness of how __________ can be important influences on productivity.",
+      "options": {
+        "a": "structures",
+        "b": "human factors",
+        "c": "physical work conditions",
+        "d": "pay and rewards"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q7",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "Advice to study a job, carefully train workers to do that job, and link financial incentives to job performance would most likely come from __________.",
+      "options": {
+        "a": "scientific management",
+        "b": "contingency management",
+        "c": "Henri Fayol",
+        "d": "Abraham Maslow"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q8",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "The highest level in Maslow\u2019s hierarchy includes __________ needs.",
+      "options": {
+        "a": "safety",
+        "b": "esteem",
+        "c": "self-actualization",
+        "d": "physiological"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q9",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "A possible misfit between the mature adult personality and rigid practices of a bureaucratic organization was a major concern of __________.",
+      "options": {
+        "a": "Argyris",
+        "b": "Follett",
+        "c": "Weber",
+        "d": "Fuller"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q10",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "When people perform in a situation as they are expected to, this is sometimes called the __________ Effect.",
+      "options": {
+        "a": "Hawthorne",
+        "b": "systems",
+        "c": "contingency",
+        "d": "open-systems"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q11",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "Resource acquisition and customer satisfaction are important when an organization is viewed as a",
+      "options": {
+        "n": "__________.",
+        "a": "bureaucracy",
+        "b": "closed system",
+        "c": "open system",
+        "d": "pyramid"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q12",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "The loan-processing department would be considered a __________ of your local bank or credit union.",
+      "options": {
+        "a": "subsystem",
+        "b": "closed system",
+        "c": "resource input",
+        "d": "cost center"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q13",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "When a manager notices that Sheryl has strong social needs and assigns her a job in customer relations and gives Kwabena lots of praise because of his strong ego needs, the manager is displaying __________.",
+      "options": {
+        "a": "systems thinking",
+        "b": "Theory X",
+        "c": "motion study",
+        "d": "contingency thinking"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q14",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "Which is the correct match?",
+      "options": {
+        "a": "Senge\u2014motion study",
+        "b": "McGregor\u2014analytics",
+        "c": "Deming\u2014quality management",
+        "d": "Maslow\u2014Theory X and Y"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch2_q15",
+      "chapter": "2",
+      "type": "MCQ",
+      "question": "When managers try to avoid hearsay and make decisions based on solid facts and information, this is known as __________.",
+      "options": {
+        "a": "continuous improvement",
+        "b": "evidence-based management",
+        "c": "TQM",
+        "d": "Theory X management"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q1",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "The general environment of an organization would include __________.",
+      "options": {
+        "a": "population demographics",
+        "b": "activist groups",
+        "c": "competitors",
+        "d": "customers"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q2",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "Internet censorship faced in foreign countries by firms such as Google is an example of how differences in __________ factors in the general environment can cause complications for global business executives.",
+      "options": {
+        "a": "economic",
+        "b": "legal-political",
+        "c": "natural environment",
+        "d": "demographic"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q3",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "If the term offshoring describes outsourcing of work and jobs to foreign locations, what is it called when firms like Caterpillar move jobs back into the United States from foreign locations?",
+      "options": {
+        "a": "protectionism",
+        "b": "reshoring",
+        "c": "disrupting",
+        "d": "upscaling"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q4",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "Work preferences of different generations and public values over things like high pay for corporate executives are examples of developments in the __________ environment of organizations.",
+      "options": {
+        "a": "task",
+        "b": "specific",
+        "c": "socio-cultural",
+        "d": "economic"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q5",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "A business that has found ways to use technology to outperform its rivals in the marketplace can be said to have gained __________.",
+      "options": {
+        "a": "environmental capital",
+        "b": "competitive advantage",
+        "c": "sustainable development",
+        "d": "environmental certainty"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q6",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "Apps for an Apple iPhone or Google Android phone are examples of __________ innovations, whereas the use of robotics in performing manufacturing tasks previously done by humans is an example of __________ innovation.",
+      "options": {
+        "a": "cost-benefit, process",
+        "b": "product, cost-benefit",
+        "c": "value-driven, service-driven",
+        "d": "product, process"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q7",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "Micro-credit lending that makes it possible for poor people to get small loans so they can start small businesses is an example of a business model innovation that is also a __________ innovation.",
+      "options": {
+        "a": "social business",
+        "b": "technological",
+        "c": "disruptive",
+        "d": "green"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q8",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "Two dimensions that determine the level of environmental uncertainty are the number of factors in the external environment and the __________ of these factors.",
+      "options": {
+        "a": "location",
+        "b": "rate of change",
+        "c": "importance",
+        "d": "interdependence"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q9",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "One of the ways that corporations might better take into account their responsibility for being good environmental citizens is to redefine the notion of profit to: Profit = Revenue - Cost of Goods Sold - __________.",
+      "options": {
+        "a": "operating expenses",
+        "b": "dividends",
+        "c": "costs to society",
+        "d": "loan interest"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q10",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "The three P\u2019s of organizational performance are Profit, People, and __________.",
+      "options": {
+        "a": "Philanthropy",
+        "b": "Principle",
+        "c": "Potential",
+        "d": "Planet"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q11",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "What organizational stakeholder must be considered in any serious discussion about how a firm can better fulfill its obligations for sustainable development?",
+      "options": {
+        "a": "owners or investors",
+        "b": "customers",
+        "c": "suppliers",
+        "d": "future generations"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q12",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "The first step in Hamel\u2019s wheel of innovation is __________.",
+      "options": {
+        "a": "imagining",
+        "b": "assessing",
+        "c": "experimenting",
+        "d": "scaling"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q13",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "When a medical device is developed in India so that it can sell at a low price and still deliver high-quality results, and then that device is transferred for sale in the United States also at a low price, this is an example of __________.",
+      "options": {
+        "a": "trickle-down innovation",
+        "b": "disruptive innovation",
+        "c": "reverse innovation",
+        "d": "sustainable innovation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q14",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "What term is used to describe the world\u2019s storehouse of natural resources, things like land, water, and minerals?",
+      "options": {
+        "a": "sustainable development",
+        "b": "global warming",
+        "c": "climate justice",
+        "d": "environmental capital"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch4_q15",
+      "chapter": "4",
+      "type": "MCQ",
+      "question": "Health insurance for employees, flexible work hours to balance work and family responsibilities, and programs to help employees deal with stress in their lives, are ways organizations might try to improve their accomplishments in respect to __________.",
+      "options": {
+        "a": "profits",
+        "b": "human sustainability",
+        "c": "innovation",
+        "d": "natural capital"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q1",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "Among the ways information technology is changing organizations today, __________ is one of its most noteworthy characteristics.",
+      "options": {
+        "a": "eliminating need for top managers",
+        "b": "reducing information available for decision making",
+        "c": "breaking down barriers internally and externally",
+        "d": "decreasing need for environmental awareness"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q2",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "Whereas management information systems use the latest technologies to collect, organize, and distribute data, __________ involves tapping the available data to extract and report it in organized ways that are most useful to decision makers.",
+      "options": {
+        "a": "analytics",
+        "b": "business intelligence",
+        "c": "anchoring and adjustment",
+        "d": "optimizing"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q3",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "A manager who is reactive and works hard to address problems after they occur is known as a __________.",
+      "options": {
+        "a": "problem seeker",
+        "b": "problem avoider",
+        "c": "problem solver",
+        "d": "problem manager"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q4",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "A",
+      "options": {
+        "n": "__________ thinker approaches problems in a rational and an analytic fashion.",
+        "a": "systematic",
+        "b": "intuitive",
+        "c": "internal",
+        "d": "external"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q5",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "A person likes to deal with hard facts and clear goals in a decision situation; she also likes to be in control and keep things impersonal. This person\u2019s cognitive style tends toward __________.",
+      "options": {
+        "a": "sensation thinking",
+        "b": "intuitive thinking",
+        "c": "sensation feeling",
+        "d": "intuitive feeling"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q6",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "The assigning of probabilities for action alternatives and their consequences indicates the presence of __________ in the decision environment.",
+      "options": {
+        "a": "certainty",
+        "b": "optimizing",
+        "c": "risk",
+        "d": "satisficing"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q7",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "The first step in the decision-making process is to __________.",
+      "options": {
+        "a": "identify alternatives",
+        "b": "evaluate results",
+        "c": "find and define the problem",
+        "d": "choose a solution"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q8",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "Being asked to develop a plan to increase international sales of a product is an example of the types of __________ problems that managers must be prepared to deal with.",
+      "options": {
+        "a": "routine",
+        "b": "unstructured",
+        "c": "crisis",
+        "d": "structured"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q9",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "Costs, timeliness, and __________ are among the recommended criteria for evaluating alternative courses of action.",
+      "options": {
+        "a": "ethical soundness",
+        "b": "competitiveness",
+        "c": "availability",
+        "d": "simplicity"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q10",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "A common mistake made by managers in crisis situations is that they __________.",
+      "options": {
+        "a": "try to get too much information before responding",
+        "b": "rely too much on group decision making",
+        "c": "isolate themselves to make the decision alone",
+        "d": "forget to use their crisis management plan"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q11",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "The __________ decision model views managers as making optimizing decisions, whereas the __________ decision model views them as making satisficing decisions.",
+      "options": {
+        "a": "behavioral, human relations",
+        "b": "classical, behavioral",
+        "c": "heuristic, humanistic",
+        "d": "quantitative, behavioral"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q12",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "When a manager makes a decision about someone\u2019s annual pay raise only after looking at his or her current salary, the risk is that the decision will be biased because of __________.",
+      "options": {
+        "a": "a framing error",
+        "b": "escalating commitment",
+        "c": "anchoring and adjustment",
+        "d": "strategic opportunism"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q13",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "When a problem is addressed according to the positive or negative context in which it is presented, this is an example of __________.",
+      "options": {
+        "a": "framing error",
+        "b": "escalating commitment",
+        "c": "availability and adjustment",
+        "d": "strategic opportunism"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q14",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "When a manager decides to continue pursuing a course of action that facts otherwise indicate is failing to deliver desired results, this is called __________.",
+      "options": {
+        "a": "strategic opportunism",
+        "b": "escalating commitment",
+        "c": "confirmation error",
+        "d": "the risky shift"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch7_q15",
+      "chapter": "7",
+      "type": "MCQ",
+      "question": "Personal creativity drivers include creativity skills, task expertise, and __________.",
+      "options": {
+        "a": "emotional intelligence",
+        "b": "management support",
+        "c": "organizational culture",
+        "d": "task motivation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q1",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "Planning is the process of __________ and __________.",
+      "options": {
+        "a": "developing premises about the future, evaluating them",
+        "b": "measuring results, taking corrective action",
+        "c": "measuring past performance, targeting future performance",
+        "d": "setting objectives, deciding how to accomplish them"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q2",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "The benefits of planning include __________.",
+      "options": {
+        "a": "improved focus",
+        "b": "lower labor costs",
+        "c": "more accurate forecasts",
+        "d": "higher profits"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q3",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "In order to help implement its corporate strategy, a business firm would likely develop a (an) __________ plan for the marketing department.",
+      "options": {
+        "a": "functional",
+        "b": "single-use",
+        "c": "production",
+        "d": "zero-based"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q4",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "__________ planning identifies alternative courses of action that can be taken if and when certain situations arise.",
+      "options": {
+        "a": "Zero-based",
+        "b": "Participative",
+        "c": "Strategic",
+        "d": "Contingency"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q5",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "The first step in the control process is to __________.",
+      "options": {
+        "a": "measure actual performance",
+        "b": "establish objectives and standards",
+        "c": "compare results with objectives",
+        "d": "take corrective action"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q6",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "A sexual harassment policy is an example of __________ plans used by organizations.",
+      "options": {
+        "a": "long-range",
+        "b": "single-use",
+        "c": "standing-use",
+        "d": "operational"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q7",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "When a manager is asked to justify a new budget proposal on the basis of projected activities rather than past practices, this is an example of __________ budgeting.",
+      "options": {
+        "a": "zero-based",
+        "b": "variable",
+        "c": "fixed",
+        "d": "contingency"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q8",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "One of the benefits of participatory planning is __________.",
+      "options": {
+        "a": "reduced time for planning",
+        "b": "less need for forecasting",
+        "c": "greater attention to contingencies",
+        "d": "more commitment to implementation"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q9",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "The ideal situation in a hierarchy of objectives is that lower-level plans become the __________ for accomplishing higher-level plans.",
+      "options": {
+        "a": "means",
+        "b": "ends",
+        "c": "scenarios",
+        "d": "benchmarks"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q10",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "When managers use the benchmarking approach to planning, they __________.",
+      "options": {
+        "a": "use flexible budgets",
+        "b": "identify best practices used by others",
+        "c": "are seeking the most accurate forecasts that are available",
+        "d": "focus more on the short term than the long term"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q11",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "One of the problems in relying too much on staff planners is __________.",
+      "options": {
+        "a": "a communication gap between planners and implementers",
+        "b": "lack of expertise in the planning process",
+        "c": "short-term rather than long-term focus",
+        "d": "neglect of budgets as links between resources and activities"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q12",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "The planning process isn\u2019t complete until __________.",
+      "options": {
+        "a": "future conditions have been identified",
+        "b": "stretch goals have been set",
+        "c": "plans are implemented and results evaluated",
+        "d": "budgets commit resources to plans"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q13",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "When a team leader is trying to follow an approach known as management by objectives, who should set a team member\u2019s performance objectives?",
+      "options": {
+        "a": "the team member",
+        "b": "the team leader",
+        "c": "the team leader and team member",
+        "d": "the team member, the team leader, and a lawyer"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q14",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "A good performance objective is written in such a way that it __________.",
+      "options": {
+        "a": "has no precise timetable",
+        "b": "is general and not too specific",
+        "c": "is almost impossible to accomplish",
+        "d": "can be easily measured"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch8_q15",
+      "chapter": "8",
+      "type": "MCQ",
+      "question": "Which type of plan is used to guide resource allocations for long-term advancement of the organization\u2019s mission or purpose?",
+      "options": {
+        "a": "tactical",
+        "b": "operational",
+        "c": "strategic",
+        "d": "functional"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q1",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "After objectives and standards are set, what step comes next in the control process?",
+      "options": {
+        "a": "Measure results.",
+        "b": "Take corrective action.",
+        "c": "Compare results with objectives.",
+        "d": "Modify standards to fit circumstances."
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q2",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "When a soccer coach tells her players at the end of a game: \u201cI\u2019m pleased you stayed with the game plan,\u201d she is using a/an __________ to a measure performance, even though in terms of outcomes her team lost.",
+      "options": {
+        "a": "input standard",
+        "b": "output standard",
+        "c": "historical comparison",
+        "d": "relative comparison"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q3",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "When an automobile manufacturer is careful to purchase only the highest-quality components for use in production, this is an example of an attempt to ensure high performance through __________ control.",
+      "options": {
+        "a": "concurrent",
+        "b": "statistical",
+        "c": "inventory",
+        "d": "feedforward"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q4",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "Management by exception means __________.",
+      "options": {
+        "a": "managing only when necessary",
+        "b": "focusing attention where the need for action is greatest",
+        "c": "the same thing as concurrent control",
+        "d": "the same thing as just-in-time delivery"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q5",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "When a supervisor working alongside an employee corrects him or her when a mistake is made, this is an example of __________ control.",
+      "options": {
+        "a": "feedforward",
+        "b": "concurrent",
+        "c": "internal",
+        "d": "clan"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q6",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "If an organization\u2019s top management visits a firm in another industry to learn more about its excellent record in hiring and promoting minority and female candidates, this is an example of using __________ for control purposes.",
+      "options": {
+        "a": "a balanced scorecard",
+        "b": "relative comparison",
+        "c": "management by exception",
+        "d": "progressive discipline"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q7",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "The control equation states: __________ = Desired Performance \u2013 Actual Performance.",
+      "options": {
+        "a": "Problem Magnitude",
+        "b": "Management Opportunity",
+        "c": "Planning Objective",
+        "d": "Need for Action"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q8",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "When a UPS manager compares the amount of time a driver takes to make certain deliveries against standards set through a quantitative analysis of her delivery route, this is known as __________.",
+      "options": {
+        "a": "a historical comparison",
+        "b": "an engineering comparison",
+        "c": "relative benchmarking",
+        "d": "concurrent control"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q9",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "Projects are unique one-time events that __________.",
+      "options": {
+        "a": "have unclear objectives",
+        "b": "must be completed in a specific time",
+        "c": "have unlimited budgets",
+        "d": "are largely self-managing"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q10",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "The __________ chart graphically displays the scheduling of tasks required to complete a project.",
+      "options": {
+        "a": "exception",
+        "b": "Taylor",
+        "c": "Gantt",
+        "d": "after-action"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q11",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "When one team member advises another team member that \u201cyour behavior is crossing the line in terms of our expectations for workplace civility,\u201d she is exercising a form of __________ control over the other\u2019s inappropriate behaviors.",
+      "options": {
+        "a": "clan",
+        "b": "market",
+        "c": "internal",
+        "d": "preliminary"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q12",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "In a CPM/PERT analysis the focus is on __________ and the event __________ that link them together with the finished project.",
+      "options": {
+        "a": "costs, budgets",
+        "b": "activities, sequences",
+        "c": "timetables, budgets",
+        "d": "goals, costs"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q13",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "If fixed costs are $10,000, variable costs are $4 per unit, and the target selling price per unit is $8, what is the breakeven point?",
+      "options": {
+        "a": "2",
+        "b": "500",
+        "c": "2,500",
+        "d": "4,800"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q14",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "Among the financial ratios used for control, Current Assets/Current Liabilities is known as the __________.",
+      "options": {
+        "a": "debt ratio",
+        "b": "net margin",
+        "c": "current ratio",
+        "d": "inventory turnover ratio"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    },
+    {
+      "id": "ch9_q15",
+      "chapter": "9",
+      "type": "MCQ",
+      "question": "In respect to return on assets (ROA) and the debt ratio, the preferred directions when analyzing them from a control standpoint are __________.",
+      "options": {
+        "a": "decrease ROA, increase debt",
+        "b": "increase ROA, increase debt",
+        "c": "increase ROA, decrease debt",
+        "d": "decrease ROA, decrease debt"
+      },
+      "answer": "TBD",
+      "justification": "TBD"
+    }
+  ],
+  "glossary_sample": [
+    "A balance sheet shows assets and liabilities at one point in time.",
+    "A balanced scorecard tallies organizational performance in fi nancial, customer service, internal process, and innovation and learning areas.",
+    "A bargaining zone is the space between one party\u2019s minimum reservation point and the other party\u2019s maximum reservation point.",
+    "A behaviorally anchored rating scale uses specifi c descriptions of actual behaviors to rate various levels of performance.",
+    "A boundaryless organization eliminates internal boundaries among subsystems and external boundaries with the external environment.",
+    "A budget is a plan that commits resources to projects or activities.",
+    "A bureaucracy emphasizes formal authority, order, fairness, and effi  ciency.",
+    "A business model is a plan for making a profi t by generating revenues that are greater than costs.",
+    "A business plan describes the direction for a new business and the fi nancing needed to operate it.",
+    "A business strategy identifi es how a division or strategic business unit will compete in its product or service domain.",
+    "A certain environment off ers complete information on possible action alternatives and their consequences.",
+    "A change leader takes initiative in trying to change the behavior of another person or social system.",
+    "A charismatic leader inspires followers in extraordinary ways.",
+    "A classic entrepreneur is someone willing to pursue opportunities in situations others view as problems or threats.",
+    "A code of ethics is a formal statement of values and ethical standards.",
+    "A committee is designated to work on a special task on a continuing basis.",
+    "A communication channel is the pathway through which a message moves from sender to receiver.",
+    "A compressed workweek allows a fulltime job to be completed in less than fi ve days.",
+    "A conceptual skill is the ability to think analytically to diagnose and solve complex problems.",
+    "A confi rmation error occurs when focusing only on information that confi rms a decision already made.",
+    "A consultative decision is made by a leader after receiving information, advice, or opinions from group members.",
+    "A core competency is a special strength that gives an organization a competitive advantage.",
+    "A corporate strategy sets long-term direction for the total enterprise.",
+    "A corporation is a legal entity that exists separately from its owners.",
+    "A cost leadership strategy seeks to operate with low cost so that products can be sold at low prices.",
+    "A crisis decision occurs when an unexpected problem arises that can lead to disaster if not resolved quickly and appropriately.",
+    "A cross-functional team brings together members from diff erent functional departments.",
+    "A customer structure groups together people and jobs that serve the same customers or clients.",
+    "A decentralized communication network allows all members to communicate directly with one another.",
+    "A decision is a choice among possible alternative courses of action.",
+    "A defensive strategy does the minimum legally required to display social responsibility.",
+    "A democratic leader emphasizes both tasks and people.",
+    "A diff erentiation strategy off ers products that are unique and diff erent from the competition.",
+    "A divisional structure groups together people working on the same product, in the same area, with similar customers, or on the same processes.",
+    "A downsizing strategy decreases the size of operations.",
+    "A family business is owned and controlled by members of a family.",
+    "A family business feud occurs when family members have major disagreements over how the business should be run.",
+    "A fi rst-mover advantage comes from being fi rst to exploit a niche or enter a market.",
+    "A focus strategy concentrates on serving a unique market segment better than anyone else.",
+    "A focused cost leadership strategy seeks the lowest costs of operations within a special market segment.",
+    "A focused diff erentiation strategy offers a unique product to a special market segment.",
+    "A force-coercion strategy pursues change through formal authority and/or the use of rewards or punishments.",
+    "A foreign subsidiary is a local operation completely owned by a foreign fi rm.",
+    "A formal group is a team offi  cially recognized and supported by the organization.",
+    "A franchise is when one business owner sells to another the right to operate the same business in another location.",
+    "A functional strategy guides activities within one specifi c area of operations.",
+    "A functional structure groups together people with similar skills who perform similar tasks.",
+    "A Gantt chart graphically displays the\u00a0scheduling of tasks required to complete a project.",
+    "A geographical structure groups together people and jobs performed in the same location.",
+    "A global corporation is a multinational enterprise (MNE) or multinational corporation (MNC) that conducts commercial transactions across national boundaries."
+  ]
+}

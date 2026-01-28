@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz 2: Foundations & History</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; margin: 5px; }
+        button:hover { background-color: #2980b9; }
+        .print-btn { background-color: #27ae60; }
+        .print-btn:hover { background-color: #219150; }
+        
+        .quiz-container { max-width: 800px; margin: 0 auto; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 25px; page-break-inside: avoid; }
+        .question-header { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .q-id { font-weight: bold; color: #7f8c8d; }
+        .q-chapter { background: #e0f7fa; color: #006064; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+        
+        .question-text { font-size: 1.1em; font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        
+        .options-list { list-style: none; padding: 0; }
+        .option-item { padding: 10px 15px; margin: 5px 0; border: 1px solid #bdc3c7; border-radius: 5px; cursor: pointer; transition: background 0.2s; }
+        .option-item:hover { background-color: #f0f3f4; }
+        
+        /* Interactive States */
+        .option-item.selected { background-color: #d6eaf8; border-color: #3498db; }
+        .option-item.correct { background-color: #d4efdf; border-color: #27ae60; color: #145a32; }
+        .option-item.wrong { background-color: #fadbd8; border-color: #c0392b; color: #78281f; }
+        
+        .answer-reveal { margin-top: 15px; padding: 15px; background-color: #e8f8f5; border-left: 5px solid #1abc9c; display: none; }
+        .justification { margin-top: 5px; font-style: italic; color: #555; }
+        
+        @media print {
+            body { background: white; color: black; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .controls { display: none; }
+            .answer-reveal { display: block !important; border: none; background: none; font-size: 0.9em; padding: 0; margin-top: 5px; }
+            .correct-label { font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Master Quiz 2: Foundations & History</h1>
+    <div class="controls">
+        <button class="print-btn" onclick="window.print()">Print to PDF</button>
+        <button onclick="revealAll()">Show All Answers</button>
+        <button onclick="hideAll()">Hide All Answers</button>
+    </div>
+    <div class="quiz-container">
+
+        <div class="card" id="q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Lecture 1: Intro</span>
+            </div>
+            <div class="question-text">According to the lecture, management is primarily described as __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q1', 'a', 'b')"><strong>(a)</strong> a technical skill to master</li><li class="option-item" data-opt="b" onclick="checkAnswer('q1', 'b', 'b')"><strong>(b)</strong> a mindset and decision-making process</li><li class="option-item" data-opt="c" onclick="checkAnswer('q1', 'c', 'b')"><strong>(c)</strong> a strict set of rules</li><li class="option-item" data-opt="d" onclick="checkAnswer('q1', 'd', 'b')"><strong>(d)</strong> controlling people</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">The lecture emphasizes that management is about 'mindset' and 'decision making' to fit the situation.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Lecture 1: Organization</span>
+            </div>
+            <div class="question-text">Which of the following best describes the 'Process' component of an organization?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q2', 'a', 'b')"><strong>(a)</strong> The intangible elements like culture</li><li class="option-item" data-opt="b" onclick="checkAnswer('q2', 'b', 'b')"><strong>(b)</strong> The technical part involving hierarchy and steps</li><li class="option-item" data-opt="c" onclick="checkAnswer('q2', 'c', 'b')"><strong>(c)</strong> The psychological contract</li><li class="option-item" data-opt="d" onclick="checkAnswer('q2', 'd', 'b')"><strong>(d)</strong> The external environment</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Processes refer to the 'technical part' such as hierarchy, steps, and lines of influence.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Lecture 1: Open System</span>
+            </div>
+            <div class="question-text">An organization is considered an 'Open System' because it __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q3', 'a', 'b')"><strong>(a)</strong> has open doors for all employees</li><li class="option-item" data-opt="b" onclick="checkAnswer('q3', 'b', 'b')"><strong>(b)</strong> interacts with and is affected by the external environment</li><li class="option-item" data-opt="c" onclick="checkAnswer('q3', 'c', 'b')"><strong>(c)</strong> shares all its secrets</li><li class="option-item" data-opt="d" onclick="checkAnswer('q3', 'd', 'b')"><strong>(d)</strong> has no hierarchy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Open systems interact with the external environment (Regulations, Economy) and affect the market.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Lecture 1: Efficiency</span>
+            </div>
+            <div class="question-text">Efficiency is best defined as __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q4', 'a', 'b')"><strong>(a)</strong> doing the right things</li><li class="option-item" data-opt="b" onclick="checkAnswer('q4', 'b', 'b')"><strong>(b)</strong> doing things right (minimum waste)</li><li class="option-item" data-opt="c" onclick="checkAnswer('q4', 'c', 'b')"><strong>(c)</strong> setting high goals</li><li class="option-item" data-opt="d" onclick="checkAnswer('q4', 'd', 'b')"><strong>(d)</strong> achieving the objective</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Efficiency focuses on 'How' to achieve results with minimum waste (Resource usage).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Lecture 1: Effectiveness</span>
+            </div>
+            <div class="question-text">Effectiveness is concerned with __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q5', 'a', 'c')"><strong>(a)</strong> minimizing costs</li><li class="option-item" data-opt="b" onclick="checkAnswer('q5', 'b', 'c')"><strong>(b)</strong> the methodological approach</li><li class="option-item" data-opt="c" onclick="checkAnswer('q5', 'c', 'c')"><strong>(c)</strong> achieving the stated goals</li><li class="option-item" data-opt="d" onclick="checkAnswer('q5', 'd', 'c')"><strong>(d)</strong> reducing time spent</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Effectiveness focuses on 'What' is achieved (Goal attainment).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Lecture 1: PDCA</span>
+            </div>
+            <div class="question-text">In the PDCA cycle, the 'Act' phase focuses on __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q6', 'a', 'c')"><strong>(a)</strong> implementing the plan</li><li class="option-item" data-opt="b" onclick="checkAnswer('q6', 'b', 'c')"><strong>(b)</strong> checking results</li><li class="option-item" data-opt="c" onclick="checkAnswer('q6', 'c', 'c')"><strong>(c)</strong> making adjustments or improvements</li><li class="option-item" data-opt="d" onclick="checkAnswer('q6', 'd', 'c')"><strong>(d)</strong> setting the budget</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Act involved Change/Improvement based on the Check phase.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Lecture 1: Levels</span>
+            </div>
+            <div class="question-text">Middle managers primarily focus on __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q7', 'a', 'c')"><strong>(a)</strong> overall corporate strategy</li><li class="option-item" data-opt="b" onclick="checkAnswer('q7', 'b', 'c')"><strong>(b)</strong> day-to-day operations</li><li class="option-item" data-opt="c" onclick="checkAnswer('q7', 'c', 'c')"><strong>(c)</strong> divisional/sector objectives</li><li class="option-item" data-opt="d" onclick="checkAnswer('q7', 'd', 'c')"><strong>(d)</strong> doing the actual work</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Middle managers (Sectors/Divisions) translate top goals for their units.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Lecture 1: Reactive vs Proactive</span>
+            </div>
+            <div class="question-text">A proactive management approach is characterized by __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q8', 'a', 'b')"><strong>(a)</strong> waiting for problems to arise</li><li class="option-item" data-opt="b" onclick="checkAnswer('q8', 'b', 'b')"><strong>(b)</strong> agility and planning ahead</li><li class="option-item" data-opt="c" onclick="checkAnswer('q8', 'c', 'b')"><strong>(c)</strong> ignoring external feedback</li><li class="option-item" data-opt="d" onclick="checkAnswer('q8', 'd', 'b')"><strong>(d)</strong> rigidly sticking to old plans</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Proactive means planning ahead, adaptability, and high visibility to solve problems early.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Lecture 1: Business Model Canvas</span>
+            </div>
+            <div class="question-text">In the Business Model Canvas, 'Value Proposition' belongs to the __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q9', 'a', 'b')"><strong>(a)</strong> internal cost side</li><li class="option-item" data-opt="b" onclick="checkAnswer('q9', 'b', 'b')"><strong>(b)</strong> external revenue side</li><li class="option-item" data-opt="c" onclick="checkAnswer('q9', 'c', 'b')"><strong>(c)</strong> finance bottom line</li><li class="option-item" data-opt="d" onclick="checkAnswer('q9', 'd', 'b')"><strong>(d)</strong> supplier network</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Value Proposition is the core offering to the Customer (External Side).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Lecture 1: Uber Case</span>
+            </div>
+            <div class="question-text">In the Uber case study, 'Drivers' are considered __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q10', 'a', 'b')"><strong>(a)</strong> only employees</li><li class="option-item" data-opt="b" onclick="checkAnswer('q10', 'b', 'b')"><strong>(b)</strong> a key customer segment</li><li class="option-item" data-opt="c" onclick="checkAnswer('q10', 'c', 'b')"><strong>(c)</strong> irrelevant to the model</li><li class="option-item" data-opt="d" onclick="checkAnswer('q10', 'd', 'b')"><strong>(d)</strong> competitors</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Uber serves two segments: Passengers (who need rides) and Drivers (who need income).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Lecture 12: Classical School</span>
+            </div>
+            <div class="question-text">Scientific Management (Taylorism) focused primarily on __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q11', 'a', 'b')"><strong>(a)</strong> human relations</li><li class="option-item" data-opt="b" onclick="checkAnswer('q11', 'b', 'b')"><strong>(b)</strong> process efficiency and productivity</li><li class="option-item" data-opt="c" onclick="checkAnswer('q11', 'c', 'b')"><strong>(c)</strong> bureaucracy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q11', 'd', 'b')"><strong>(d)</strong> strategic vision</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Taylor focused on the 'One Best Way', time/motion studies, and efficiency.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Lecture 12: Fayol</span>
+            </div>
+            <div class="question-text">Henri Fayol is associated with __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q12', 'a', 'b')"><strong>(a)</strong> Time and Motion studies</li><li class="option-item" data-opt="b" onclick="checkAnswer('q12', 'b', 'b')"><strong>(b)</strong> Administrative Principles (14 Principles)</li><li class="option-item" data-opt="c" onclick="checkAnswer('q12', 'c', 'b')"><strong>(c)</strong> Bureaucracy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q12', 'd', 'b')"><strong>(d)</strong> Hawthorne Studies</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Fayol developed the 14 Principles of Management and defined the 5 functions.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Lecture 12: Weber</span>
+            </div>
+            <div class="question-text">Max Weber's concept of Bureaucracy emphasizes __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q13', 'a', 'c')"><strong>(a)</strong> personal friendships</li><li class="option-item" data-opt="b" onclick="checkAnswer('q13', 'b', 'c')"><strong>(b)</strong> flexible roles</li><li class="option-item" data-opt="c" onclick="checkAnswer('q13', 'c', 'c')"><strong>(c)</strong> impersonality and formal authority</li><li class="option-item" data-opt="d" onclick="checkAnswer('q13', 'd', 'c')"><strong>(d)</strong> creativity</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Bureaucracy is based on rules, hierarchy, and impersonal relationships to ensure fairness.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Lecture 12: Behavioral School</span>
+            </div>
+            <div class="question-text">The Hawthorne Studies were significant because they revealed __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q14', 'a', 'c')"><strong>(a)</strong> lighting does not affect work</li><li class="option-item" data-opt="b" onclick="checkAnswer('q14', 'b', 'c')"><strong>(b)</strong> money is the only motivator</li><li class="option-item" data-opt="c" onclick="checkAnswer('q14', 'c', 'c')"><strong>(c)</strong> the influence of group behavior and social factors</li><li class="option-item" data-opt="d" onclick="checkAnswer('q14', 'd', 'c')"><strong>(d)</strong> structures are more important than people</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Hawthorne Effect: Social/Group factors and attention from leaders influence productivity.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Lecture 12: Theory X/Y</span>
+            </div>
+            <div class="question-text">A Theory X manager believes employees __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q15', 'a', 'b')"><strong>(a)</strong> are creative and self-directed</li><li class="option-item" data-opt="b" onclick="checkAnswer('q15', 'b', 'b')"><strong>(b)</strong> dislike work and need control</li><li class="option-item" data-opt="c" onclick="checkAnswer('q15', 'c', 'b')"><strong>(c)</strong> seek responsibility</li><li class="option-item" data-opt="d" onclick="checkAnswer('q15', 'd', 'b')"><strong>(d)</strong> are motivated by praise</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Theory X assumes employees are lazy and need coercion.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q16">
+            <div class="question-header">
+                <span class="q-id">Question 16</span>
+                <span class="q-chapter">Lecture 12: Theory Y</span>
+            </div>
+            <div class="question-text">A Theory Y manager is likely to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q16', 'a', 'b')"><strong>(a)</strong> micromanage every task</li><li class="option-item" data-opt="b" onclick="checkAnswer('q16', 'b', 'b')"><strong>(b)</strong> empower employees and trust them</li><li class="option-item" data-opt="c" onclick="checkAnswer('q16', 'c', 'b')"><strong>(c)</strong> punish mistakes severely</li><li class="option-item" data-opt="d" onclick="checkAnswer('q16', 'd', 'b')"><strong>(d)</strong> ignore employee ideas</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Theory Y assumes employees are active, accountable, and can be empowered.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q17">
+            <div class="question-header">
+                <span class="q-id">Question 17</span>
+                <span class="q-chapter">Lecture 12: Quantitative Approach</span>
+            </div>
+            <div class="question-text">The Quantitative Approach to management applies __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q17', 'a', 'b')"><strong>(a)</strong> psychology</li><li class="option-item" data-opt="b" onclick="checkAnswer('q17', 'b', 'b')"><strong>(b)</strong> statistics and strict models</li><li class="option-item" data-opt="c" onclick="checkAnswer('q17', 'c', 'b')"><strong>(c)</strong> history</li><li class="option-item" data-opt="d" onclick="checkAnswer('q17', 'd', 'b')"><strong>(d)</strong> marketing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">It uses math, stats, and optimization models (e.g. for logistics).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q18">
+            <div class="question-header">
+                <span class="q-id">Question 18</span>
+                <span class="q-chapter">Lecture 12: Systems Theory</span>
+            </div>
+            <div class="question-text">Systems Theory views the organization as __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q18', 'a', 'b')"><strong>(a)</strong> a machine</li><li class="option-item" data-opt="b" onclick="checkAnswer('q18', 'b', 'b')"><strong>(b)</strong> a collection of interrelated parts</li><li class="option-item" data-opt="c" onclick="checkAnswer('q18', 'c', 'b')"><strong>(c)</strong> a family</li><li class="option-item" data-opt="d" onclick="checkAnswer('q18', 'd', 'b')"><strong>(d)</strong> a battlefield</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Organization is a system of interrelated parts working together.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q19">
+            <div class="question-header">
+                <span class="q-id">Question 19</span>
+                <span class="q-chapter">Lecture 12: Contingency Theory</span>
+            </div>
+            <div class="question-text">Contingency Theory suggests that __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q19', 'a', 'b')"><strong>(a)</strong> there is one best way to manage</li><li class="option-item" data-opt="b" onclick="checkAnswer('q19', 'b', 'b')"><strong>(b)</strong> management depends on the situation</li><li class="option-item" data-opt="c" onclick="checkAnswer('q19', 'c', 'b')"><strong>(c)</strong> managers should ignore the environment</li><li class="option-item" data-opt="d" onclick="checkAnswer('q19', 'd', 'b')"><strong>(d)</strong> planning is useless</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">No single way is best; it depends on the situation (If X, then Y).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q20">
+            <div class="question-header">
+                <span class="q-id">Question 20</span>
+                <span class="q-chapter">Lecture 12: Contemporary</span>
+            </div>
+            <div class="question-text">TQM (Total Quality Management) focuses on __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q20', 'a', 'b')"><strong>(a)</strong> rapid production only</li><li class="option-item" data-opt="b" onclick="checkAnswer('q20', 'b', 'b')"><strong>(b)</strong> continuous improvement and customer needs</li><li class="option-item" data-opt="c" onclick="checkAnswer('q20', 'c', 'b')"><strong>(c)</strong> cutting staff</li><li class="option-item" data-opt="d" onclick="checkAnswer('q20', 'd', 'b')"><strong>(d)</strong> financial audits</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">TQM is committed to continuous improvement and quality.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q21">
+            <div class="question-header">
+                <span class="q-id">Question 21</span>
+                <span class="q-chapter">Lecture 1: Perception</span>
+            </div>
+            <div class="question-text">Perception is described as a process that __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q21', 'a', 'c')"><strong>(a)</strong> is always accurate</li><li class="option-item" data-opt="b" onclick="checkAnswer('q21', 'b', 'c')"><strong>(b)</strong> is free from bias</li><li class="option-item" data-opt="c" onclick="checkAnswer('q21', 'c', 'c')"><strong>(c)</strong> takes incomplete info and forms a judgment</li><li class="option-item" data-opt="d" onclick="checkAnswer('q21', 'd', 'c')"><strong>(d)</strong> managers should ignore</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Perception processes incomplete data and is vulnerable to bias/stereotyping.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q22">
+            <div class="question-header">
+                <span class="q-id">Question 22</span>
+                <span class="q-chapter">Lecture 1: Management Skills</span>
+            </div>
+            <div class="question-text">Katz identified three essential management skills: Technical, Human, and __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q22', 'a', 'b')"><strong>(a)</strong> Financial</li><li class="option-item" data-opt="b" onclick="checkAnswer('q22', 'b', 'b')"><strong>(b)</strong> Conceptual</li><li class="option-item" data-opt="c" onclick="checkAnswer('q22', 'c', 'b')"><strong>(c)</strong> Physical</li><li class="option-item" data-opt="d" onclick="checkAnswer('q22', 'd', 'b')"><strong>(d)</strong> Digital</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">The trio is Technical, Human (Interpersonal), and Conceptual.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q23">
+            <div class="question-header">
+                <span class="q-id">Question 23</span>
+                <span class="q-chapter">Lecture 1: Management Skills</span>
+            </div>
+            <div class="question-text">Human (Interpersonal) skills are equally important for __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q23', 'a', 'c')"><strong>(a)</strong> only top managers</li><li class="option-item" data-opt="b" onclick="checkAnswer('q23', 'b', 'c')"><strong>(b)</strong> only middle managers</li><li class="option-item" data-opt="c" onclick="checkAnswer('q23', 'c', 'c')"><strong>(c)</strong> all levels of management</li><li class="option-item" data-opt="d" onclick="checkAnswer('q23', 'd', 'c')"><strong>(d)</strong> only first-line managers</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">While conceptual/technical needs vary, human skills are critical at all levels.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q24">
+            <div class="question-header">
+                <span class="q-id">Question 24</span>
+                <span class="q-chapter">Lecture 1: Efficiency vs Effectiveness</span>
+            </div>
+            <div class="question-text">High Efficiency but Low Effectiveness means __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q24', 'a', 'b')"><strong>(a)</strong> Right goals, poor resource use</li><li class="option-item" data-opt="b" onclick="checkAnswer('q24', 'b', 'b')"><strong>(b)</strong> Wrong goals, good resource use</li><li class="option-item" data-opt="c" onclick="checkAnswer('q24', 'c', 'b')"><strong>(c)</strong> Right goals, good resource use</li><li class="option-item" data-opt="d" onclick="checkAnswer('q24', 'd', 'b')"><strong>(d)</strong> Wrong goals, poor resource use</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">You are doing the wrong thing (ineffective) but doing it very cheaply (efficient).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q25">
+            <div class="question-header">
+                <span class="q-id">Question 25</span>
+                <span class="q-chapter">Lecture 1: Governance</span>
+            </div>
+            <div class="question-text">Governance is best described as part of the __________ system.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q25', 'a', 'b')"><strong>(a)</strong> Motivational</li><li class="option-item" data-opt="b" onclick="checkAnswer('q25', 'b', 'b')"><strong>(b)</strong> Control</li><li class="option-item" data-opt="c" onclick="checkAnswer('q25', 'c', 'b')"><strong>(c)</strong> Production</li><li class="option-item" data-opt="d" onclick="checkAnswer('q25', 'd', 'b')"><strong>(d)</strong> Marketing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Governance monitors performance and accountability (Control).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q26">
+            <div class="question-header">
+                <span class="q-id">Question 26</span>
+                <span class="q-chapter">Lecture 1: KPIs</span>
+            </div>
+            <div class="question-text">KPIs (Key Performance Indicators) are used to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q26', 'a', 'b')"><strong>(a)</strong> punish employees</li><li class="option-item" data-opt="b" onclick="checkAnswer('q26', 'b', 'b')"><strong>(b)</strong> check and monitor progress</li><li class="option-item" data-opt="c" onclick="checkAnswer('q26', 'c', 'b')"><strong>(c)</strong> guess the future</li><li class="option-item" data-opt="d" onclick="checkAnswer('q26', 'd', 'b')"><strong>(d)</strong> create confusion</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">KPIs reflect the 'What & How' and are used to monitor achievement.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q27">
+            <div class="question-header">
+                <span class="q-id">Question 27</span>
+                <span class="q-chapter">Lecture 12: Skills</span>
+            </div>
+            <div class="question-text">Political skills in management involve __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q27', 'a', 'b')"><strong>(a)</strong> running for office</li><li class="option-item" data-opt="b" onclick="checkAnswer('q27', 'b', 'b')"><strong>(b)</strong> building a power base and connections</li><li class="option-item" data-opt="c" onclick="checkAnswer('q27', 'c', 'b')"><strong>(c)</strong> ignoring office politics</li><li class="option-item" data-opt="d" onclick="checkAnswer('q27', 'd', 'b')"><strong>(d)</strong> technical coding</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Political skill is the ability to build connections and influence.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q28">
+            <div class="question-header">
+                <span class="q-id">Question 28</span>
+                <span class="q-chapter">Lecture 12: Roles</span>
+            </div>
+            <div class="question-text">The 'Figurehead' role is part of Mintzberg's __________ roles.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q28', 'a', 'c')"><strong>(a)</strong> Informational</li><li class="option-item" data-opt="b" onclick="checkAnswer('q28', 'b', 'c')"><strong>(b)</strong> Decisional</li><li class="option-item" data-opt="c" onclick="checkAnswer('q28', 'c', 'c')"><strong>(c)</strong> Interpersonal</li><li class="option-item" data-opt="d" onclick="checkAnswer('q28', 'd', 'c')"><strong>(d)</strong> Technical</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Figurehead, Leader, Liaison are Interpersonal roles.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q29">
+            <div class="question-header">
+                <span class="q-id">Question 29</span>
+                <span class="q-chapter">Lecture 12: Roles</span>
+            </div>
+            <div class="question-text">The 'Resource Allocator' role is part of Mintzberg's __________ roles.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q29', 'a', 'b')"><strong>(a)</strong> Informational</li><li class="option-item" data-opt="b" onclick="checkAnswer('q29', 'b', 'b')"><strong>(b)</strong> Decisional</li><li class="option-item" data-opt="c" onclick="checkAnswer('q29', 'c', 'b')"><strong>(c)</strong> Interpersonal</li><li class="option-item" data-opt="d" onclick="checkAnswer('q29', 'd', 'b')"><strong>(d)</strong> Technical</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Decisional roles: Entrepreneur, Disturbance Handler, Resource Allocator, Negotiator.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q30">
+            <div class="question-header">
+                <span class="q-id">Question 30</span>
+                <span class="q-chapter">Lecture 12: TQM</span>
+            </div>
+            <div class="question-text">Which of these is NOT a principle of Total Quality Management?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q30', 'a', 'd')"><strong>(a)</strong> Continuous Improvement</li><li class="option-item" data-opt="b" onclick="checkAnswer('q30', 'b', 'd')"><strong>(b)</strong> Customer Focus</li><li class="option-item" data-opt="c" onclick="checkAnswer('q30', 'c', 'd')"><strong>(c)</strong> Employee Involvement</li><li class="option-item" data-opt="d" onclick="checkAnswer('q30', 'd', 'd')"><strong>(d)</strong> Rigid Hierarchy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">TQM encourages empowerment and flexibility, not rigid hierarchy.</div>
+            </div>
+        </div>
+    
+    </div>
+    <script>
+        function checkAnswer(cardId, selectedOption, correctOption) {
+            const card = document.getElementById(cardId);
+            const options = card.querySelectorAll('.option-item');
+            const answerReveal = card.querySelector('.answer-reveal');
+            
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'wrong');
+            });
+            
+            let clickedOpt;
+            options.forEach(opt => {
+                if(opt.dataset.opt === selectedOption) clickedOpt = opt;
+            });
+            
+            if (selectedOption === correctOption) {
+                clickedOpt.classList.add('correct');
+            } else {
+                clickedOpt.classList.add('wrong');
+                options.forEach(opt => {
+                    if(opt.dataset.opt === correctOption) opt.classList.add('correct');
+                });
+            }
+            answerReveal.style.display = 'block';
+        }
+
+        function revealAll() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+        }
+        function hideAll() {
+             document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+        }
+    </script>
+</body>
+</html>

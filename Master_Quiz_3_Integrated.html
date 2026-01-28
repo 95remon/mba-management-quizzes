@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz 3: Integrated Mock Exam B</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; margin: 5px; }
+        button:hover { background-color: #2980b9; }
+        .print-btn { background-color: #27ae60; }
+        .print-btn:hover { background-color: #219150; }
+        
+        .quiz-container { max-width: 800px; margin: 0 auto; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 25px; page-break-inside: avoid; }
+        .question-header { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .q-id { font-weight: bold; color: #7f8c8d; }
+        .q-chapter { background: #e0f7fa; color: #006064; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+        
+        .question-text { font-size: 1.1em; font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        
+        .options-list { list-style: none; padding: 0; }
+        .option-item { padding: 10px 15px; margin: 5px 0; border: 1px solid #bdc3c7; border-radius: 5px; cursor: pointer; transition: background 0.2s; }
+        .option-item:hover { background-color: #f0f3f4; }
+        
+        /* Interactive States */
+        .option-item.selected { background-color: #d6eaf8; border-color: #3498db; }
+        .option-item.correct { background-color: #d4efdf; border-color: #27ae60; color: #145a32; }
+        .option-item.wrong { background-color: #fadbd8; border-color: #c0392b; color: #78281f; }
+        
+        .answer-reveal { margin-top: 15px; padding: 15px; background-color: #e8f8f5; border-left: 5px solid #1abc9c; display: none; }
+        .justification { margin-top: 5px; font-style: italic; color: #555; }
+        
+        @media print {
+            body { background: white; color: black; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .controls { display: none; }
+            .answer-reveal { display: block !important; border: none; background: none; font-size: 0.9em; padding: 0; margin-top: 5px; }
+            .correct-label { font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Master Quiz 3: Integrated Mock Exam B</h1>
+    <div class="controls">
+        <button class="print-btn" onclick="window.print()">Print to PDF</button>
+        <button onclick="revealAll()">Show All Answers</button>
+        <button onclick="hideAll()">Hide All Answers</button>
+    </div>
+    <div class="quiz-container">
+
+        <div class="card" id="q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Strategy</span>
+            </div>
+            <div class="question-text">A SWOT analysis combines __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q1', 'a', 'a')"><strong>(a)</strong> Internal Strengths/Weaknesses and External Opportunities/Threats</li><li class="option-item" data-opt="b" onclick="checkAnswer('q1', 'b', 'a')"><strong>(b)</strong> Internal Opportunities and External Strengths</li><li class="option-item" data-opt="c" onclick="checkAnswer('q1', 'c', 'a')"><strong>(c)</strong> Financial goals and HR metrics</li><li class="option-item" data-opt="d" onclick="checkAnswer('q1', 'd', 'a')"><strong>(d)</strong> Past and Future plans</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">SWOT matches Internal capabilities with External conditions.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Planning</span>
+            </div>
+            <div class="question-text">A plan that outlines the alternative courses of action if things go wrong is a __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q2', 'a', 'b')"><strong>(a)</strong> Strategic Plan</li><li class="option-item" data-opt="b" onclick="checkAnswer('q2', 'b', 'b')"><strong>(b)</strong> Contingency Plan</li><li class="option-item" data-opt="c" onclick="checkAnswer('q2', 'c', 'b')"><strong>(c)</strong> Budget</li><li class="option-item" data-opt="d" onclick="checkAnswer('q2', 'd', 'b')"><strong>(d)</strong> Procedure</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Contingency planning deals with 'What If' scenarios.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Skills</span>
+            </div>
+            <div class="question-text">Emotional Intelligence includes self-awareness and empathy.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q3', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q3', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">EI components: Self-awareness, Self-regulation, Motivation, Empathy, Social skill.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Change</span>
+            </div>
+            <div class="question-text">The 'Unfreezing' stage of Lewin's Change Model involves __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q4', 'a', 'a')"><strong>(a)</strong> creating a sense of urgency and breaking old habits</li><li class="option-item" data-opt="b" onclick="checkAnswer('q4', 'b', 'a')"><strong>(b)</strong> teaching new skills</li><li class="option-item" data-opt="c" onclick="checkAnswer('q4', 'c', 'a')"><strong>(c)</strong> rewarding new behavior</li><li class="option-item" data-opt="d" onclick="checkAnswer('q4', 'd', 'a')"><strong>(d)</strong> hiring consultants</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Unfreezing is about preparing the organization to accept that change is necessary.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Environment</span>
+            </div>
+            <div class="question-text">Uncertainty is primarily associated with complexity + change.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q5', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q5', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Uncertainty involves complexity + change.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Foundations</span>
+            </div>
+            <div class="question-text">Efficiency means 'doing the right things' regardless of cost.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q6', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q6', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Efficiency is 'doing things right' (minimizing waste). Effectiveness is 'doing the right things'.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Innovation</span>
+            </div>
+            <div class="question-text">Disruptive innovation creates products that typically perform worse initially but cheaper/simpler.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q7', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q7', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Disruptors start at the low end and move up (e.g., Netflix vs Blockbuster).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Structure</span>
+            </div>
+            <div class="question-text">Which term refers to duplication of resources?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q8', 'a', 'a')"><strong>(a)</strong> Divisional Structure</li><li class="option-item" data-opt="b" onclick="checkAnswer('q8', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q8', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q8', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Divisional Structure is characterized by duplication of resources.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Control</span>
+            </div>
+            <div class="question-text">Which term refers to project scheduling?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q9', 'a', 'a')"><strong>(a)</strong> CPM/PERT</li><li class="option-item" data-opt="b" onclick="checkAnswer('q9', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q9', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q9', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">CPM/PERT is characterized by project scheduling.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Strategy</span>
+            </div>
+            <div class="question-text">A Cost Leadership strategy requires a narrow market scope.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q10', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q10', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Cost Leadership targets a BROAD market. Focused Low Cost targets a narrow market.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Environment</span>
+            </div>
+            <div class="question-text">The General Environment (Macro) touches all organizations and includes PESTEL factors.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q11', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q11', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">General environment affects everyone indirectly (e.g. inflation, laws).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Global</span>
+            </div>
+            <div class="question-text">Which term refers to paying to use brand/process?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q12', 'a', 'a')"><strong>(a)</strong> Licensing</li><li class="option-item" data-opt="b" onclick="checkAnswer('q12', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q12', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q12', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Licensing is characterized by paying to use brand/process.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Motivation</span>
+            </div>
+            <div class="question-text">Valence is primarily associated with value of reward.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q13', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q13', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Valence involves value of reward.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Foundations</span>
+            </div>
+            <div class="question-text">Which term refers to environmental interaction?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q14', 'a', 'a')"><strong>(a)</strong> Open System</li><li class="option-item" data-opt="b" onclick="checkAnswer('q14', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q14', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q14', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Open System is characterized by environmental interaction.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">History</span>
+            </div>
+            <div class="question-text">Max Weber believed that a Bureaucracy should be based on personal relationships and favoritism.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q15', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q15', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Weber argued for 'Impersonality'—decisions based on rules and merit, not personal ties.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q16">
+            <div class="question-header">
+                <span class="q-id">Question 16</span>
+                <span class="q-chapter">Motivation</span>
+            </div>
+            <div class="question-text">Hygiene factors (Herzberg) differ from Motivators because they only prevent dissatisfaction.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q16', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q16', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Improving hygiene (pay, conditions) gets you to 'neutral'. Only motivators (growth) create satisfaction.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q17">
+            <div class="question-header">
+                <span class="q-id">Question 17</span>
+                <span class="q-chapter">Strategy</span>
+            </div>
+            <div class="question-text">Which term refers to consolidation?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q17', 'a', 'a')"><strong>(a)</strong> Retrenchment</li><li class="option-item" data-opt="b" onclick="checkAnswer('q17', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q17', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q17', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Retrenchment is characterized by consolidation.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q18">
+            <div class="question-header">
+                <span class="q-id">Question 18</span>
+                <span class="q-chapter">Strategy</span>
+            </div>
+            <div class="question-text">Differentiation Strategy depends on __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q18', 'a', 'b')"><strong>(a)</strong> lowest price</li><li class="option-item" data-opt="b" onclick="checkAnswer('q18', 'b', 'b')"><strong>(b)</strong> uniqueness valued by customers</li><li class="option-item" data-opt="c" onclick="checkAnswer('q18', 'c', 'b')"><strong>(c)</strong> narrow market scope</li><li class="option-item" data-opt="d" onclick="checkAnswer('q18', 'd', 'b')"><strong>(d)</strong> mass production</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Differentiation builds competitive advantage through unique value (brand, quality).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q19">
+            <div class="question-header">
+                <span class="q-id">Question 19</span>
+                <span class="q-chapter">Planning</span>
+            </div>
+            <div class="question-text">Which term refers to policies/procedures?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q19', 'a', 'a')"><strong>(a)</strong> Standing Plans</li><li class="option-item" data-opt="b" onclick="checkAnswer('q19', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q19', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q19', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Standing Plans is characterized by policies/procedures.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q20">
+            <div class="question-header">
+                <span class="q-id">Question 20</span>
+                <span class="q-chapter">Structure</span>
+            </div>
+            <div class="question-text">Functional Structure is primarily associated with economies of scale.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q20', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q20', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Functional Structure involves economies of scale.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q21">
+            <div class="question-header">
+                <span class="q-id">Question 21</span>
+                <span class="q-chapter">Decision Making</span>
+            </div>
+            <div class="question-text">Risk is primarily associated with probabilistic outcomes.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q21', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q21', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Risk involves probabilistic outcomes.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q22">
+            <div class="question-header">
+                <span class="q-id">Question 22</span>
+                <span class="q-chapter">Skills</span>
+            </div>
+            <div class="question-text">Technical skills are most important for top-level managers.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q22', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q22', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Technical skills are most critical for First-Line managers. Top managers need Conceptual skills.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q23">
+            <div class="question-header">
+                <span class="q-id">Question 23</span>
+                <span class="q-chapter">Leadership</span>
+            </div>
+            <div class="question-text">Which term refers to unilateral decisions?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q23', 'a', 'a')"><strong>(a)</strong> Autocratic</li><li class="option-item" data-opt="b" onclick="checkAnswer('q23', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q23', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q23', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Autocratic is characterized by unilateral decisions.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q24">
+            <div class="question-header">
+                <span class="q-id">Question 24</span>
+                <span class="q-chapter">HR</span>
+            </div>
+            <div class="question-text">Which term refers to choosing candidates?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q24', 'a', 'a')"><strong>(a)</strong> Selection</li><li class="option-item" data-opt="b" onclick="checkAnswer('q24', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q24', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q24', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Selection is characterized by choosing candidates.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q25">
+            <div class="question-header">
+                <span class="q-id">Question 25</span>
+                <span class="q-chapter">Control</span>
+            </div>
+            <div class="question-text">Output Standard is primarily associated with quality/quantity.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q25', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q25', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Output Standard involves quality/quantity.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q26">
+            <div class="question-header">
+                <span class="q-id">Question 26</span>
+                <span class="q-chapter">Communication</span>
+            </div>
+            <div class="question-text">Which term refers to receiver response?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q26', 'a', 'a')"><strong>(a)</strong> Feedback</li><li class="option-item" data-opt="b" onclick="checkAnswer('q26', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q26', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q26', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Feedback is characterized by receiver response.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q27">
+            <div class="question-header">
+                <span class="q-id">Question 27</span>
+                <span class="q-chapter">Environment</span>
+            </div>
+            <div class="question-text">Technological conditions is primarily associated with general environment.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q27', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q27', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Technological conditions involves general environment.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q28">
+            <div class="question-header">
+                <span class="q-id">Question 28</span>
+                <span class="q-chapter">Ethics</span>
+            </div>
+            <div class="question-text">Corporate Social Responsibility (CSR) implies a business considers only profit.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q28', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q28', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">CSR implies serving both organizational outcome AND social/environmental well-being.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q29">
+            <div class="question-header">
+                <span class="q-id">Question 29</span>
+                <span class="q-chapter">Strategy</span>
+            </div>
+            <div class="question-text">Which term refers to expansion?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q29', 'a', 'a')"><strong>(a)</strong> Growth Strategy</li><li class="option-item" data-opt="b" onclick="checkAnswer('q29', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q29', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q29', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Growth Strategy is characterized by expansion.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q30">
+            <div class="question-header">
+                <span class="q-id">Question 30</span>
+                <span class="q-chapter">Structure</span>
+            </div>
+            <div class="question-text">Which term refers to top-level decisions?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q30', 'a', 'a')"><strong>(a)</strong> Centralization</li><li class="option-item" data-opt="b" onclick="checkAnswer('q30', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q30', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q30', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Centralization is characterized by top-level decisions.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q31">
+            <div class="question-header">
+                <span class="q-id">Question 31</span>
+                <span class="q-chapter">Teams</span>
+            </div>
+            <div class="question-text">Which term refers to whole > sum of parts?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q31', 'a', 'a')"><strong>(a)</strong> Synergy</li><li class="option-item" data-opt="b" onclick="checkAnswer('q31', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q31', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q31', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Synergy is characterized by whole > sum of parts.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q32">
+            <div class="question-header">
+                <span class="q-id">Question 32</span>
+                <span class="q-chapter">Motivation</span>
+            </div>
+            <div class="question-text">Which term refers to belief usually leads to reward?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q32', 'a', 'a')"><strong>(a)</strong> Expectancy</li><li class="option-item" data-opt="b" onclick="checkAnswer('q32', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q32', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q32', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Expectancy is characterized by belief usually leads to reward.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q33">
+            <div class="question-header">
+                <span class="q-id">Question 33</span>
+                <span class="q-chapter">Strategy</span>
+            </div>
+            <div class="question-text">Porter's 5 Forces Model is used to analyze the Internal Environment.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q33', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q33', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">It analyzes the INDUSTRY (External Environment) attractiveness.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q34">
+            <div class="question-header">
+                <span class="q-id">Question 34</span>
+                <span class="q-chapter">Foundations</span>
+            </div>
+            <div class="question-text">Bureaucracy is primarily associated with formal rules.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q34', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q34', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Correct, Bureaucracy involves formal rules.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q35">
+            <div class="question-header">
+                <span class="q-id">Question 35</span>
+                <span class="q-chapter">Motivation</span>
+            </div>
+            <div class="question-text">Which term refers to performance leads to reward?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q35', 'a', 'a')"><strong>(a)</strong> Instrumentality</li><li class="option-item" data-opt="b" onclick="checkAnswer('q35', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q35', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q35', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Instrumentality is characterized by performance leads to reward.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q36">
+            <div class="question-header">
+                <span class="q-id">Question 36</span>
+                <span class="q-chapter">Control</span>
+            </div>
+            <div class="question-text">Budgeting is strictly a financial activity and has no relation to planning.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q36', 'a', 'b')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q36', 'b', 'b')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">A budget is a plan expressed in numerical terms; it is a key planning and control tool.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q37">
+            <div class="question-header">
+                <span class="q-id">Question 37</span>
+                <span class="q-chapter">Environment</span>
+            </div>
+            <div class="question-text">Which term refers to specific environment?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q37', 'a', 'a')"><strong>(a)</strong> Competitors</li><li class="option-item" data-opt="b" onclick="checkAnswer('q37', 'b', 'a')"><strong>(b)</strong> Entropy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q37', 'c', 'a')"><strong>(c)</strong> Synergy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q37', 'd', 'a')"><strong>(d)</strong> Bureaucracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Competitors is characterized by specific environment.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q38">
+            <div class="question-header">
+                <span class="q-id">Question 38</span>
+                <span class="q-chapter">HR</span>
+            </div>
+            <div class="question-text">Human Resource Management (HRM) is responsible for attracting, developing, and maintaining a workforce.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q38', 'a', 'a')"><strong>(a)</strong> True</li><li class="option-item" data-opt="b" onclick="checkAnswer('q38', 'b', 'a')"><strong>(b)</strong> False</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">These are the three core functions of HRM.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q39">
+            <div class="question-header">
+                <span class="q-id">Question 39</span>
+                <span class="q-chapter">History</span>
+            </div>
+            <div class="question-text">Who is known as the 'Father of Scientific Management'?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q39', 'a', 'b')"><strong>(a)</strong> Henri Fayol</li><li class="option-item" data-opt="b" onclick="checkAnswer('q39', 'b', 'b')"><strong>(b)</strong> Frederick Taylor</li><li class="option-item" data-opt="c" onclick="checkAnswer('q39', 'c', 'b')"><strong>(c)</strong> Max Weber</li><li class="option-item" data-opt="d" onclick="checkAnswer('q39', 'd', 'b')"><strong>(d)</strong> Elton Mayo</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Taylor introduced the scientific method to jobs (Time & Motion studies).</div>
+            </div>
+        </div>
+    
+    </div>
+    <script>
+        function checkAnswer(cardId, selectedOption, correctOption) {
+            const card = document.getElementById(cardId);
+            const options = card.querySelectorAll('.option-item');
+            const answerReveal = card.querySelector('.answer-reveal');
+            
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'wrong');
+            });
+            
+            let clickedOpt;
+            options.forEach(opt => {
+                if(opt.dataset.opt === selectedOption) clickedOpt = opt;
+            });
+            
+            if (selectedOption === correctOption) {
+                clickedOpt.classList.add('correct');
+            } else {
+                clickedOpt.classList.add('wrong');
+                options.forEach(opt => {
+                    if(opt.dataset.opt === correctOption) opt.classList.add('correct');
+                });
+            }
+            answerReveal.style.display = 'block';
+        }
+
+        function revealAll() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+        }
+        function hideAll() {
+             document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+        }
+    </script>
+</body>
+</html>

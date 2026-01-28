@@ -1,0 +1,2497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz 1: Management Foundations & Self-Tests</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; margin: 5px; }
+        button:hover { background-color: #2980b9; }
+        .print-btn { background-color: #27ae60; }
+        .print-btn:hover { background-color: #219150; }
+        
+        .quiz-container { max-width: 800px; margin: 0 auto; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 25px; page-break-inside: avoid; }
+        .question-header { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .q-id { font-weight: bold; color: #7f8c8d; }
+        .q-chapter { background: #e0f7fa; color: #006064; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+        
+        .question-text { font-size: 1.1em; font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        
+        .options-list { list-style: none; padding: 0; }
+        .option-item { padding: 10px 15px; margin: 5px 0; border: 1px solid #bdc3c7; border-radius: 5px; cursor: pointer; transition: background 0.2s; }
+        .option-item:hover { background-color: #f0f3f4; }
+        
+        /* Interactive States */
+        .option-item.selected { background-color: #d6eaf8; border-color: #3498db; }
+        .option-item.correct { background-color: #d4efdf; border-color: #27ae60; color: #145a32; }
+        .option-item.wrong { background-color: #fadbd8; border-color: #c0392b; color: #78281f; }
+        
+        .answer-reveal { margin-top: 15px; padding: 15px; background-color: #e8f8f5; border-left: 5px solid #1abc9c; display: none; }
+        .justification { margin-top: 5px; font-style: italic; color: #555; }
+        
+        @media print {
+            body { background: white; color: black; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .controls { display: none; }
+            .answer-reveal { display: block !important; border: none; background: none; font-size: 0.9em; padding: 0; margin-top: 5px; }
+            .correct-label { font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Master Quiz 1: Foundations & Self-Tests</h1>
+    <div class="controls">
+        <button class="print-btn" onclick="window.print()">Print to PDF</button>
+        <button onclick="revealAll()">Show All Answers</button>
+        <button onclick="hideAll()">Hide All Answers</button>
+    </div>
+
+    <div class="quiz-container">
+        <!-- Python Generated Content -->
+        
+        <div class="card" id="ch1_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The process of management involves the functions of planning, __________, leading, and controlling.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q1', 'a', 'd')"><strong>(a)</strong> accounting</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q1', 'b', 'd')"><strong>(b)</strong> creating</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q1', 'c', 'd')"><strong>(c)</strong> innovating</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q1', 'd', 'd')"><strong>(d)</strong> organizing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">The four functions of management are Planning, Organizing, Leading, and Controlling.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">An effective manager achieves both high-performance results and high levels of __________ among people doing the required work.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q2', 'a', 'c')"><strong>(a)</strong> turnover</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q2', 'b', 'c')"><strong>(b)</strong> effectiveness</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q2', 'c', 'c')"><strong>(c)</strong> satisfaction</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q2', 'd', 'c')"><strong>(d)</strong> stress</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">An effective manager achieves high performance results and high levels of job satisfaction.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">Performance efficiency is a measure of the __________ associated with task accomplishment.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q3', 'a', 'a')"><strong>(a)</strong> resource costs</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q3', 'b', 'a')"><strong>(b)</strong> goal specificity</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q3', 'c', 'a')"><strong>(c)</strong> product quality</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q3', 'd', 'a')"><strong>(d)</strong> product quantity</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Efficiency is a measure of resource usage (costs) associated with goal accomplishment.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The requirement that a manager answer to a higher-level boss for performance results achieved by a work team is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q4', 'a', 'b')"><strong>(a)</strong> dependency</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q4', 'b', 'b')"><strong>(b)</strong> accountability</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q4', 'c', 'b')"><strong>(c)</strong> authority</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q4', 'd', 'b')"><strong>(d)</strong> empowerment</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Accountability is the requirement to show performance results to a supervisor.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">Productivity is a measure of the quantity and __________ of work produced, relative to the cost of inputs.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q5', 'a', 'a')"><strong>(a)</strong> quality</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q5', 'b', 'a')"><strong>(b)</strong> cost</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q5', 'c', 'a')"><strong>(c)</strong> timeliness</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q5', 'd', 'a')"><strong>(d)</strong> value</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Productivity measures the quantity and quality of work relative to inputs.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">__________ managers pay special attention to the external environment, looking for problems and opportunities and finding ways to deal with them.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q6', 'a', 'a')"><strong>(a)</strong> Top</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q6', 'b', 'a')"><strong>(b)</strong> Middle</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q6', 'c', 'a')"><strong>(c)</strong> Lower</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q6', 'd', 'a')"><strong>(d)</strong> First-line</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Top managers pay attention to the external environment and strategic direction.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The accounting manager for a local newspaper would be considered a __________ manager, whereas the editorial director would be considered a __________ manager.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q7', 'a', 'c')"><strong>(a)</strong> general, functional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q7', 'b', 'c')"><strong>(b)</strong> middle, top</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q7', 'c', 'c')"><strong>(c)</strong> staff, line</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q7', 'd', 'c')"><strong>(d)</strong> senior, junior</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Accounting is a staff function (support), Editorial is a line function (core product).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">When a team leader clarifies desired work targets and deadlines for a work team, he or she is fulfilling the management function of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q8', 'a', 'a')"><strong>(a)</strong> planning</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q8', 'b', 'a')"><strong>(b)</strong> delegating</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q8', 'c', 'a')"><strong>(c)</strong> controlling</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q8', 'd', 'a')"><strong>(d)</strong> supervising</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Clarifying targets and deadlines is part of the Planning function (setting goals).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The process of building and maintaining good working relationships with others who may help implement a manager’s work agendas is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q9', 'a', 'b')"><strong>(a)</strong> governance</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q9', 'b', 'b')"><strong>(b)</strong> networking</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q9', 'c', 'b')"><strong>(c)</strong> authority</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q9', 'd', 'b')"><strong>(d)</strong> entrepreneurship</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Networking is building relationships to help implement agendas.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">In Katz’s framework, top managers tend to rely more on their __________ skills than do first-line managers.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q10', 'a', 'b')"><strong>(a)</strong> human</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q10', 'b', 'b')"><strong>(b)</strong> conceptual</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q10', 'c', 'b')"><strong>(c)</strong> decision-making</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q10', 'd', 'b')"><strong>(d)</strong> technical</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Top managers rely more on Conceptual skills; First-line on Technical skills.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The research of Mintzberg and others concludes that managers __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q11', 'a', 'c')"><strong>(a)</strong> work at a leisurely pace</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q11', 'b', 'c')"><strong>(b)</strong> have blocks of private time for planning</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q11', 'c', 'c')"><strong>(c)</strong> are never free from the pressures of performance responsibility</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q11', 'd', 'c')"><strong>(d)</strong> have the advantages of flexible work hours</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Managers are never free from pressure and work at a fragmented, intense pace.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">When someone with a negative attitude toward minorities makes a decision to deny advancement opportunities to a Hispanic worker, this is an example of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q12', 'a', 'a')"><strong>(a)</strong> discrimination</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q12', 'b', 'a')"><strong>(b)</strong> emotional intelligence</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q12', 'c', 'a')"><strong>(c)</strong> performance efficiency</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q12', 'd', 'a')"><strong>(d)</strong> prejudice</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Discrimination is acting on a prejudice by denying opportunity.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">Among the trends in the new workplace, one can expect to find __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q13', 'a', 'b')"><strong>(a)</strong> more order-giving</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q13', 'b', 'b')"><strong>(b)</strong> more valuing people as human assets</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q13', 'c', 'b')"><strong>(c)</strong> less teamwork</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q13', 'd', 'b')"><strong>(d)</strong> reduced concern for work–life balance</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">The new workplace values people as human assets (Human Capital).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The manager’s role in the “upside-down pyramid” view of organizations is best described as providing __________ so that operating workers can directly serve __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q14', 'a', 'c')"><strong>(a)</strong> direction, top management</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q14', 'b', 'c')"><strong>(b)</strong> leadership, organizational goals</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q14', 'c', 'c')"><strong>(c)</strong> support, customers</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q14', 'd', 'c')"><strong>(d)</strong> agendas, networking</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Upside-down pyramid: Managers support workers, who argue serve customers.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch1_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 1</span>
+            </div>
+            <div class="question-text">The management function of __________ is being performed when a retail manager measures daily sales in the women’s apparel department and compares them with daily sales targets.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch1_q15', 'a', 'c')"><strong>(a)</strong> planning</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch1_q15', 'b', 'c')"><strong>(b)</strong> agenda setting</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch1_q15', 'c', 'c')"><strong>(c)</strong> controlling</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch1_q15', 'd', 'c')"><strong>(d)</strong> delegating</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Measuring performance and comparing to targets is Controlling.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">The assumption that people are complex with widely varying needs is most associated with the __________ management approaches.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q1', 'a', 'c')"><strong>(a)</strong> classical</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q1', 'b', 'c')"><strong>(b)</strong> neoclassical</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q1', 'c', 'c')"><strong>(c)</strong> behavioral</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q1', 'd', 'c')"><strong>(d)</strong> modern</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Behavioral approaches assume people are complex with social/psychological needs.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">The father of scientific management is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q2', 'a', 'b')"><strong>(a)</strong> Weber</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q2', 'b', 'b')"><strong>(b)</strong> Taylor</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q2', 'c', 'b')"><strong>(c)</strong> Mintzberg</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q2', 'd', 'b')"><strong>(d)</strong> Katz</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Frederick Taylor is the father of Scientific Management.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">When the registrar of a university deals with students by an identification number rather than a name, which characteristic of bureaucracy is being displayed and what is its intended benefit?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q3', 'a', 'd')"><strong>(a)</strong> division of labor, competency</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q3', 'b', 'd')"><strong>(b)</strong> merit-based careers, productivity</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q3', 'c', 'd')"><strong>(c)</strong> rules and procedures, efficiency</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q3', 'd', 'd')"><strong>(d)</strong> impersonality, fairness</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Impersonality ensures fairness by removing bias/favoritism.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">If an organization was performing poorly and Henri Fayol was called in as a consultant, what would he most likely suggest to improve things?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q4', 'a', 'a')"><strong>(a)</strong> Teach managers to better plan and control.</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q4', 'b', 'a')"><strong>(b)</strong> Teach workers more efficient job methods.</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q4', 'c', 'a')"><strong>(c)</strong> Promote to management only the most competent workers.</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q4', 'd', 'a')"><strong>(d)</strong> Find ways to increase corporate social responsibility.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Fayol (Administrative Principles) focused on management functions like Planning/Control.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">One example of how scientific management principles are applied in organizations today would be:</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q5', 'a', 'a')"><strong>(a)</strong> conducting studies to increase efficiencies in job performance.</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q5', 'b', 'a')"><strong>(b)</strong> finding alternatives to a bureaucratic structure.</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q5', 'c', 'a')"><strong>(c)</strong> training managers to better understand worker attitudes.</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q5', 'd', 'a')"><strong>(d)</strong> focusing managers on teamwork rather than individual jobs.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Scientific management studies jobs to increase efficiency (e.g., UPS delivery methods).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">The Hawthorne studies raised awareness of how __________ can be important influences on productivity.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q6', 'a', 'b')"><strong>(a)</strong> structures</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q6', 'b', 'b')"><strong>(b)</strong> human factors</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q6', 'c', 'b')"><strong>(c)</strong> physical work conditions</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q6', 'd', 'b')"><strong>(d)</strong> pay and rewards</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Hawthorne studies revealed importance of human factors/social setting.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">Advice to study a job, carefully train workers to do that job, and link financial incentives to job performance would most likely come from __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q7', 'a', 'a')"><strong>(a)</strong> scientific management</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q7', 'b', 'a')"><strong>(b)</strong> contingency management</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q7', 'c', 'a')"><strong>(c)</strong> Henri Fayol</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q7', 'd', 'a')"><strong>(d)</strong> Abraham Maslow</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Study job, train, incentivize = Scientific Management (Taylor).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">The highest level in Maslow’s hierarchy includes __________ needs.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q8', 'a', 'c')"><strong>(a)</strong> safety</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q8', 'b', 'c')"><strong>(b)</strong> esteem</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q8', 'c', 'c')"><strong>(c)</strong> self-actualization</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q8', 'd', 'c')"><strong>(d)</strong> physiological</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Highest level is Self-Actualization.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">A possible misfit between the mature adult personality and rigid practices of a bureaucratic organization was a major concern of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q9', 'a', 'a')"><strong>(a)</strong> Argyris</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q9', 'b', 'a')"><strong>(b)</strong> Follett</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q9', 'c', 'a')"><strong>(c)</strong> Weber</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q9', 'd', 'a')"><strong>(d)</strong> Fuller</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Chris Argyris argued bureaucracy stifles mature adult personalities.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">When people perform in a situation as they are expected to, this is sometimes called the __________ Effect.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q10', 'a', 'a')"><strong>(a)</strong> Hawthorne</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q10', 'b', 'a')"><strong>(b)</strong> systems</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q10', 'c', 'a')"><strong>(c)</strong> contingency</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q10', 'd', 'a')"><strong>(d)</strong> open-systems</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Hawthorne Effect: People perform as expected when singled out/observed.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">Resource acquisition and customer satisfaction are important when an organization is viewed as a</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q11', 'a', 'c')"><strong>(a)</strong> bureaucracy</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q11', 'b', 'c')"><strong>(b)</strong> closed system</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q11', 'c', 'c')"><strong>(c)</strong> open system</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q11', 'd', 'c')"><strong>(d)</strong> pyramid</li><li class="option-item" data-opt="n" onclick="checkAnswer('ch2_q11', 'n', 'c')"><strong>(n)</strong> __________.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Open systems interact with environment (Resources In -> Customer Satisfaction Out).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">The loan-processing department would be considered a __________ of your local bank or credit union.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q12', 'a', 'a')"><strong>(a)</strong> subsystem</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q12', 'b', 'a')"><strong>(b)</strong> closed system</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q12', 'c', 'a')"><strong>(c)</strong> resource input</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q12', 'd', 'a')"><strong>(d)</strong> cost center</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Departments are subsystems of the larger organization.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">When a manager notices that Sheryl has strong social needs and assigns her a job in customer relations and gives Kwabena lots of praise because of his strong ego needs, the manager is displaying __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q13', 'a', 'd')"><strong>(a)</strong> systems thinking</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q13', 'b', 'd')"><strong>(b)</strong> Theory X</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q13', 'c', 'd')"><strong>(c)</strong> motion study</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q13', 'd', 'd')"><strong>(d)</strong> contingency thinking</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Contingency thinking matches management style to individual needs/situations.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">Which is the correct match?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q14', 'a', 'c')"><strong>(a)</strong> Senge—motion study</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q14', 'b', 'c')"><strong>(b)</strong> McGregor—analytics</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q14', 'c', 'c')"><strong>(c)</strong> Deming—quality management</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q14', 'd', 'c')"><strong>(d)</strong> Maslow—Theory X and Y</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Deming is associated with Total Quality Management (TQM).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch2_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 2</span>
+            </div>
+            <div class="question-text">When managers try to avoid hearsay and make decisions based on solid facts and information, this is known as __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch2_q15', 'a', 'b')"><strong>(a)</strong> continuous improvement</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch2_q15', 'b', 'b')"><strong>(b)</strong> evidence-based management</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch2_q15', 'c', 'b')"><strong>(c)</strong> TQM</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch2_q15', 'd', 'b')"><strong>(d)</strong> Theory X management</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Evidence-based management uses facts/data for decisions.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">The general environment of an organization would include __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q1', 'a', 'a')"><strong>(a)</strong> population demographics</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q1', 'b', 'a')"><strong>(b)</strong> activist groups</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q1', 'c', 'a')"><strong>(c)</strong> competitors</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q1', 'd', 'a')"><strong>(d)</strong> customers</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">General environment includes demographics, economic, legal, etc. (Competitors/Customers are Specific).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">Internet censorship faced in foreign countries by firms such as Google is an example of how differences in __________ factors in the general environment can cause complications for global business executives.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q2', 'a', 'b')"><strong>(a)</strong> economic</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q2', 'b', 'b')"><strong>(b)</strong> legal-political</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q2', 'c', 'b')"><strong>(c)</strong> natural environment</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q2', 'd', 'b')"><strong>(d)</strong> demographic</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Censorship and laws are Legal-Political factors.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">If the term offshoring describes outsourcing of work and jobs to foreign locations, what is it called when firms like Caterpillar move jobs back into the United States from foreign locations?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q3', 'a', 'b')"><strong>(a)</strong> protectionism</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q3', 'b', 'b')"><strong>(b)</strong> reshoring</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q3', 'c', 'b')"><strong>(c)</strong> disrupting</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q3', 'd', 'b')"><strong>(d)</strong> upscaling</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Reshoring is bringing jobs back from foreign locations.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">Work preferences of different generations and public values over things like high pay for corporate executives are examples of developments in the __________ environment of organizations.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q4', 'a', 'c')"><strong>(a)</strong> task</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q4', 'b', 'c')"><strong>(b)</strong> specific</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q4', 'c', 'c')"><strong>(c)</strong> socio-cultural</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q4', 'd', 'c')"><strong>(d)</strong> economic</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Work preferences and values are Socio-cultural factors.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">A business that has found ways to use technology to outperform its rivals in the marketplace can be said to have gained __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q5', 'a', 'b')"><strong>(a)</strong> environmental capital</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q5', 'b', 'b')"><strong>(b)</strong> competitive advantage</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q5', 'c', 'b')"><strong>(c)</strong> sustainable development</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q5', 'd', 'b')"><strong>(d)</strong> environmental certainty</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Using technology to outperform rivals is a Competitive Advantage.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">Apps for an Apple iPhone or Google Android phone are examples of __________ innovations, whereas the use of robotics in performing manufacturing tasks previously done by humans is an example of __________ innovation.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q6', 'a', 'd')"><strong>(a)</strong> cost-benefit, process</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q6', 'b', 'd')"><strong>(b)</strong> product, cost-benefit</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q6', 'c', 'd')"><strong>(c)</strong> value-driven, service-driven</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q6', 'd', 'd')"><strong>(d)</strong> product, process</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Apps are Product innovations; Robotics in manufacturing is a Process innovation.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">Micro-credit lending that makes it possible for poor people to get small loans so they can start small businesses is an example of a business model innovation that is also a __________ innovation.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q7', 'a', 'a')"><strong>(a)</strong> social business</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q7', 'b', 'a')"><strong>(b)</strong> technological</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q7', 'c', 'a')"><strong>(c)</strong> disruptive</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q7', 'd', 'a')"><strong>(d)</strong> green</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Micro-credit for the poor is Social Business (solving social problems via business).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">Two dimensions that determine the level of environmental uncertainty are the number of factors in the external environment and the __________ of these factors.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q8', 'a', 'b')"><strong>(a)</strong> location</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q8', 'b', 'b')"><strong>(b)</strong> rate of change</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q8', 'c', 'b')"><strong>(c)</strong> importance</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q8', 'd', 'b')"><strong>(d)</strong> interdependence</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Uncertainty = Complexity (Number of factors) + Rate of Change.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">One of the ways that corporations might better take into account their responsibility for being good environmental citizens is to redefine the notion of profit to: Profit = Revenue - Cost of Goods Sold - __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q9', 'a', 'c')"><strong>(a)</strong> operating expenses</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q9', 'b', 'c')"><strong>(b)</strong> dividends</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q9', 'c', 'c')"><strong>(c)</strong> costs to society</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q9', 'd', 'c')"><strong>(d)</strong> loan interest</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">True profit should account for Costs to Society (sustainability view).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">The three P’s of organizational performance are Profit, People, and __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q10', 'a', 'd')"><strong>(a)</strong> Philanthropy</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q10', 'b', 'd')"><strong>(b)</strong> Principle</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q10', 'c', 'd')"><strong>(c)</strong> Potential</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q10', 'd', 'd')"><strong>(d)</strong> Planet</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Triple Bottom Line: Profit, People, Planet.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">What organizational stakeholder must be considered in any serious discussion about how a firm can better fulfill its obligations for sustainable development?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q11', 'a', 'd')"><strong>(a)</strong> owners or investors</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q11', 'b', 'd')"><strong>(b)</strong> customers</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q11', 'c', 'd')"><strong>(c)</strong> suppliers</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q11', 'd', 'd')"><strong>(d)</strong> future generations</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Sustainable development protects the rights of Future Generations.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">The first step in Hamel’s wheel of innovation is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q12', 'a', 'a')"><strong>(a)</strong> imagining</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q12', 'b', 'a')"><strong>(b)</strong> assessing</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q12', 'c', 'a')"><strong>(c)</strong> experimenting</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q12', 'd', 'a')"><strong>(d)</strong> scaling</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Hamel's wheel starts with Imagining new possibilities.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">When a medical device is developed in India so that it can sell at a low price and still deliver high-quality results, and then that device is transferred for sale in the United States also at a low price, this is an example of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q13', 'a', 'c')"><strong>(a)</strong> trickle-down innovation</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q13', 'b', 'c')"><strong>(b)</strong> disruptive innovation</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q13', 'c', 'c')"><strong>(c)</strong> reverse innovation</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q13', 'd', 'c')"><strong>(d)</strong> sustainable innovation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Reverse innovation: Created in emerging markets, then sold in developed ones.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">What term is used to describe the world’s storehouse of natural resources, things like land, water, and minerals?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q14', 'a', 'd')"><strong>(a)</strong> sustainable development</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q14', 'b', 'd')"><strong>(b)</strong> global warming</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q14', 'c', 'd')"><strong>(c)</strong> climate justice</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q14', 'd', 'd')"><strong>(d)</strong> environmental capital</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Environmental Capital (Natural Capital).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch4_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 4</span>
+            </div>
+            <div class="question-text">Health insurance for employees, flexible work hours to balance work and family responsibilities, and programs to help employees deal with stress in their lives, are ways organizations might try to improve their accomplishments in respect to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch4_q15', 'a', 'b')"><strong>(a)</strong> profits</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch4_q15', 'b', 'b')"><strong>(b)</strong> human sustainability</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch4_q15', 'c', 'b')"><strong>(c)</strong> innovation</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch4_q15', 'd', 'b')"><strong>(d)</strong> natural capital</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Health/Work-life balance relate to Human Sustainability.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">Among the ways information technology is changing organizations today, __________ is one of its most noteworthy characteristics.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q1', 'a', 'c')"><strong>(a)</strong> eliminating need for top managers</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q1', 'b', 'c')"><strong>(b)</strong> reducing information available for decision making</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q1', 'c', 'c')"><strong>(c)</strong> breaking down barriers internally and externally</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q1', 'd', 'c')"><strong>(d)</strong> decreasing need for environmental awareness</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">IT breaks down barriers (boundaryless organizations).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">Whereas management information systems use the latest technologies to collect, organize, and distribute data, __________ involves tapping the available data to extract and report it in organized ways that are most useful to decision makers.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q2', 'a', 'b')"><strong>(a)</strong> analytics</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q2', 'b', 'b')"><strong>(b)</strong> business intelligence</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q2', 'c', 'b')"><strong>(c)</strong> anchoring and adjustment</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q2', 'd', 'b')"><strong>(d)</strong> optimizing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Business Intelligence extracts useful data for decisions.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">A manager who is reactive and works hard to address problems after they occur is known as a __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q3', 'a', 'c')"><strong>(a)</strong> problem seeker</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q3', 'b', 'c')"><strong>(b)</strong> problem avoider</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q3', 'c', 'c')"><strong>(c)</strong> problem solver</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q3', 'd', 'c')"><strong>(d)</strong> problem manager</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Problem Solvers deal with problems as they occur (Reactive). A Problem Seeker is proactive.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">A</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q4', 'a', 'a')"><strong>(a)</strong> systematic</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q4', 'b', 'a')"><strong>(b)</strong> intuitive</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q4', 'c', 'a')"><strong>(c)</strong> internal</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q4', 'd', 'a')"><strong>(d)</strong> external</li><li class="option-item" data-opt="n" onclick="checkAnswer('ch7_q4', 'n', 'a')"><strong>(n)</strong> __________ thinker approaches problems in a rational and an analytic fashion.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Systematic thinkers are rational/analytic.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">A person likes to deal with hard facts and clear goals in a decision situation; she also likes to be in control and keep things impersonal. This person’s cognitive style tends toward __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q5', 'a', 'a')"><strong>(a)</strong> sensation thinking</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q5', 'b', 'a')"><strong>(b)</strong> intuitive thinking</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q5', 'c', 'a')"><strong>(c)</strong> sensation feeling</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q5', 'd', 'a')"><strong>(d)</strong> intuitive feeling</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Sensation Thinking: Hard facts, clear goals, impersonal.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">The assigning of probabilities for action alternatives and their consequences indicates the presence of __________ in the decision environment.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q6', 'a', 'c')"><strong>(a)</strong> certainty</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q6', 'b', 'c')"><strong>(b)</strong> optimizing</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q6', 'c', 'c')"><strong>(c)</strong> risk</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q6', 'd', 'c')"><strong>(d)</strong> satisficing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Risk environment: Alternatives known, probabilities assigned.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">The first step in the decision-making process is to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q7', 'a', 'c')"><strong>(a)</strong> identify alternatives</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q7', 'b', 'c')"><strong>(b)</strong> evaluate results</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q7', 'c', 'c')"><strong>(c)</strong> find and define the problem</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q7', 'd', 'c')"><strong>(d)</strong> choose a solution</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Step 1: Find and define the problem.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">Being asked to develop a plan to increase international sales of a product is an example of the types of __________ problems that managers must be prepared to deal with.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q8', 'a', 'b')"><strong>(a)</strong> routine</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q8', 'b', 'b')"><strong>(b)</strong> unstructured</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q8', 'c', 'b')"><strong>(c)</strong> crisis</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q8', 'd', 'b')"><strong>(d)</strong> structured</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Unstructured problems (ambiguous, new) require non-programmed decisions.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">Costs, timeliness, and __________ are among the recommended criteria for evaluating alternative courses of action.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q9', 'a', 'a')"><strong>(a)</strong> ethical soundness</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q9', 'b', 'a')"><strong>(b)</strong> competitiveness</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q9', 'c', 'a')"><strong>(c)</strong> availability</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q9', 'd', 'a')"><strong>(d)</strong> simplicity</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Ethical soundness is a mandatory check.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">A common mistake made by managers in crisis situations is that they __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q10', 'a', 'c')"><strong>(a)</strong> try to get too much information before responding</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q10', 'b', 'c')"><strong>(b)</strong> rely too much on group decision making</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q10', 'c', 'c')"><strong>(c)</strong> isolate themselves to make the decision alone</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q10', 'd', 'c')"><strong>(d)</strong> forget to use their crisis management plan</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Isolating oneself is a mistake; crisis requires communication.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">The __________ decision model views managers as making optimizing decisions, whereas the __________ decision model views them as making satisficing decisions.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q11', 'a', 'b')"><strong>(a)</strong> behavioral, human relations</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q11', 'b', 'b')"><strong>(b)</strong> classical, behavioral</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q11', 'c', 'b')"><strong>(c)</strong> heuristic, humanistic</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q11', 'd', 'b')"><strong>(d)</strong> quantitative, behavioral</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Classical = Optimizing (Rational); Behavioral = Satisficing (Bounded Rationality).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">When a manager makes a decision about someone’s annual pay raise only after looking at his or her current salary, the risk is that the decision will be biased because of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q12', 'a', 'c')"><strong>(a)</strong> a framing error</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q12', 'b', 'c')"><strong>(b)</strong> escalating commitment</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q12', 'c', 'c')"><strong>(c)</strong> anchoring and adjustment</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q12', 'd', 'c')"><strong>(d)</strong> strategic opportunism</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Anchoring bias: Relying on a starting value (current salary) to adjust.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">When a problem is addressed according to the positive or negative context in which it is presented, this is an example of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q13', 'a', 'a')"><strong>(a)</strong> framing error</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q13', 'b', 'a')"><strong>(b)</strong> escalating commitment</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q13', 'c', 'a')"><strong>(c)</strong> availability and adjustment</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q13', 'd', 'a')"><strong>(d)</strong> strategic opportunism</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Framing error: Being influenced by how the problem is presented (glass half full/empty).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">When a manager decides to continue pursuing a course of action that facts otherwise indicate is failing to deliver desired results, this is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q14', 'a', 'b')"><strong>(a)</strong> strategic opportunism</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q14', 'b', 'b')"><strong>(b)</strong> escalating commitment</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q14', 'c', 'b')"><strong>(c)</strong> confirmation error</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q14', 'd', 'b')"><strong>(d)</strong> the risky shift</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Escalating commitment: Throwing good money after bad.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch7_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 7</span>
+            </div>
+            <div class="question-text">Personal creativity drivers include creativity skills, task expertise, and __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch7_q15', 'a', 'd')"><strong>(a)</strong> emotional intelligence</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch7_q15', 'b', 'd')"><strong>(b)</strong> management support</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch7_q15', 'c', 'd')"><strong>(c)</strong> organizational culture</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch7_q15', 'd', 'd')"><strong>(d)</strong> task motivation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Creativity = Expertise + Creative Skills + Task Motivation.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">Planning is the process of __________ and __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q1', 'a', 'd')"><strong>(a)</strong> developing premises about the future, evaluating them</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q1', 'b', 'd')"><strong>(b)</strong> measuring results, taking corrective action</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q1', 'c', 'd')"><strong>(c)</strong> measuring past performance, targeting future performance</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q1', 'd', 'd')"><strong>(d)</strong> setting objectives, deciding how to accomplish them</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Planning = Setting objectives + Deciding how to accomplish them.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">The benefits of planning include __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q2', 'a', 'a')"><strong>(a)</strong> improved focus</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q2', 'b', 'a')"><strong>(b)</strong> lower labor costs</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q2', 'c', 'a')"><strong>(c)</strong> more accurate forecasts</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q2', 'd', 'a')"><strong>(d)</strong> higher profits</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Planning improves focus and flexibility.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">In order to help implement its corporate strategy, a business firm would likely develop a (an) __________ plan for the marketing department.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q3', 'a', 'a')"><strong>(a)</strong> functional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q3', 'b', 'a')"><strong>(b)</strong> single-use</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q3', 'c', 'a')"><strong>(c)</strong> production</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q3', 'd', 'a')"><strong>(d)</strong> zero-based</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Functional plans (marketing, finance) support strategy.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">__________ planning identifies alternative courses of action that can be taken if and when certain situations arise.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q4', 'a', 'd')"><strong>(a)</strong> Zero-based</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q4', 'b', 'd')"><strong>(b)</strong> Participative</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q4', 'c', 'd')"><strong>(c)</strong> Strategic</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q4', 'd', 'd')"><strong>(d)</strong> Contingency</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Contingency planning = 'What if' scenarios.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">The first step in the control process is to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q5', 'a', 'b')"><strong>(a)</strong> measure actual performance</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q5', 'b', 'b')"><strong>(b)</strong> establish objectives and standards</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q5', 'c', 'b')"><strong>(c)</strong> compare results with objectives</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q5', 'd', 'b')"><strong>(d)</strong> take corrective action</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Step 1: Establish objectives and standards.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">A sexual harassment policy is an example of __________ plans used by organizations.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q6', 'a', 'c')"><strong>(a)</strong> long-range</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q6', 'b', 'c')"><strong>(b)</strong> single-use</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q6', 'c', 'c')"><strong>(c)</strong> standing-use</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q6', 'd', 'c')"><strong>(d)</strong> operational</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Policy is a Standing-use plan (used repeatedly).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">When a manager is asked to justify a new budget proposal on the basis of projected activities rather than past practices, this is an example of __________ budgeting.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q7', 'a', 'a')"><strong>(a)</strong> zero-based</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q7', 'b', 'a')"><strong>(b)</strong> variable</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q7', 'c', 'a')"><strong>(c)</strong> fixed</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q7', 'd', 'a')"><strong>(d)</strong> contingency</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Zero-based budgeting starts from scratch, justifying every dollar.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">One of the benefits of participatory planning is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q8', 'a', 'd')"><strong>(a)</strong> reduced time for planning</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q8', 'b', 'd')"><strong>(b)</strong> less need for forecasting</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q8', 'c', 'd')"><strong>(c)</strong> greater attention to contingencies</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q8', 'd', 'd')"><strong>(d)</strong> more commitment to implementation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Participation increases commitment to implementation.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">The ideal situation in a hierarchy of objectives is that lower-level plans become the __________ for accomplishing higher-level plans.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q9', 'a', 'a')"><strong>(a)</strong> means</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q9', 'b', 'a')"><strong>(b)</strong> ends</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q9', 'c', 'a')"><strong>(c)</strong> scenarios</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q9', 'd', 'a')"><strong>(d)</strong> benchmarks</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Lower-level plans are the Means to the Higher-level Ends.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">When managers use the benchmarking approach to planning, they __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q10', 'a', 'b')"><strong>(a)</strong> use flexible budgets</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q10', 'b', 'b')"><strong>(b)</strong> identify best practices used by others</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q10', 'c', 'b')"><strong>(c)</strong> are seeking the most accurate forecasts that are available</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q10', 'd', 'b')"><strong>(d)</strong> focus more on the short term than the long term</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Benchmarking = Comparing to best practices.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">One of the problems in relying too much on staff planners is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q11', 'a', 'a')"><strong>(a)</strong> a communication gap between planners and implementers</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q11', 'b', 'a')"><strong>(b)</strong> lack of expertise in the planning process</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q11', 'c', 'a')"><strong>(c)</strong> short-term rather than long-term focus</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q11', 'd', 'a')"><strong>(d)</strong> neglect of budgets as links between resources and activities</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Staff planners can create a communication gap with line managers.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">The planning process isn’t complete until __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q12', 'a', 'c')"><strong>(a)</strong> future conditions have been identified</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q12', 'b', 'c')"><strong>(b)</strong> stretch goals have been set</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q12', 'c', 'c')"><strong>(c)</strong> plans are implemented and results evaluated</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q12', 'd', 'c')"><strong>(d)</strong> budgets commit resources to plans</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Planning is a cycle; evaluation feeds into new plans.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">When a team leader is trying to follow an approach known as management by objectives, who should set a team member’s performance objectives?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q13', 'a', 'c')"><strong>(a)</strong> the team member</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q13', 'b', 'c')"><strong>(b)</strong> the team leader</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q13', 'c', 'c')"><strong>(c)</strong> the team leader and team member</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q13', 'd', 'c')"><strong>(d)</strong> the team member, the team leader, and a lawyer</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">MBO requires joint goal setting (Leader + Member).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">A good performance objective is written in such a way that it __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q14', 'a', 'd')"><strong>(a)</strong> has no precise timetable</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q14', 'b', 'd')"><strong>(b)</strong> is general and not too specific</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q14', 'c', 'd')"><strong>(c)</strong> is almost impossible to accomplish</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q14', 'd', 'd')"><strong>(d)</strong> can be easily measured</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Objectives should be Measurable (SMART).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch8_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 8</span>
+            </div>
+            <div class="question-text">Which type of plan is used to guide resource allocations for long-term advancement of the organization’s mission or purpose?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch8_q15', 'a', 'c')"><strong>(a)</strong> tactical</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch8_q15', 'b', 'c')"><strong>(b)</strong> operational</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch8_q15', 'c', 'c')"><strong>(c)</strong> strategic</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch8_q15', 'd', 'c')"><strong>(d)</strong> functional</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Strategic plans are long-term and comprehensive.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">After objectives and standards are set, what step comes next in the control process?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q1', 'a', 'a')"><strong>(a)</strong> Measure results.</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q1', 'b', 'a')"><strong>(b)</strong> Take corrective action.</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q1', 'c', 'a')"><strong>(c)</strong> Compare results with objectives.</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q1', 'd', 'a')"><strong>(d)</strong> Modify standards to fit circumstances.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Measure actual performance (Step 2).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">When a soccer coach tells her players at the end of a game: “I’m pleased you stayed with the game plan,” she is using a/an __________ to a measure performance, even though in terms of outcomes her team lost.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q2', 'a', 'a')"><strong>(a)</strong> input standard</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q2', 'b', 'a')"><strong>(b)</strong> output standard</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q2', 'c', 'a')"><strong>(c)</strong> historical comparison</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q2', 'd', 'a')"><strong>(d)</strong> relative comparison</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Input standard measures effort/adherence to plan, not result.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">When an automobile manufacturer is careful to purchase only the highest-quality components for use in production, this is an example of an attempt to ensure high performance through __________ control.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q3', 'a', 'd')"><strong>(a)</strong> concurrent</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q3', 'b', 'd')"><strong>(b)</strong> statistical</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q3', 'c', 'd')"><strong>(c)</strong> inventory</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q3', 'd', 'd')"><strong>(d)</strong> feedforward</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Feedforward control (preliminary) ensures inputs are good.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">Management by exception means __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q4', 'a', 'b')"><strong>(a)</strong> managing only when necessary</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q4', 'b', 'b')"><strong>(b)</strong> focusing attention where the need for action is greatest</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q4', 'c', 'b')"><strong>(c)</strong> the same thing as concurrent control</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q4', 'd', 'b')"><strong>(d)</strong> the same thing as just-in-time delivery</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Focusing on significant deviations (exceptions).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">When a supervisor working alongside an employee corrects him or her when a mistake is made, this is an example of __________ control.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q5', 'a', 'b')"><strong>(a)</strong> feedforward</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q5', 'b', 'b')"><strong>(b)</strong> concurrent</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q5', 'c', 'b')"><strong>(c)</strong> internal</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q5', 'd', 'b')"><strong>(d)</strong> clan</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Concurrent control happens during work.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">If an organization’s top management visits a firm in another industry to learn more about its excellent record in hiring and promoting minority and female candidates, this is an example of using __________ for control purposes.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q6', 'a', 'b')"><strong>(a)</strong> a balanced scorecard</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q6', 'b', 'b')"><strong>(b)</strong> relative comparison</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q6', 'c', 'b')"><strong>(c)</strong> management by exception</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q6', 'd', 'b')"><strong>(d)</strong> progressive discipline</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Relative comparison (Benchmarking) against another firm.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">The control equation states: __________ = Desired Performance – Actual Performance.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q7', 'a', 'd')"><strong>(a)</strong> Problem Magnitude</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q7', 'b', 'd')"><strong>(b)</strong> Management Opportunity</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q7', 'c', 'd')"><strong>(c)</strong> Planning Objective</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q7', 'd', 'd')"><strong>(d)</strong> Need for Action</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Need for Action = Desired - Actual.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">When a UPS manager compares the amount of time a driver takes to make certain deliveries against standards set through a quantitative analysis of her delivery route, this is known as __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q8', 'a', 'b')"><strong>(a)</strong> a historical comparison</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q8', 'b', 'b')"><strong>(b)</strong> an engineering comparison</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q8', 'c', 'b')"><strong>(c)</strong> relative benchmarking</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q8', 'd', 'b')"><strong>(d)</strong> concurrent control</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Engineering comparison uses scientifically deteremined standards.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">Projects are unique one-time events that __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q9', 'a', 'b')"><strong>(a)</strong> have unclear objectives</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q9', 'b', 'b')"><strong>(b)</strong> must be completed in a specific time</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q9', 'c', 'b')"><strong>(c)</strong> have unlimited budgets</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q9', 'd', 'b')"><strong>(d)</strong> are largely self-managing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Projects are one-time and must be completed by a deadline.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">The __________ chart graphically displays the scheduling of tasks required to complete a project.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q10', 'a', 'c')"><strong>(a)</strong> exception</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q10', 'b', 'c')"><strong>(b)</strong> Taylor</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q10', 'c', 'c')"><strong>(c)</strong> Gantt</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q10', 'd', 'c')"><strong>(d)</strong> after-action</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Gantt chart displays scheduling bars.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">When one team member advises another team member that “your behavior is crossing the line in terms of our expectations for workplace civility,” she is exercising a form of __________ control over the other’s inappropriate behaviors.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q11', 'a', 'a')"><strong>(a)</strong> clan</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q11', 'b', 'a')"><strong>(b)</strong> market</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q11', 'c', 'a')"><strong>(c)</strong> internal</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q11', 'd', 'a')"><strong>(d)</strong> preliminary</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Clan control: Social norms/peer pressure.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">In a CPM/PERT analysis the focus is on __________ and the event __________ that link them together with the finished project.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q12', 'a', 'b')"><strong>(a)</strong> costs, budgets</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q12', 'b', 'b')"><strong>(b)</strong> activities, sequences</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q12', 'c', 'b')"><strong>(c)</strong> timetables, budgets</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q12', 'd', 'b')"><strong>(d)</strong> goals, costs</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">CPM/PERT focuses on Activities and Sequences.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">If fixed costs are $10,000, variable costs are $4 per unit, and the target selling price per unit is $8, what is the breakeven point?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q13', 'a', 'c')"><strong>(a)</strong> 2</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q13', 'b', 'c')"><strong>(b)</strong> 500</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q13', 'c', 'c')"><strong>(c)</strong> 2,500</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q13', 'd', 'c')"><strong>(d)</strong> 4,800</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Breakeven = Fixed / (Price - Variable) = 10000 / (8-4) = 2500.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">Among the financial ratios used for control, Current Assets/Current Liabilities is known as the __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q14', 'a', 'c')"><strong>(a)</strong> debt ratio</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q14', 'b', 'c')"><strong>(b)</strong> net margin</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q14', 'c', 'c')"><strong>(c)</strong> current ratio</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q14', 'd', 'c')"><strong>(d)</strong> inventory turnover ratio</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Current Ratio = Current Assets / Current Liabilities.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch9_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 9</span>
+            </div>
+            <div class="question-text">In respect to return on assets (ROA) and the debt ratio, the preferred directions when analyzing them from a control standpoint are __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch9_q15', 'a', 'c')"><strong>(a)</strong> decrease ROA, increase debt</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch9_q15', 'b', 'c')"><strong>(b)</strong> increase ROA, increase debt</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch9_q15', 'c', 'c')"><strong>(c)</strong> increase ROA, decrease debt</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch9_q15', 'd', 'c')"><strong>(d)</strong> decrease ROA, decrease debt</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Increase ROA (Efficiency) and Decrease Debt (Risk).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">The most appropriate first question to ask in strategic planning is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q1', 'a', 'a')"><strong>(a)</strong> “Where do we want to be in the future?”</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q1', 'b', 'a')"><strong>(b)</strong> “How well are we currently doing?”</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q1', 'c', 'a')"><strong>(c)</strong> “How can we get where we want to be?”</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q1', 'd', 'a')"><strong>(d)</strong> “Why aren’t we doing better?”</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">First question: 'Where do we want to be?' (Mission/Vision).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">The ability of a firm to consistently outperform its rivals is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q2', 'a', 'b')"><strong>(a)</strong> vertical integration</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q2', 'b', 'b')"><strong>(b)</strong> competitive advantage</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q2', 'c', 'b')"><strong>(c)</strong> incrementalism</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q2', 'd', 'b')"><strong>(d)</strong> strategic intent</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Sustainable Competitive Advantage.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">In a complex conglomerate business such as General Electric, a</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q3', 'a', 'c')"><strong>(a)</strong> institutional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q3', 'b', 'c')"><strong>(b)</strong> corporate</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q3', 'c', 'c')"><strong>(c)</strong> business</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q3', 'd', 'c')"><strong>(d)</strong> functional</li><li class="option-item" data-opt="n" onclick="checkAnswer('ch10_q3', 'n', 'c')"><strong>(n)</strong> __________ level strategy sets strategic direction for a strategic business unit.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Business strategy directs a specific SBU.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">The __________ is a predominant value system for an organization as a whole.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q4', 'a', 'd')"><strong>(a)</strong> strategy</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q4', 'b', 'd')"><strong>(b)</strong> core competency</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q4', 'c', 'd')"><strong>(c)</strong> mission</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q4', 'd', 'd')"><strong>(d)</strong> corporate culture</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Corporate Culture is the value system.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">Cost efficiency and product quality are two examples of __________ objectives of organizations.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q5', 'a', 'b')"><strong>(a)</strong> official</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q5', 'b', 'b')"><strong>(b)</strong> operating</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q5', 'c', 'b')"><strong>(c)</strong> informal</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q5', 'd', 'b')"><strong>(d)</strong> institutional</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Operating objectives are specific/short-term (Cost/Quality).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">An organization that is downsizing to reduce costs is implementing a grand strategy of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q6', 'a', 'c')"><strong>(a)</strong> growth</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q6', 'b', 'c')"><strong>(b)</strong> cost differentiation</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q6', 'c', 'c')"><strong>(c)</strong> retrenchment</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q6', 'd', 'c')"><strong>(d)</strong> vertical integration</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Retrenchment = Downsizing/restructuring to solve problems.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">When PepsiCo acquired Tropicana, a maker of orange juice, the firm’s strategy was growth by __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q7', 'a', 'a')"><strong>(a)</strong> related diversification</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q7', 'b', 'a')"><strong>(b)</strong> concentration</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q7', 'c', 'a')"><strong>(c)</strong> vertical integration</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q7', 'd', 'a')"><strong>(d)</strong> cooperation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Related diversification (Synergy).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">In Porter’s five forces framework, having __________ increases industry attractiveness.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q8', 'a', 'd')"><strong>(a)</strong> many rivals</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q8', 'b', 'd')"><strong>(b)</strong> many substitute products</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q8', 'c', 'd')"><strong>(c)</strong> low bargaining power of suppliers</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q8', 'd', 'd')"><strong>(d)</strong> few barriers to entry</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Barriers to entry make it hard for new rivals, protecting profits.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">A __________ in the BCG matrix would have a high market share in a low-growth market, and the correct grand or master strategy is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q9', 'a', 'b')"><strong>(a)</strong> dog, growth</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q9', 'b', 'b')"><strong>(b)</strong> cash cow, stability</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q9', 'c', 'b')"><strong>(c)</strong> question mark, stability</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q9', 'd', 'b')"><strong>(d)</strong> star, retrenchment</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Cash cow (High Share, Low Growth) -> Stability strategy.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">The alliances that link together firms in supply chain management relationships are examples of how businesses try to use __________ strategies.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q10', 'a', 'c')"><strong>(a)</strong> B2C</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q10', 'b', 'c')"><strong>(b)</strong> growth</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q10', 'c', 'c')"><strong>(c)</strong> cooperation</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q10', 'd', 'c')"><strong>(d)</strong> concentration</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Alliances/Supply Chains are Cooperation strategies.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">The two questions asked by Porter to identify competitive strategies for a business or product line are: 1—What is the market scope? 2—What is the __________?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q11', 'a', 'b')"><strong>(a)</strong> market share</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q11', 'b', 'b')"><strong>(b)</strong> source of competitive advantage</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q11', 'c', 'b')"><strong>(c)</strong> core competency</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q11', 'd', 'b')"><strong>(d)</strong> industry attractiveness</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Source of difference (Cost vs Uniqueness) and Market Scope (Broad vs Narrow).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">According to Porter’s model of competitive strategies, a firm that wants to compete with its rivals in a broad market by selling a very low-priced product would need to successfully implement a __________ strategy.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q12', 'a', 'c')"><strong>(a)</strong> retrenchment</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q12', 'b', 'c')"><strong>(b)</strong> differentiation</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q12', 'c', 'c')"><strong>(c)</strong> cost leadership</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q12', 'd', 'c')"><strong>(d)</strong> diversification</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Broad market, Low Price = Cost Leadership.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">When Coke and Pepsi spend millions on ads trying to convince customers that their products are unique, they are pursuing a/an __________ strategy.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q13', 'a', 'd')"><strong>(a)</strong> transnational</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q13', 'b', 'd')"><strong>(b)</strong> concentration</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q13', 'c', 'd')"><strong>(c)</strong> diversification</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q13', 'd', 'd')"><strong>(d)</strong> differentiation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Differentiation: Uniqueness (Brand/Ad).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">The role of the board of directors as an oversight body that holds top executives accountable for the success of business strategies is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q14', 'a', 'b')"><strong>(a)</strong> strategic leadership</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q14', 'b', 'b')"><strong>(b)</strong> corporate governance</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q14', 'c', 'b')"><strong>(c)</strong> logical incrementalism</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q14', 'd', 'b')"><strong>(d)</strong> strategic opportunism</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Corporate Governance (Board role).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch10_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 10</span>
+            </div>
+            <div class="question-text">An example of a process failure in strategic planning is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch10_q15', 'a', 'a')"><strong>(a)</strong> lack of participation</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch10_q15', 'b', 'a')"><strong>(b)</strong> weak mission statement</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch10_q15', 'c', 'a')"><strong>(c)</strong> bad core values</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch10_q15', 'd', 'a')"><strong>(d)</strong> insufficient financial resources</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Lack of participation is a key process failure.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">The main purpose of organizing as a management function is to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q1', 'a', 'b')"><strong>(a)</strong> make sure that results match plans</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q1', 'b', 'b')"><strong>(b)</strong> arrange people and resources to accomplish work</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q1', 'c', 'b')"><strong>(c)</strong> create enthusiasm for the work to be done</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q1', 'd', 'b')"><strong>(d)</strong> match strategies with operational plans</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Organizing = Arranging people/resources.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">__________ is the system of tasks, reporting relationships, and communication that links together the various parts of an organization.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q2', 'a', 'a')"><strong>(a)</strong> Structure</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q2', 'b', 'a')"><strong>(b)</strong> Staff</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q2', 'c', 'a')"><strong>(c)</strong> Decentralization</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q2', 'd', 'a')"><strong>(d)</strong> Differentiation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Structure links parts of the organization.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">Rumors and resistance to change are potential disadvantages often associated with __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q3', 'a', 'b')"><strong>(a)</strong> virtual organizations</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q3', 'b', 'b')"><strong>(b)</strong> informal structures</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q3', 'c', 'b')"><strong>(c)</strong> delegation</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q3', 'd', 'b')"><strong>(d)</strong> specialized staff</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Informal structures (Rumors/Grapevine).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">An organization chart showing vice presidents of marketing, finance, manufacturing, and purchasing all reporting to the president is depicting a __________ structure.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q4', 'a', 'a')"><strong>(a)</strong> functional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q4', 'b', 'a')"><strong>(b)</strong> matrix</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q4', 'c', 'a')"><strong>(c)</strong> network</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q4', 'd', 'a')"><strong>(d)</strong> product</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Functional Structure (grouping by skill/function).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">The functional chimneys problem occurs when people in different functions __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q5', 'a', 'a')"><strong>(a)</strong> fail to communicate with one another</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q5', 'b', 'a')"><strong>(b)</strong> try to help each other work with customers</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q5', 'c', 'a')"><strong>(c)</strong> spend too much time coordinating decisions</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q5', 'd', 'a')"><strong>(d)</strong> focus on products rather than functions</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Functional chimneys (Silos) = Lack of communication across functions.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">A manufacturing business with a functional structure has recently developed three new product lines. The president of the company might consider shifting to a/an __________ structure to gain a stronger focus on each product.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q6', 'a', 'c')"><strong>(a)</strong> virtual</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q6', 'b', 'c')"><strong>(b)</strong> informal</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q6', 'c', 'c')"><strong>(c)</strong> divisional</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q6', 'd', 'c')"><strong>(d)</strong> network</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Divisional (Product) structure focuses on specific products.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">__________ structure tries to combine the best elements of the functional and divisional forms.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q7', 'a', 'd')"><strong>(a)</strong> Virtual</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q7', 'b', 'd')"><strong>(b)</strong> Boundaryless</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q7', 'c', 'd')"><strong>(c)</strong> Team</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q7', 'd', 'd')"><strong>(d)</strong> Matrix</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Matrix combines Functional and Divisional.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">The “two-boss” system of reporting relationships is found in the __________ structure.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q8', 'a', 'b')"><strong>(a)</strong> functional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q8', 'b', 'b')"><strong>(b)</strong> matrix</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q8', 'c', 'b')"><strong>(c)</strong> network</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q8', 'd', 'b')"><strong>(d)</strong> product</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Matrix structure has two bosses (Functional + Project).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">Better lower-level teamwork and more top-level strategic management are among the expected advantages of a __________ structure.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q9', 'a', 'd')"><strong>(a)</strong> divisional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q9', 'b', 'd')"><strong>(b)</strong> matrix</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q9', 'c', 'd')"><strong>(c)</strong> geographical</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q9', 'd', 'd')"><strong>(d)</strong> product</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Product structure allows experts to focus on product, improving teamwork/strategy.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">“Tall” organizations tend to have long chains of command and __________ spans of control.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q10', 'a', 'b')"><strong>(a)</strong> wide</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q10', 'b', 'b')"><strong>(b)</strong> narrow</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q10', 'c', 'b')"><strong>(c)</strong> informal</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q10', 'd', 'b')"><strong>(d)</strong> centralized</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Tall = Narrow span of control.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">A student volunteers to gather information on a company for a group case analysis project. The other members of the group agree, and tell her to go ahead and choose the information sources. In terms of delegation, this group is giving the student __________ to fulfill the agreed-upon task.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q11', 'a', 'c')"><strong>(a)</strong> responsibility</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q11', 'b', 'c')"><strong>(b)</strong> accountability</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q11', 'c', 'c')"><strong>(c)</strong> authority</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q11', 'd', 'c')"><strong>(d)</strong> decentralization</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Authority is the right to act/command.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">The current trend in the use of staff in organizations is to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q12', 'a', 'b')"><strong>(a)</strong> give staff personnel more authority over operations</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q12', 'b', 'b')"><strong>(b)</strong> reduce the number of staff personnel</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q12', 'c', 'b')"><strong>(c)</strong> remove all staff from the organization</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q12', 'd', 'b')"><strong>(d)</strong> combine all staff functions in one department</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Trend: Leaner staff, more decentralization.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">The bureaucratic organization described by Max Weber is similar to the __________ organization described by Burns and Stalker.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q13', 'a', 'b')"><strong>(a)</strong> adaptive</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q13', 'b', 'b')"><strong>(b)</strong> mechanistic</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q13', 'c', 'b')"><strong>(c)</strong> organic</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q13', 'd', 'b')"><strong>(d)</strong> adhocracy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Bureaucracy = Mechanistic (Rigid).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">Which type of organization design best fits an uncertain and changing environment?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q14', 'a', 'c')"><strong>(a)</strong> mechanistic</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q14', 'b', 'c')"><strong>(b)</strong> bureaucratic</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q14', 'c', 'c')"><strong>(c)</strong> organic</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q14', 'd', 'c')"><strong>(d)</strong> traditional</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Organic (Adaptive) fits uncertain environments.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch11_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 11</span>
+            </div>
+            <div class="question-text">An organization that employs just a few “core” or essential full-time employees and outsources a lot of the remaining work show signs of using a __________ structure.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch11_q15', 'a', 'b')"><strong>(a)</strong> functional</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch11_q15', 'b', 'b')"><strong>(b)</strong> network</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch11_q15', 'c', 'b')"><strong>(c)</strong> matrix</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch11_q15', 'd', 'b')"><strong>(d)</strong> mechanistic</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Network Structure (Core + Outsourcing).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">Pluralism and the absence of discrimination and prejudice in policies and practices are two important hallmarks of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q1', 'a', 'b')"><strong>(a)</strong> the glass ceiling effect</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q1', 'b', 'b')"><strong>(b)</strong> a multicultural organization</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q1', 'c', 'b')"><strong>(c)</strong> quality circles</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q1', 'd', 'b')"><strong>(d)</strong> affirmative action</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Multicultural organizations value pluralism/no discrimination.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">When members of minority cultures feel that they have to behave in ways similar to the majority culture, this is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q2', 'a', 'a')"><strong>(a)</strong> biculturalism</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q2', 'b', 'a')"><strong>(b)</strong> symbolic leadership</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q2', 'c', 'a')"><strong>(c)</strong> the glass ceiling effect</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q2', 'd', 'a')"><strong>(d)</strong> inclusivity</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Biculturalism: Adopting majority culture to succeed.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">Engineers, scientists, and information systems specialists are likely to become part of separate __________ subcultures in an organization.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q3', 'a', 'd')"><strong>(a)</strong> ethnic</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q3', 'b', 'd')"><strong>(b)</strong> generational</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q3', 'c', 'd')"><strong>(c)</strong> functional</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q3', 'd', 'd')"><strong>(d)</strong> occupational</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Occupational subcultures (shared professions).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">Stories told about an organization’s past accomplishments and heroes such as company founders are all part of what is called the __________ culture.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q4', 'a', 'a')"><strong>(a)</strong> observable</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q4', 'b', 'a')"><strong>(b)</strong> underground</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q4', 'c', 'a')"><strong>(c)</strong> functional</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q4', 'd', 'a')"><strong>(d)</strong> core</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Stories/Heroes are Observable Culture.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">Honesty, social responsibility, and customer service are examples of __________ that can become foundations for an organization’s core culture.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q5', 'a', 'b')"><strong>(a)</strong> rites and rituals</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q5', 'b', 'b')"><strong>(b)</strong> values</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q5', 'c', 'b')"><strong>(c)</strong> subsystems</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q5', 'd', 'b')"><strong>(d)</strong> ideas</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Values are core beliefs.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">Which leadership approach is most consistent with an organizational culture that values the full utilization of all diverse talents of all the organization’s human resources?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q6', 'a', 'a')"><strong>(a)</strong> Managing diversity</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q6', 'b', 'a')"><strong>(b)</strong> Affirmative action</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q6', 'c', 'a')"><strong>(c)</strong> Status quo</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q6', 'd', 'a')"><strong>(d)</strong> Rational persuasion</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Managing Diversity values distinct talents of all.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">When members of a dominant subculture, such as white males, make it hard for members of minority subcultures, such as women, to advance to higher level positions in the organization, this is called the __________ effect.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q7', 'a', 'b')"><strong>(a)</strong> dominator</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q7', 'b', 'b')"><strong>(b)</strong> glass ceiling</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q7', 'c', 'b')"><strong>(c)</strong> brick wall</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q7', 'd', 'b')"><strong>(d)</strong> end-of-line</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Glass ceiling.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">An executive pursuing transformational change would give highest priority to which one of these change targets?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q8', 'a', 'b')"><strong>(a)</strong> an out-of-date policy</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q8', 'b', 'b')"><strong>(b)</strong> the organizational culture</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q8', 'c', 'b')"><strong>(c)</strong> a new information system</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q8', 'd', 'b')"><strong>(d)</strong> job designs in a customer service department</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Culture change is transformative.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">__________ change results in a major change of direction for an organization, while __________ change makes small adjustments to current ways of doing things.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q9', 'a', 'c')"><strong>(a)</strong> Frame breaking; radical</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q9', 'b', 'c')"><strong>(b)</strong> Frame bending; incremental</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q9', 'c', 'c')"><strong>(c)</strong> Transformational; frame breaking</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q9', 'd', 'c')"><strong>(d)</strong> Transformational; incremental</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Transformational (Major/Frame Breaking) vs Incremental (Frame Bending).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">The presence or absence of a felt need for change is a key issue in the __________ phase of the planned change process.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q10', 'a', 'c')"><strong>(a)</strong> improvising</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q10', 'b', 'c')"><strong>(b)</strong> evaluating</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q10', 'c', 'c')"><strong>(c)</strong> unfreezing</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q10', 'd', 'c')"><strong>(d)</strong> refreezing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Unfreezing: Creating felt need for change.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">When a manager listens to users, makes adaptations, and continuously tweaks and changes a new MIS as it is being implemented, the approach to technological change can be described as __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q11', 'a', 'b')"><strong>(a)</strong> top-down</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q11', 'b', 'b')"><strong>(b)</strong> improvisational</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q11', 'c', 'b')"><strong>(c)</strong> organization development</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q11', 'd', 'b')"><strong>(d)</strong> frame breaking</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Improvisational change (tweaking during implementation).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">A manager using a force-coercion strategy will rely on __________ to bring about change.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q12', 'a', 'c')"><strong>(a)</strong> expertise</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q12', 'b', 'c')"><strong>(b)</strong> benchmarking</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q12', 'c', 'c')"><strong>(c)</strong> formal authority</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q12', 'd', 'c')"><strong>(d)</strong> information</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Force-coercion uses Authority/Punishment.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">The most participative of the planned change strategies is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q13', 'a', 'c')"><strong>(a)</strong> force-coercion</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q13', 'b', 'c')"><strong>(b)</strong> rational persuasion</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q13', 'c', 'c')"><strong>(c)</strong> shared power</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q13', 'd', 'c')"><strong>(d)</strong> command and control</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Shared power (Normative-Reeducative) is participative.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">True internalization and commitment to a planned change is most likely to occur when a manager uses a</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q14', 'a', 'd')"><strong>(a)</strong> education and communication</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q14', 'b', 'd')"><strong>(b)</strong> rational persuasion</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q14', 'c', 'd')"><strong>(c)</strong> manipulation and co-optation</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q14', 'd', 'd')"><strong>(d)</strong> shared power</li><li class="option-item" data-opt="n" onclick="checkAnswer('ch12_q14', 'n', 'd')"><strong>(n)</strong> __________ change strategy.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Shared power leads to Internalization.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch12_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 12</span>
+            </div>
+            <div class="question-text">Trying to covertly influence others, offering only selective information, and structuring events in favor of the desired change, is a way of dealing with resistance by __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch12_q15', 'a', 'b')"><strong>(a)</strong> participation</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch12_q15', 'b', 'b')"><strong>(b)</strong> manipulation and co-optation</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch12_q15', 'c', 'b')"><strong>(c)</strong> force-coercion</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch12_q15', 'd', 'b')"><strong>(d)</strong> facilitation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Manipulation and Co-optation.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">Someone with a clear sense of the future and the actions needed to get there is considered a __________ leader.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q1', 'a', 'd')"><strong>(a)</strong> task-oriented</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q1', 'b', 'd')"><strong>(b)</strong> people-oriented</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q1', 'c', 'd')"><strong>(c)</strong> transactional</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q1', 'd', 'd')"><strong>(d)</strong> visionary</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Visionary leader: Clear sense of future.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">Leader power = __________ power + __________ power.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q2', 'a', 'd')"><strong>(a)</strong> reward, punishment</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q2', 'b', 'd')"><strong>(b)</strong> reward, expert</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q2', 'c', 'd')"><strong>(c)</strong> legitimate, position</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q2', 'd', 'd')"><strong>(d)</strong> position, personal</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Power = Position + Personal.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">A manager who says “because I am the boss, you must do what I ask” is relying on __________ power.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q3', 'a', 'b')"><strong>(a)</strong> reward</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q3', 'b', 'b')"><strong>(b)</strong> legitimate</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q3', 'c', 'b')"><strong>(c)</strong> expert</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q3', 'd', 'b')"><strong>(d)</strong> referent</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Legitimate power (Authority).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">When a leader assumes that others will do as she asks because they want to positively identify with her, she is relying on __________ power to influence their behavior.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q4', 'a', 'b')"><strong>(a)</strong> expert</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q4', 'b', 'b')"><strong>(b)</strong> reference</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q4', 'c', 'b')"><strong>(c)</strong> legitimate</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q4', 'd', 'b')"><strong>(d)</strong> reward</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Referent power (Identity/Charisma).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">The personal traits now considered important for managerial success include __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q5', 'a', 'a')"><strong>(a)</strong> self-confidence</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q5', 'b', 'a')"><strong>(b)</strong> gender</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q5', 'c', 'a')"><strong>(c)</strong> age</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q5', 'd', 'a')"><strong>(d)</strong> height</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Self-confidence is a trait (Gender/Height are not valid predictors).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">In the leader-behavior approaches to leadership, someone who does a very good job of planning work, setting standards, and monitoring results would be considered a</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q6', 'a', 'a')"><strong>(a)</strong> task-oriented</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q6', 'b', 'a')"><strong>(b)</strong> control-oriented</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q6', 'c', 'a')"><strong>(c)</strong> achievement-oriented</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q6', 'd', 'a')"><strong>(d)</strong> employee-centered</li><li class="option-item" data-opt="n" onclick="checkAnswer('ch14_q6', 'n', 'a')"><strong>(n)</strong> __________ leader.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Planning/Monitoring = Task-oriented.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">According to the Blake and Mouton leadership grid, the most successful leader is one who acts with __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q7', 'a', 'b')"><strong>(a)</strong> high initiating structure and low consideration</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q7', 'b', 'b')"><strong>(b)</strong> high concern for task and high concern for people</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q7', 'c', 'b')"><strong>(c)</strong> high emotional intelligence and high integrity</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q7', 'd', 'b')"><strong>(d)</strong> low job stress and high task goals</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Team Manager (9,9): High Task, High People.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">A leader whose actions indicate an attitude of “do as you want, and don’t bother me” would be described as having a</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q8', 'a', 'd')"><strong>(a)</strong> autocratic</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q8', 'b', 'd')"><strong>(b)</strong> country club</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q8', 'c', 'd')"><strong>(c)</strong> democratic</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q8', 'd', 'd')"><strong>(d)</strong> laissez-faire</li><li class="option-item" data-opt="n" onclick="checkAnswer('ch14_q8', 'n', 'd')"><strong>(n)</strong> __________ leadership style.</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Laissez-faire (Hands-off).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">In Fiedler’s contingency model, both highly favorable and highly unfavorable leadership situations are best dealt with by a __________ leader.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q9', 'a', 'a')"><strong>(a)</strong> task-motivated</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q9', 'b', 'a')"><strong>(b)</strong> laissez-faire</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q9', 'c', 'a')"><strong>(c)</strong> participative</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q9', 'd', 'a')"><strong>(d)</strong> relationship-motivated</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Fiedler: Task-motivated works best in extremes (Very Good/Very Bad).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">__________ leadership model suggests that leadership style is strongly anchored in personality and therefore hard to change.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q10', 'a', 'b')"><strong>(a)</strong> Trait</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q10', 'b', 'b')"><strong>(b)</strong> Fiedler’s</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q10', 'c', 'b')"><strong>(c)</strong> Transformational</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q10', 'd', 'b')"><strong>(d)</strong> Blake and Mouton’s</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Fiedler believed style is fixed (Trait-like).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">House’s __________ theory of leadership says that successful leaders find ways to add value to leadership situations.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q11', 'a', 'b')"><strong>(a)</strong> trait</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q11', 'b', 'b')"><strong>(b)</strong> path-goal</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q11', 'c', 'b')"><strong>(c)</strong> transformational</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q11', 'd', 'b')"><strong>(d)</strong> life-cycle</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Path-Goal: Leader clears path/adds value.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">A leader who __________ would be described as achievement-oriented in the path–goal theory.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q12', 'a', 'a')"><strong>(a)</strong> sets challenging goals for others</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q12', 'b', 'a')"><strong>(b)</strong> works hard to achieve high performance</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q12', 'c', 'a')"><strong>(c)</strong> gives directions and monitors results</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q12', 'd', 'a')"><strong>(d)</strong> builds commitment through participation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Achievement-oriented: Sets challenging goals.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">The critical contingency variable in the Hersey-Blanchard situational model of leadership is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q13', 'a', 'a')"><strong>(a)</strong> followers’ maturity</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q13', 'b', 'a')"><strong>(b)</strong> LPC</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q13', 'c', 'a')"><strong>(c)</strong> task structure</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q13', 'd', 'a')"><strong>(d)</strong> LMX</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Hersey-Blanchard: Follower Maturity (Readiness).</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">Vision, charisma, integrity, and symbolism are all on the list of attributes typically associated with __________ leaders.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q14', 'a', 'c')"><strong>(a)</strong> contingency</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q14', 'b', 'c')"><strong>(b)</strong> informal</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q14', 'c', 'c')"><strong>(c)</strong> transformational</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q14', 'd', 'c')"><strong>(d)</strong> transactional</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Transformational leaders have Vision/Charisma.</div>
+            </div>
+        </div>
+        
+
+        <div class="card" id="ch14_q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Chapter 14</span>
+            </div>
+            <div class="question-text">The interactive leadership style, sometimes associated with women, is characterized by __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('ch14_q15', 'a', 'a')"><strong>(a)</strong> inclusion and information sharing</li><li class="option-item" data-opt="b" onclick="checkAnswer('ch14_q15', 'b', 'a')"><strong>(b)</strong> use of rewards and punishments</li><li class="option-item" data-opt="c" onclick="checkAnswer('ch14_q15', 'c', 'a')"><strong>(c)</strong> command and control</li><li class="option-item" data-opt="d" onclick="checkAnswer('ch14_q15', 'd', 'a')"><strong>(d)</strong> emphasis on position power</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Interactive: Inclusion/Communication (often associated with female leaders).</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function checkAnswer(cardId, selectedOption, correctOption) {
+            const card = document.getElementById(cardId);
+            const options = card.querySelectorAll('.option-item');
+            const answerReveal = card.querySelector('.answer-reveal');
+            
+            // Reset styles
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'wrong');
+            });
+            
+            // Finding the clicked element
+            let clickedOpt;
+            options.forEach(opt => {
+                if(opt.dataset.opt === selectedOption) clickedOpt = opt;
+            });
+            
+            if (selectedOption === correctOption) {
+                clickedOpt.classList.add('correct');
+            } else {
+                clickedOpt.classList.add('wrong');
+                // Highlight correct
+                options.forEach(opt => {
+                    if(opt.dataset.opt === correctOption) opt.classList.add('correct');
+                });
+            }
+            
+            answerReveal.style.display = 'block';
+        }
+
+        function revealAll() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+        }
+        function hideAll() {
+             document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+        }
+    </script>
+</body>
+</html>

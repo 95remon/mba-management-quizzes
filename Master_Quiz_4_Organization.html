@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz 4: Organization & Culture</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; margin: 5px; }
+        button:hover { background-color: #2980b9; }
+        .print-btn { background-color: #27ae60; }
+        .print-btn:hover { background-color: #219150; }
+        
+        .quiz-container { max-width: 800px; margin: 0 auto; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 25px; page-break-inside: avoid; }
+        .question-header { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .q-id { font-weight: bold; color: #7f8c8d; }
+        .q-chapter { background: #e0f7fa; color: #006064; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+        
+        .question-text { font-size: 1.1em; font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        
+        .options-list { list-style: none; padding: 0; }
+        .option-item { padding: 10px 15px; margin: 5px 0; border: 1px solid #bdc3c7; border-radius: 5px; cursor: pointer; transition: background 0.2s; }
+        .option-item:hover { background-color: #f0f3f4; }
+        
+        /* Interactive States */
+        .option-item.selected { background-color: #d6eaf8; border-color: #3498db; }
+        .option-item.correct { background-color: #d4efdf; border-color: #27ae60; color: #145a32; }
+        .option-item.wrong { background-color: #fadbd8; border-color: #c0392b; color: #78281f; }
+        
+        .answer-reveal { margin-top: 15px; padding: 15px; background-color: #e8f8f5; border-left: 5px solid #1abc9c; display: none; }
+        .justification { margin-top: 5px; font-style: italic; color: #555; }
+        
+        @media print {
+            body { background: white; color: black; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .controls { display: none; }
+            .answer-reveal { display: block !important; border: none; background: none; font-size: 0.9em; padding: 0; margin-top: 5px; }
+            .correct-label { font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Master Quiz 4: Organization & Culture</h1>
+    <div class="controls">
+        <button class="print-btn" onclick="window.print()">Print to PDF</button>
+        <button onclick="revealAll()">Show All Answers</button>
+        <button onclick="hideAll()">Hide All Answers</button>
+    </div>
+    <div class="quiz-container">
+
+        <div class="card" id="q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Lecture 5: Planning</span>
+            </div>
+            <div class="question-text">Which plan covers the entire organization and long-term goals?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q1', 'a', 'a')"><strong>(a)</strong> Strategic Plan</li><li class="option-item" data-opt="b" onclick="checkAnswer('q1', 'b', 'a')"><strong>(b)</strong> Tactical Plan</li><li class="option-item" data-opt="c" onclick="checkAnswer('q1', 'c', 'a')"><strong>(c)</strong> Operational Plan</li><li class="option-item" data-opt="d" onclick="checkAnswer('q1', 'd', 'a')"><strong>(d)</strong> Contingency Plan</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Strategic plans are broad, long-term, and cover the whole organization.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Lecture 5: Planning</span>
+            </div>
+            <div class="question-text">Tactical plans are primarily the responsibility of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q2', 'a', 'b')"><strong>(a)</strong> Top Management</li><li class="option-item" data-opt="b" onclick="checkAnswer('q2', 'b', 'b')"><strong>(b)</strong> Middle Management</li><li class="option-item" data-opt="c" onclick="checkAnswer('q2', 'c', 'b')"><strong>(c)</strong> First-line Management</li><li class="option-item" data-opt="d" onclick="checkAnswer('q2', 'd', 'b')"><strong>(d)</strong> Board of Directors</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Middle managers implement tactical plans to support the strategy.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Lecture 7: Structure</span>
+            </div>
+            <div class="question-text">Which organizational structure groups people based on similar skills or tasks?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q3', 'a', 'c')"><strong>(a)</strong> Divisional</li><li class="option-item" data-opt="b" onclick="checkAnswer('q3', 'b', 'c')"><strong>(b)</strong> Matrix</li><li class="option-item" data-opt="c" onclick="checkAnswer('q3', 'c', 'c')"><strong>(c)</strong> Functional</li><li class="option-item" data-opt="d" onclick="checkAnswer('q3', 'd', 'c')"><strong>(d)</strong> Network</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Functional structure groups by function (Marketing, Finance, HR).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Lecture 7: Structure</span>
+            </div>
+            <div class="question-text">A disadvantage of the Functional Structure is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q4', 'a', 'b')"><strong>(a)</strong> lack of specialization</li><li class="option-item" data-opt="b" onclick="checkAnswer('q4', 'b', 'b')"><strong>(b)</strong> 'Chimneys' or silos where communication across functions is poor</li><li class="option-item" data-opt="c" onclick="checkAnswer('q4', 'c', 'b')"><strong>(c)</strong> duplication of resources</li><li class="option-item" data-opt="d" onclick="checkAnswer('q4', 'd', 'b')"><strong>(d)</strong> too much focus on products</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Functional silos (chimneys) hinder cross-functional communication.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Lecture 7: Structure</span>
+            </div>
+            <div class="question-text">Which structure combines functional and divisional approaches, creating a dual-reporting system?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q5', 'a', 'b')"><strong>(a)</strong> Team</li><li class="option-item" data-opt="b" onclick="checkAnswer('q5', 'b', 'b')"><strong>(b)</strong> Matrix</li><li class="option-item" data-opt="c" onclick="checkAnswer('q5', 'c', 'b')"><strong>(c)</strong> Network</li><li class="option-item" data-opt="d" onclick="checkAnswer('q5', 'd', 'b')"><strong>(d)</strong> Virtual</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Matrix structure involves reporting to both a functional manager and a project/product manager.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Lecture 7: Structure</span>
+            </div>
+            <div class="question-text">A structure that uses a central core to coordinate a network of outside suppliers and contractors is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q6', 'a', 'b')"><strong>(a)</strong> Bureaucracy</li><li class="option-item" data-opt="b" onclick="checkAnswer('q6', 'b', 'b')"><strong>(b)</strong> Network Structure</li><li class="option-item" data-opt="c" onclick="checkAnswer('q6', 'c', 'b')"><strong>(c)</strong> Divisional Structure</li><li class="option-item" data-opt="d" onclick="checkAnswer('q6', 'd', 'b')"><strong>(d)</strong> Mechanistic</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Network structures outsource many functions, keeping a small core.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Lecture 7: Design</span>
+            </div>
+            <div class="question-text">A Mechanistic design is characterized by __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q7', 'a', 'b')"><strong>(a)</strong> flexibility and decentralization</li><li class="option-item" data-opt="b" onclick="checkAnswer('q7', 'b', 'b')"><strong>(b)</strong> rigid hierarchy, centralization, and many rules</li><li class="option-item" data-opt="c" onclick="checkAnswer('q7', 'c', 'b')"><strong>(c)</strong> empowered teams</li><li class="option-item" data-opt="d" onclick="checkAnswer('q7', 'd', 'b')"><strong>(d)</strong> wide spans of control</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Mechanistic = Bureaucratic (Rigid, Centralized, Formal).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Lecture 7: Design</span>
+            </div>
+            <div class="question-text">An Organic design is best suited for __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q8', 'a', 'b')"><strong>(a)</strong> stable environments</li><li class="option-item" data-opt="b" onclick="checkAnswer('q8', 'b', 'b')"><strong>(b)</strong> uncertain and changing environments</li><li class="option-item" data-opt="c" onclick="checkAnswer('q8', 'c', 'b')"><strong>(c)</strong> mass production</li><li class="option-item" data-opt="d" onclick="checkAnswer('q8', 'd', 'b')"><strong>(d)</strong> government agencies</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Organic designs are adaptive and flexible, fitting uncertain environments.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Lecture 8: Change</span>
+            </div>
+            <div class="question-text">According to Lewin's model, the first stage of change is __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q9', 'a', 'c')"><strong>(a)</strong> Changing</li><li class="option-item" data-opt="b" onclick="checkAnswer('q9', 'b', 'c')"><strong>(b)</strong> Refreezing</li><li class="option-item" data-opt="c" onclick="checkAnswer('q9', 'c', 'c')"><strong>(c)</strong> Unfreezing</li><li class="option-item" data-opt="d" onclick="checkAnswer('q9', 'd', 'c')"><strong>(d)</strong> Coercing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Unfreezing prepares the organization for change (melting resistance).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Lecture 8: Change</span>
+            </div>
+            <div class="question-text">The 'Refreezing' stage involves __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q10', 'a', 'b')"><strong>(a)</strong> creating a crisis</li><li class="option-item" data-opt="b" onclick="checkAnswer('q10', 'b', 'b')"><strong>(b)</strong> stabilizing the change to make it long-lasting</li><li class="option-item" data-opt="c" onclick="checkAnswer('q10', 'c', 'b')"><strong>(c)</strong> implementing new process</li><li class="option-item" data-opt="d" onclick="checkAnswer('q10', 'd', 'b')"><strong>(d)</strong> ignoring feedback</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Refreezing ensures the change becomes the new normal.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Lecture 8: Change Strategy</span>
+            </div>
+            <div class="question-text">Which change strategy relies on formal authority and punishment?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q11', 'a', 'c')"><strong>(a)</strong> Rational Persuasion</li><li class="option-item" data-opt="b" onclick="checkAnswer('q11', 'b', 'c')"><strong>(b)</strong> Shared Power</li><li class="option-item" data-opt="c" onclick="checkAnswer('q11', 'c', 'c')"><strong>(c)</strong> Force-Coercion</li><li class="option-item" data-opt="d" onclick="checkAnswer('q11', 'd', 'c')"><strong>(d)</strong> Facilitation</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Force-Coercion uses power/threats (fast but low commitment).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Lecture 8: Change Strategy</span>
+            </div>
+            <div class="question-text">Which strategy builds the highest level of commitment (Internalization)?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q12', 'a', 'c')"><strong>(a)</strong> Force-Coercion</li><li class="option-item" data-opt="b" onclick="checkAnswer('q12', 'b', 'c')"><strong>(b)</strong> Rational Persuasion</li><li class="option-item" data-opt="c" onclick="checkAnswer('q12', 'c', 'c')"><strong>(c)</strong> Shared Power</li><li class="option-item" data-opt="d" onclick="checkAnswer('q12', 'd', 'c')"><strong>(d)</strong> Top-down</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Shared Power (Participation) leads to true ownership of the change.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Lecture 8: Culture</span>
+            </div>
+            <div class="question-text">The 'Core Culture' consists of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q13', 'a', 'b')"><strong>(a)</strong> office layout and dress code</li><li class="option-item" data-opt="b" onclick="checkAnswer('q13', 'b', 'b')"><strong>(b)</strong> underlying values and beliefs</li><li class="option-item" data-opt="c" onclick="checkAnswer('q13', 'c', 'b')"><strong>(c)</strong> stories and heroes</li><li class="option-item" data-opt="d" onclick="checkAnswer('q13', 'd', 'b')"><strong>(d)</strong> symbols</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Core culture is the deeper level of values (Observable culture is symbols/stories).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Lecture 8: Culture</span>
+            </div>
+            <div class="question-text">What is the 'Glass Ceiling'?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q14', 'a', 'b')"><strong>(a)</strong> A transparent roof design</li><li class="option-item" data-opt="b" onclick="checkAnswer('q14', 'b', 'b')"><strong>(b)</strong> An invisible barrier limiting advancement of women/minorities</li><li class="option-item" data-opt="c" onclick="checkAnswer('q14', 'c', 'b')"><strong>(c)</strong> A type of open office</li><li class="option-item" data-opt="d" onclick="checkAnswer('q14', 'd', 'b')"><strong>(d)</strong> A strategic vision</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">It describes the difficulty for minorities to reach top levels despite qualifications.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Lecture 7: Authority</span>
+            </div>
+            <div class="question-text">Span of Control refers to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q15', 'a', 'b')"><strong>(a)</strong> the number of managers in a company</li><li class="option-item" data-opt="b" onclick="checkAnswer('q15', 'b', 'b')"><strong>(b)</strong> the number of subordinates reporting directly to a manager</li><li class="option-item" data-opt="c" onclick="checkAnswer('q15', 'c', 'b')"><strong>(c)</strong> the size of the budget</li><li class="option-item" data-opt="d" onclick="checkAnswer('q15', 'd', 'b')"><strong>(d)</strong> the length of the product line</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Wide span = many subordinates; Narrow span = few subordinates.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q16">
+            <div class="question-header">
+                <span class="q-id">Question 16</span>
+                <span class="q-chapter">Lecture 7: Authority</span>
+            </div>
+            <div class="question-text">Empowerment involves __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q16', 'a', 'a')"><strong>(a)</strong> giving employees authority to make decisions</li><li class="option-item" data-opt="b" onclick="checkAnswer('q16', 'b', 'a')"><strong>(b)</strong> taking power away from unions</li><li class="option-item" data-opt="c" onclick="checkAnswer('q16', 'c', 'a')"><strong>(c)</strong> increasing executive pay</li><li class="option-item" data-opt="d" onclick="checkAnswer('q16', 'd', 'a')"><strong>(d)</strong> centralizing decision making</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Empowerment delegates authority and responsibility to workers.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q17">
+            <div class="question-header">
+                <span class="q-id">Question 17</span>
+                <span class="q-chapter">Lecture 7: Job Design</span>
+            </div>
+            <div class="question-text">Job Enrichment differs from Job Enlargement because it adds __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q17', 'a', 'b')"><strong>(a)</strong> more tasks of the same level</li><li class="option-item" data-opt="b" onclick="checkAnswer('q17', 'b', 'b')"><strong>(b)</strong> planning and evaluating duties (depth)</li><li class="option-item" data-opt="c" onclick="checkAnswer('q17', 'c', 'b')"><strong>(c)</strong> higher pay only</li><li class="option-item" data-opt="d" onclick="checkAnswer('q17', 'd', 'b')"><strong>(d)</strong> shorter hours</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Enrichment adds vertical depth (responsibility); Enlargement adds horizontal breadth (variety).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q18">
+            <div class="question-header">
+                <span class="q-id">Question 18</span>
+                <span class="q-chapter">Lecture 6: Global Strategy</span>
+            </div>
+            <div class="question-text">A Transnational Strategy seeks __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q18', 'a', 'c')"><strong>(a)</strong> global efficiency only</li><li class="option-item" data-opt="b" onclick="checkAnswer('q18', 'b', 'c')"><strong>(b)</strong> local responsiveness only</li><li class="option-item" data-opt="c" onclick="checkAnswer('q18', 'c', 'c')"><strong>(c)</strong> both global efficiency and local responsiveness</li><li class="option-item" data-opt="d" onclick="checkAnswer('q18', 'd', 'c')"><strong>(d)</strong> neither</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Transnational tries to achieve the best of both worlds (Standardization + Adaptation).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q19">
+            <div class="question-header">
+                <span class="q-id">Question 19</span>
+                <span class="q-chapter">Lecture 6: Diversification</span>
+            </div>
+            <div class="question-text">Growth by acquiring suppliers or distributors is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q19', 'a', 'b')"><strong>(a)</strong> Horizontal Integration</li><li class="option-item" data-opt="b" onclick="checkAnswer('q19', 'b', 'b')"><strong>(b)</strong> Vertical Integration</li><li class="option-item" data-opt="c" onclick="checkAnswer('q19', 'c', 'b')"><strong>(c)</strong> Unrelated Diversification</li><li class="option-item" data-opt="d" onclick="checkAnswer('q19', 'd', 'b')"><strong>(d)</strong> Concentration</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Vertical integration moves up or down the supply chain (Suppliers = Backward; Distributors = Forward).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q20">
+            <div class="question-header">
+                <span class="q-id">Question 20</span>
+                <span class="q-chapter">Lecture 6: Coopetition</span>
+            </div>
+            <div class="question-text">Coopetition is the strategy of __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q20', 'a', 'b')"><strong>(a)</strong> destroying competitors</li><li class="option-item" data-opt="b" onclick="checkAnswer('q20', 'b', 'b')"><strong>(b)</strong> working with rivals on projects of mutual benefit</li><li class="option-item" data-opt="c" onclick="checkAnswer('q20', 'c', 'b')"><strong>(c)</strong> ignoring rivals</li><li class="option-item" data-opt="d" onclick="checkAnswer('q20', 'd', 'b')"><strong>(d)</strong> price fixing</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Coopetition = Cooperation + Competition.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q21">
+            <div class="question-header">
+                <span class="q-id">Question 21</span>
+                <span class="q-chapter">Lecture 7: Bureaucracy</span>
+            </div>
+            <div class="question-text">Which of these is NOT a characteristic of Weber's Ideal Bureaucracy?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q21', 'a', 'b')"><strong>(a)</strong> Clear division of labor</li><li class="option-item" data-opt="b" onclick="checkAnswer('q21', 'b', 'b')"><strong>(b)</strong> Personal relationships</li><li class="option-item" data-opt="c" onclick="checkAnswer('q21', 'c', 'b')"><strong>(c)</strong> Formal hierarchy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q21', 'd', 'b')"><strong>(d)</strong> Rules and procedures</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Bureaucracy relies on Impersonality, not personal relationships.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q22">
+            <div class="question-header">
+                <span class="q-id">Question 22</span>
+                <span class="q-chapter">Lecture 8: Innovation</span>
+            </div>
+            <div class="question-text">Product Innovation results in __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q22', 'a', 'b')"><strong>(a)</strong> new ways of doing things</li><li class="option-item" data-opt="b" onclick="checkAnswer('q22', 'b', 'b')"><strong>(b)</strong> new or improved goods/services</li><li class="option-item" data-opt="c" onclick="checkAnswer('q22', 'c', 'b')"><strong>(c)</strong> better management styles</li><li class="option-item" data-opt="d" onclick="checkAnswer('q22', 'd', 'b')"><strong>(d)</strong> lower costs</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Product innovation (iPhone) vs Process innovation (Assembly line).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q23">
+            <div class="question-header">
+                <span class="q-id">Question 23</span>
+                <span class="q-chapter">Lecture 8: Resistance</span>
+            </div>
+            <div class="question-text">Why do people resist change?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q23', 'a', 'd')"><strong>(a)</strong> Fear of the unknown</li><li class="option-item" data-opt="b" onclick="checkAnswer('q23', 'b', 'd')"><strong>(b)</strong> Loss of control</li><li class="option-item" data-opt="c" onclick="checkAnswer('q23', 'c', 'd')"><strong>(c)</strong> Lack of trust</li><li class="option-item" data-opt="d" onclick="checkAnswer('q23', 'd', 'd')"><strong>(d)</strong> All of the above</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(d)</strong></div>
+                <div class="justification">Resistance stems from uncertainty, fear, and loss of habit/security.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q24">
+            <div class="question-header">
+                <span class="q-id">Question 24</span>
+                <span class="q-chapter">Lecture 7: Delegation</span>
+            </div>
+            <div class="question-text">Delegation involves assigning responsibility, granting authority, and creating __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q24', 'a', 'b')"><strong>(a)</strong> Confusion</li><li class="option-item" data-opt="b" onclick="checkAnswer('q24', 'b', 'b')"><strong>(b)</strong> Accountability</li><li class="option-item" data-opt="c" onclick="checkAnswer('q24', 'c', 'b')"><strong>(c)</strong> Distance</li><li class="option-item" data-opt="d" onclick="checkAnswer('q24', 'd', 'b')"><strong>(d)</strong> Conflict</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">The three elements are Responsibility, Authority, and Accountability.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q25">
+            <div class="question-header">
+                <span class="q-id">Question 25</span>
+                <span class="q-chapter">Lecture 7: Structure</span>
+            </div>
+            <div class="question-text">A 'Tall' structure typically has __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q25', 'a', 'b')"><strong>(a)</strong> Wide span of control</li><li class="option-item" data-opt="b" onclick="checkAnswer('q25', 'b', 'b')"><strong>(b)</strong> Narrow span of control and many levels</li><li class="option-item" data-opt="c" onclick="checkAnswer('q25', 'c', 'b')"><strong>(c)</strong> No managers</li><li class="option-item" data-opt="d" onclick="checkAnswer('q25', 'd', 'b')"><strong>(d)</strong> Few levels</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Tall structures have many hierarchical levels and narrow spans.</div>
+            </div>
+        </div>
+    
+    </div>
+    <script>
+        function checkAnswer(cardId, selectedOption, correctOption) {
+            const card = document.getElementById(cardId);
+            const options = card.querySelectorAll('.option-item');
+            const answerReveal = card.querySelector('.answer-reveal');
+            
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'wrong');
+            });
+            
+            let clickedOpt;
+            options.forEach(opt => {
+                if(opt.dataset.opt === selectedOption) clickedOpt = opt;
+            });
+            
+            if (selectedOption === correctOption) {
+                clickedOpt.classList.add('correct');
+            } else {
+                clickedOpt.classList.add('wrong');
+                options.forEach(opt => {
+                    if(opt.dataset.opt === correctOption) opt.classList.add('correct');
+                });
+            }
+            answerReveal.style.display = 'block';
+        }
+
+        function revealAll() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+        }
+        function hideAll() {
+             document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+        }
+    </script>
+</body>
+</html>

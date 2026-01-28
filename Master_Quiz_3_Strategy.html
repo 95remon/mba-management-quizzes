@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz 3: Environment & Strategy</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; margin: 5px; }
+        button:hover { background-color: #2980b9; }
+        .print-btn { background-color: #27ae60; }
+        .print-btn:hover { background-color: #219150; }
+        
+        .quiz-container { max-width: 800px; margin: 0 auto; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 25px; page-break-inside: avoid; }
+        .question-header { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .q-id { font-weight: bold; color: #7f8c8d; }
+        .q-chapter { background: #e0f7fa; color: #006064; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+        
+        .question-text { font-size: 1.1em; font-weight: 600; margin-bottom: 15px; line-height: 1.5; }
+        
+        .options-list { list-style: none; padding: 0; }
+        .option-item { padding: 10px 15px; margin: 5px 0; border: 1px solid #bdc3c7; border-radius: 5px; cursor: pointer; transition: background 0.2s; }
+        .option-item:hover { background-color: #f0f3f4; }
+        
+        /* Interactive States */
+        .option-item.selected { background-color: #d6eaf8; border-color: #3498db; }
+        .option-item.correct { background-color: #d4efdf; border-color: #27ae60; color: #145a32; }
+        .option-item.wrong { background-color: #fadbd8; border-color: #c0392b; color: #78281f; }
+        
+        .answer-reveal { margin-top: 15px; padding: 15px; background-color: #e8f8f5; border-left: 5px solid #1abc9c; display: none; }
+        .justification { margin-top: 5px; font-style: italic; color: #555; }
+        
+        @media print {
+            body { background: white; color: black; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .controls { display: none; }
+            .answer-reveal { display: block !important; border: none; background: none; font-size: 0.9em; padding: 0; margin-top: 5px; }
+            .correct-label { font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Master Quiz 3: Environment & Strategy</h1>
+    <div class="controls">
+        <button class="print-btn" onclick="window.print()">Print to PDF</button>
+        <button onclick="revealAll()">Show All Answers</button>
+        <button onclick="hideAll()">Hide All Answers</button>
+    </div>
+    <div class="quiz-container">
+
+        <div class="card" id="q1">
+            <div class="question-header">
+                <span class="q-id">Question 1</span>
+                <span class="q-chapter">Lecture 2: Environment</span>
+            </div>
+            <div class="question-text">Which of the following is an example of the General External Environment?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q1', 'a', 'b')"><strong>(a)</strong> A competitor's price cut</li><li class="option-item" data-opt="b" onclick="checkAnswer('q1', 'b', 'b')"><strong>(b)</strong> A change in national tax laws</li><li class="option-item" data-opt="c" onclick="checkAnswer('q1', 'c', 'b')"><strong>(c)</strong> A supplier delay</li><li class="option-item" data-opt="d" onclick="checkAnswer('q1', 'd', 'b')"><strong>(d)</strong> A customer complaint</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Legal/Political factors like tax laws impact all industries and are part of the General Environment (PESTEL).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q2">
+            <div class="question-header">
+                <span class="q-id">Question 2</span>
+                <span class="q-chapter">Lecture 2: SWOT</span>
+            </div>
+            <div class="question-text">In SWOT analysis, 'Opportunities' and 'Threats' refer to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q2', 'a', 'c')"><strong>(a)</strong> internal factors</li><li class="option-item" data-opt="b" onclick="checkAnswer('q2', 'b', 'c')"><strong>(b)</strong> financial ratios</li><li class="option-item" data-opt="c" onclick="checkAnswer('q2', 'c', 'c')"><strong>(c)</strong> external factors</li><li class="option-item" data-opt="d" onclick="checkAnswer('q2', 'd', 'c')"><strong>(d)</strong> past performance</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Strengths/Weaknesses are Internal; Opportunities/Threats are External.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q3">
+            <div class="question-header">
+                <span class="q-id">Question 3</span>
+                <span class="q-chapter">Lecture 2: VRIO</span>
+            </div>
+            <div class="question-text">VRIO analysis is used to determine __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q3', 'a', 'b')"><strong>(a)</strong> macro-economic trends</li><li class="option-item" data-opt="b" onclick="checkAnswer('q3', 'b', 'b')"><strong>(b)</strong> if a resource provides a sustainable competitive advantage</li><li class="option-item" data-opt="c" onclick="checkAnswer('q3', 'c', 'b')"><strong>(c)</strong> employee satisfaction</li><li class="option-item" data-opt="d" onclick="checkAnswer('q3', 'd', 'b')"><strong>(d)</strong> market share</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">VRIO (Valuable, Rare, Inimitable, Organized) assesses internal resources for competitive advantage.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q4">
+            <div class="question-header">
+                <span class="q-id">Question 4</span>
+                <span class="q-chapter">Lecture 2: VRIO</span>
+            </div>
+            <div class="question-text">If a resource is Valuable and Rare but NOT Inimitable (easy to copy), it provides __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q4', 'a', 'b')"><strong>(a)</strong> sustainable competitive advantage</li><li class="option-item" data-opt="b" onclick="checkAnswer('q4', 'b', 'b')"><strong>(b)</strong> temporary competitive advantage</li><li class="option-item" data-opt="c" onclick="checkAnswer('q4', 'c', 'b')"><strong>(c)</strong> disadvantage</li><li class="option-item" data-opt="d" onclick="checkAnswer('q4', 'd', 'b')"><strong>(d)</strong> parity</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">If competitors can copy it, the advantage is only temporary.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q5">
+            <div class="question-header">
+                <span class="q-id">Question 5</span>
+                <span class="q-chapter">Lecture 3: Planning</span>
+            </div>
+            <div class="question-text">Which of these is NOT a characteristic of SMART goals?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q5', 'a', 'c')"><strong>(a)</strong> Specific</li><li class="option-item" data-opt="b" onclick="checkAnswer('q5', 'b', 'c')"><strong>(b)</strong> Measurable</li><li class="option-item" data-opt="c" onclick="checkAnswer('q5', 'c', 'c')"><strong>(c)</strong> Ambiguous</li><li class="option-item" data-opt="d" onclick="checkAnswer('q5', 'd', 'c')"><strong>(d)</strong> Time-bound</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">SMART stands for Specific, Measurable, Actionable/Attainable, Relevant, Time-bound. Ambiguity is bad.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q6">
+            <div class="question-header">
+                <span class="q-id">Question 6</span>
+                <span class="q-chapter">Lecture 3: Strategic Hierarchy</span>
+            </div>
+            <div class="question-text">Corporate Strategy answers the question __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q6', 'a', 'b')"><strong>(a)</strong> How do we compete in this business?</li><li class="option-item" data-opt="b" onclick="checkAnswer('q6', 'b', 'b')"><strong>(b)</strong> What businesses should we be in?</li><li class="option-item" data-opt="c" onclick="checkAnswer('q6', 'c', 'b')"><strong>(c)</strong> How do we support the business?</li><li class="option-item" data-opt="d" onclick="checkAnswer('q6', 'd', 'b')"><strong>(d)</strong> How to price the product?</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Corporate Strategy sets the overall direction (Growth, Stability, Retrenchment) for the portfolio.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q7">
+            <div class="question-header">
+                <span class="q-id">Question 7</span>
+                <span class="q-chapter">Lecture 3: Generic Strategies</span>
+            </div>
+            <div class="question-text">According to Porter, a 'Cost Leadership' strategy seeks to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q7', 'a', 'b')"><strong>(a)</strong> sell unique products at high prices</li><li class="option-item" data-opt="b" onclick="checkAnswer('q7', 'b', 'b')"><strong>(b)</strong> operate with lower costs than competitors for a broad market</li><li class="option-item" data-opt="c" onclick="checkAnswer('q7', 'c', 'b')"><strong>(c)</strong> focus on a tiny niche</li><li class="option-item" data-opt="d" onclick="checkAnswer('q7', 'd', 'b')"><strong>(d)</strong> innovate technologically</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Cost Leadership = Low Cost + Broad Market.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q8">
+            <div class="question-header">
+                <span class="q-id">Question 8</span>
+                <span class="q-chapter">Lecture 3: Generic Strategies</span>
+            </div>
+            <div class="question-text">A strategy that offers unique products that customers value and pay a premium for is called __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q8', 'a', 'b')"><strong>(a)</strong> Cost Leadership</li><li class="option-item" data-opt="b" onclick="checkAnswer('q8', 'b', 'b')"><strong>(b)</strong> Differentiation</li><li class="option-item" data-opt="c" onclick="checkAnswer('q8', 'c', 'b')"><strong>(c)</strong> Retrenchment</li><li class="option-item" data-opt="d" onclick="checkAnswer('q8', 'd', 'b')"><strong>(d)</strong> Diversification</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Differentiation focuses on uniqueness (brand, quality, service).</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q9">
+            <div class="question-header">
+                <span class="q-id">Question 9</span>
+                <span class="q-chapter">Lecture 4: PESTEL</span>
+            </div>
+            <div class="question-text">The 'S' in PESTEL stands for __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q9', 'a', 'b')"><strong>(a)</strong> Strategic</li><li class="option-item" data-opt="b" onclick="checkAnswer('q9', 'b', 'b')"><strong>(b)</strong> Socio-cultural</li><li class="option-item" data-opt="c" onclick="checkAnswer('q9', 'c', 'b')"><strong>(c)</strong> Systems</li><li class="option-item" data-opt="d" onclick="checkAnswer('q9', 'd', 'b')"><strong>(d)</strong> Sales</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Political, Economic, Socio-cultural, Technological, Environmental, Legal.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q10">
+            <div class="question-header">
+                <span class="q-id">Question 10</span>
+                <span class="q-chapter">Lecture 4: Porter's 5 Forces</span>
+            </div>
+            <div class="question-text">Which of the following explains 'Threat of New Entrants'?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q10', 'a', 'c')"><strong>(a)</strong> Customers forcing prices down</li><li class="option-item" data-opt="b" onclick="checkAnswer('q10', 'b', 'c')"><strong>(b)</strong> Suppliers raising costs</li><li class="option-item" data-opt="c" onclick="checkAnswer('q10', 'c', 'c')"><strong>(c)</strong> Ease with which new competitors can enter the market</li><li class="option-item" data-opt="d" onclick="checkAnswer('q10', 'd', 'c')"><strong>(d)</strong> Rivalry among existing firms</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">High barriers to entry reduce the threat of new entrants.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q11">
+            <div class="question-header">
+                <span class="q-id">Question 11</span>
+                <span class="q-chapter">Lecture 4: Porter's 5 Forces</span>
+            </div>
+            <div class="question-text">If 'Supplier Power' is high, it means __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q11', 'a', 'b')"><strong>(a)</strong> suppliers have few choices</li><li class="option-item" data-opt="b" onclick="checkAnswer('q11', 'b', 'b')"><strong>(b)</strong> suppliers can demand higher prices or lower quality</li><li class="option-item" data-opt="c" onclick="checkAnswer('q11', 'c', 'b')"><strong>(c)</strong> buyers can negotiate lower prices</li><li class="option-item" data-opt="d" onclick="checkAnswer('q11', 'd', 'b')"><strong>(d)</strong> there are many substitute suppliers</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">High supplier power squeezes industry profits.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q12">
+            <div class="question-header">
+                <span class="q-id">Question 12</span>
+                <span class="q-chapter">Lecture 2: Operational Plans</span>
+            </div>
+            <div class="question-text">Operational plans typically have a __________ timeframe compared to strategic plans.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q12', 'a', 'b')"><strong>(a)</strong> longer</li><li class="option-item" data-opt="b" onclick="checkAnswer('q12', 'b', 'b')"><strong>(b)</strong> shorter</li><li class="option-item" data-opt="c" onclick="checkAnswer('q12', 'c', 'b')"><strong>(c)</strong> similar</li><li class="option-item" data-opt="d" onclick="checkAnswer('q12', 'd', 'b')"><strong>(d)</strong> infinite</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Operational plans are short-term (daily/weekly/monthly) implementations of strategy.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q13">
+            <div class="question-header">
+                <span class="q-id">Question 13</span>
+                <span class="q-chapter">Lecture 3: Value Disciplines</span>
+            </div>
+            <div class="question-text">Which Value Discipline focuses on total solution and strong customer relationship?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q13', 'a', 'c')"><strong>(a)</strong> Operational Excellence</li><li class="option-item" data-opt="b" onclick="checkAnswer('q13', 'b', 'c')"><strong>(b)</strong> Product Leadership</li><li class="option-item" data-opt="c" onclick="checkAnswer('q13', 'c', 'c')"><strong>(c)</strong> Customer Intimacy</li><li class="option-item" data-opt="d" onclick="checkAnswer('q13', 'd', 'c')"><strong>(d)</strong> Cost Leadership</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Customer Intimacy tailors the product/service to the specific customer.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q14">
+            <div class="question-header">
+                <span class="q-id">Question 14</span>
+                <span class="q-chapter">Lecture 3: VUCA</span>
+            </div>
+            <div class="question-text">In a VUCA environment, 'Volatility' refers to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q14', 'a', 'b')"><strong>(a)</strong> lack of clarity</li><li class="option-item" data-opt="b" onclick="checkAnswer('q14', 'b', 'b')"><strong>(b)</strong> rate of change and instability</li><li class="option-item" data-opt="c" onclick="checkAnswer('q14', 'c', 'b')"><strong>(c)</strong> interconnected parts</li><li class="option-item" data-opt="d" onclick="checkAnswer('q14', 'd', 'b')"><strong>(d)</strong> predictability</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">VUCA: Volatile (Unstable), Uncertain, Complex, Ambiguous.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q15">
+            <div class="question-header">
+                <span class="q-id">Question 15</span>
+                <span class="q-chapter">Lecture 2: Internal Environment</span>
+            </div>
+            <div class="question-text">The Internal Environment includes factors like __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q15', 'a', 'b')"><strong>(a)</strong> Interest rates</li><li class="option-item" data-opt="b" onclick="checkAnswer('q15', 'b', 'b')"><strong>(b)</strong> Organization Culture and Employees</li><li class="option-item" data-opt="c" onclick="checkAnswer('q15', 'c', 'b')"><strong>(c)</strong> Competitors</li><li class="option-item" data-opt="d" onclick="checkAnswer('q15', 'd', 'b')"><strong>(d)</strong> Laws</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Culture, structure, and resources are internal.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q16">
+            <div class="question-header">
+                <span class="q-id">Question 16</span>
+                <span class="q-chapter">Lecture 3: BCG Matrix</span>
+            </div>
+            <div class="question-text">In the BCG Matrix, a 'Star' has __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q16', 'a', 'a')"><strong>(a)</strong> High Share, High Growth</li><li class="option-item" data-opt="b" onclick="checkAnswer('q16', 'b', 'a')"><strong>(b)</strong> Low Share, High Growth</li><li class="option-item" data-opt="c" onclick="checkAnswer('q16', 'c', 'a')"><strong>(c)</strong> High Share, Low Growth</li><li class="option-item" data-opt="d" onclick="checkAnswer('q16', 'd', 'a')"><strong>(d)</strong> Low Share, Low Growth</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(a)</strong></div>
+                <div class="justification">Stars are market leaders in growing markets.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q17">
+            <div class="question-header">
+                <span class="q-id">Question 17</span>
+                <span class="q-chapter">Lecture 3: BCG Matrix</span>
+            </div>
+            <div class="question-text">The recommended strategy for a 'Cash Cow' is to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q17', 'a', 'b')"><strong>(a)</strong> invest heavily for growth</li><li class="option-item" data-opt="b" onclick="checkAnswer('q17', 'b', 'b')"><strong>(b)</strong> milk it to fund other businesses (Stability)</li><li class="option-item" data-opt="c" onclick="checkAnswer('q17', 'c', 'b')"><strong>(c)</strong> divest immediately</li><li class="option-item" data-opt="d" onclick="checkAnswer('q17', 'd', 'b')"><strong>(d)</strong> close it down</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Cash Cows generate cash to support Stars or Question Marks.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q18">
+            <div class="question-header">
+                <span class="q-id">Question 18</span>
+                <span class="q-chapter">Lecture 3: Value Chain</span>
+            </div>
+            <div class="question-text">In Porter's Value Chain, which is a Primary Activity?</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q18', 'a', 'c')"><strong>(a)</strong> HR Management</li><li class="option-item" data-opt="b" onclick="checkAnswer('q18', 'b', 'c')"><strong>(b)</strong> Technology Development</li><li class="option-item" data-opt="c" onclick="checkAnswer('q18', 'c', 'c')"><strong>(c)</strong> Inbound Logistics</li><li class="option-item" data-opt="d" onclick="checkAnswer('q18', 'd', 'c')"><strong>(d)</strong> Procurement</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(c)</strong></div>
+                <div class="justification">Primary: Inbound, Operations, Outbound, Marketing/Sales, Service. Others are Support.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q19">
+            <div class="question-header">
+                <span class="q-id">Question 19</span>
+                <span class="q-chapter">Lecture 2: Strategic Management</span>
+            </div>
+            <div class="question-text">Strategic Management involves Analysis, Formulation, Implementation, and __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q19', 'a', 'b')"><strong>(a)</strong> Hiring</li><li class="option-item" data-opt="b" onclick="checkAnswer('q19', 'b', 'b')"><strong>(b)</strong> Evaluation/Control</li><li class="option-item" data-opt="c" onclick="checkAnswer('q19', 'c', 'b')"><strong>(c)</strong> Marketing</li><li class="option-item" data-opt="d" onclick="checkAnswer('q19', 'd', 'b')"><strong>(d)</strong> Production</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Evaluation/Control ensures the strategy is working.</div>
+            </div>
+        </div>
+    
+        <div class="card" id="q20">
+            <div class="question-header">
+                <span class="q-id">Question 20</span>
+                <span class="q-chapter">Lecture 4: Competitive Advantage</span>
+            </div>
+            <div class="question-text">Sustainable Competitive Advantage is difficult for competitors to __________.</div>
+            <ul class="options-list">
+                <li class="option-item" data-opt="a" onclick="checkAnswer('q20', 'a', 'b')"><strong>(a)</strong> understand</li><li class="option-item" data-opt="b" onclick="checkAnswer('q20', 'b', 'b')"><strong>(b)</strong> imitate or copy</li><li class="option-item" data-opt="c" onclick="checkAnswer('q20', 'c', 'b')"><strong>(c)</strong> see</li><li class="option-item" data-opt="d" onclick="checkAnswer('q20', 'd', 'b')"><strong>(d)</strong> buy</li>
+            </ul>
+            <div class="answer-reveal">
+                <div><span class="correct-label">Correct Answer:</span> <strong>(b)</strong></div>
+                <div class="justification">Inimitability is key to sustainability (VRIO).</div>
+            </div>
+        </div>
+    
+    </div>
+    <script>
+        function checkAnswer(cardId, selectedOption, correctOption) {
+            const card = document.getElementById(cardId);
+            const options = card.querySelectorAll('.option-item');
+            const answerReveal = card.querySelector('.answer-reveal');
+            
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'wrong');
+            });
+            
+            let clickedOpt;
+            options.forEach(opt => {
+                if(opt.dataset.opt === selectedOption) clickedOpt = opt;
+            });
+            
+            if (selectedOption === correctOption) {
+                clickedOpt.classList.add('correct');
+            } else {
+                clickedOpt.classList.add('wrong');
+                options.forEach(opt => {
+                    if(opt.dataset.opt === correctOption) opt.classList.add('correct');
+                });
+            }
+            answerReveal.style.display = 'block';
+        }
+
+        function revealAll() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+        }
+        function hideAll() {
+             document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+        }
+    </script>
+</body>
+</html>
